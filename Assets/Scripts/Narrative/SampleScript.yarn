@@ -1,11 +1,40 @@
 ﻿title: Start
 ---
-Wow!
-My first ever Yarn script in Unity!
+MC Dialogue: Hello there! I got this clue. Can you help me with it? Can't seem to find out what this clue means? 
 
--> Gosh!
--> Incredible!
--> I'm amazed!
+NPC Dialogue: Welcome to my riddle! You are in the right place. The clue in your hand is what will be accessed to unlock the next level. Use what you have to unlock to go to the next clue.You can quite at anytime, if you already know the clue.
 
-Anyway, time to get writing!
+
+Let's Start! 
+
+NPC Dialogue: What is always in front of you but can’t be seen?
+-> Your Future!
+	<<jump correct_answer>>
+-> Your Shadow!
+	<<jump wrong_answer>>
+-> Nothing!
+	<<jump wrong_answer>>
+-> Quit!
+	<<jump quit_game>>
+
+===
+title: correct_answer
+---
+Correct answer
+<<jump End>>
+===
+title: wrong_answer
+---
+Try again?
+<<jump Start>>
+===
+title: quit_game
+---
+ Farewell.
+<<stop>>
+===
+title: End
+---
+Thanks for playing! You may go to next Scene!
+<<stop>>
 ===
