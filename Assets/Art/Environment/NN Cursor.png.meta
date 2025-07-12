@@ -116,10 +116,10 @@ TextureImporter:
       name: NN Cursor_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 262
-        height: 464
+        width: 260
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NN Cursor_0: 7139670761586486990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
