@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MC ANGRY SPRITE_0: -5950602671636175607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
