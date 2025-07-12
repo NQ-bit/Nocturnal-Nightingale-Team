@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fd9434915c192d949b81a177f21d41fd
+guid: 45a51aa879c1e9d4aa0a8ca39330fa66
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2021840921692174891
-    second: MC NEUTRAL SPRITE_0
+      213: 7139670761586486990
+    second: NN Cursor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -57,7 +57,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 7
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC NEUTRAL SPRITE_0
+      name: NN Cursor_0
       rect:
         serializedVersion: 2
-        x: 286
+        x: 2
         y: 0
-        width: 2065
-        height: 3168
+        width: 262
+        height: 464
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2a7fc92b950f0c10800000000000000
-      internalID: 2021840921692174891
+      spriteID: eceea95eab4351360800000000000000
+      internalID: 7139670761586486990
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MC NEUTRAL SPRITE_0: 2021840921692174891
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
