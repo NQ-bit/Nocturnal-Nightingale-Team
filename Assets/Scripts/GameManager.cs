@@ -15,23 +15,62 @@ public class GameManager : MonoBehaviour
 
     [Header("Scene Names")]
     public string mainMenuSceneName = "TitleScreen";
+    public string cutSceneName = "CutScene"; // Name of the cutscene scene
     public string firstGameSceneName = "Beach";
     public string secondGameSceneName = "TownSquare";
     public string thirdGameSceneName = "Warehouse";
     public string goodEndingSceneName = "GoodEnding";
     public string badEndingSceneName = "BadEnding";
+    
+    private void Start()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        currentSceneName = SceneManager.GetActiveScene().name;
+        _score = 0; // Initialize score
+    }
 
     private void Awake()
     {
-        if (Instance != null && Instance != this) {
-                Destroy(gameObject);
-                return;
-            }
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+    
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(firstGameSceneName);
+    }
 
-    public void AddScore(int amount) {
+    public void ReturnToMainMenu()
+    {
+        Time.timeScale = 1f; // Reset time scale
+        SceneManager.LoadScene(mainMenuSceneName);
+    }
+    
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
+
+    public void AddScore(int amount)
+    {
         _score += amount;
         Debug.Log($"[GameManager] Score updated to {_score}");
     }
