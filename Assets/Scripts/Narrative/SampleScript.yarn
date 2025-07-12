@@ -36,7 +36,7 @@ title: quit_game
 ---
 <<expression Nisaea Angry>>
  Farewell.
-<<stop>>
+<<change_scene TitleScreen>>
 ===
 title: End
 ---
