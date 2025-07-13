@@ -38,15 +38,9 @@ public class GameManager : MonoBehaviour
         _score = 0; // Initialize score
     }
 
-    private void Awake()
+    public void LoadCutScene()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        SceneManager.LoadScene(cutSceneName);
     }
     
     public void PlayGame()
