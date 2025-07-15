@@ -393,6 +393,7 @@ MonoBehaviour:
   endingThreshold: 20
   mainMenuSceneName: TitleScreen
   cutSceneName: CutScene
+  tutorialGameSceneName: Tutorial
   firstGameSceneName: Beach
   secondGameSceneName: TownSquare
   thirdGameSceneName: Warehouse
@@ -2595,10 +2596,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 337d46a0332e7634aa6ef40946c3d09c, type: 3}
-  m_Resource: {fileID: 8300000, guid: 337d46a0332e7634aa6ef40946c3d09c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d5a6635c9beed9a4d9e26c7c07de015f, type: 3}
+  m_Resource: {fileID: 8300000, guid: d5a6635c9beed9a4d9e26c7c07de015f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4487,7 +4488,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 446bf2b46b48a6840aea66b32ed96acc, type: 3}
   m_Resource: {fileID: 8300000, guid: 446bf2b46b48a6840aea66b32ed96acc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.85
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
