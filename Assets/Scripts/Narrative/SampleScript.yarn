@@ -42,5 +42,5 @@ title: End
 ---
 <<expression Nisaea Happy>>
 Thanks for playing! You may go to next Scene!
-<<stop>>
+<<change_scene Beach>>
 ===
