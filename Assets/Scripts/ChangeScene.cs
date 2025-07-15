@@ -9,7 +9,7 @@ public class ChangeScene : MonoBehaviour
     public void GoToMainGameScene()
     {
 
-        SceneManager.LoadScene("Main Game");
+        SceneManager.LoadScene("Tutorial");
 
     }
 }
