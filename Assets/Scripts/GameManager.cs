@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Scene Names")]
     public string mainMenuSceneName = "TitleScreen";
-    public string cutSceneName = "CutScene"; // Name of the cutscene scene
+    public string cutSceneName = "CutScene";
+
+    public string tutorialGameSceneName = "Tutorial";
     public string firstGameSceneName = "Beach";
     public string secondGameSceneName = "TownSquare";
     public string thirdGameSceneName = "Warehouse";
@@ -45,7 +47,7 @@ public class GameManager : MonoBehaviour
     
     public void PlayGame()
     {
-        SceneManager.LoadScene(firstGameSceneName);
+        SceneManager.LoadScene(tutorialGameSceneName);
     }
 
     public void ReturnToMainMenu()
