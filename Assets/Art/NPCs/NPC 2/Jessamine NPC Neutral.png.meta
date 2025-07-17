@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9ea9c55fbae03074bb504d2f6c195d75
+guid: 32ee8c6a90668df4b976070e1946f7b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1024691621685196269
-    second: Textbox 1_0
+      213: -4840500158256232574
+    second: Jessamine NPC Neutral_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Textbox 1_0
+      name: Jessamine NPC Neutral_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 427
         y: 0
-        width: 580
-        height: 465
+        width: 1807
+        height: 2412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31a822d266097c1f0800000000000000
-      internalID: -1024691621685196269
+      spriteID: 2874aeb80c613dcb0800000000000000
+      internalID: -4840500158256232574
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Textbox 1_0: -1024691621685196269
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
