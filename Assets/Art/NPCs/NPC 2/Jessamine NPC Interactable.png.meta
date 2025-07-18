@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jessamine NPC Interactable_0: -2143945735860372731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

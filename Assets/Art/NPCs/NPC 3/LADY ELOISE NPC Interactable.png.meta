@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LADY ELOISE NPC Interactable_0: 7236183288471071128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
