@@ -53,6 +53,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadSceneWithDelay(tutorialGameSceneName));
     }
 
+    public void LoadFirstGameScene()
+    {
+        StartCoroutine(LoadSceneWithDelay(firstGameSceneName));
+    }
+
     public void ReturnToMainMenu()
     {
         StartCoroutine(LoadSceneWithDelay(mainMenuSceneName));
