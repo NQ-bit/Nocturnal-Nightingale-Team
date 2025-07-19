@@ -6,7 +6,7 @@ public class FadeController : MonoBehaviour
     [Header("Fade Settings")]
     [SerializeField] private Canvas fadeCanvasController; // Optional: Canvas for fade effects
     [SerializeField] private CanvasGroup fadeCanvas; // Canvas for fade effects
-    [SerializeField] private float fadeDuration = 5.0f; // Duration of the fade
+    [SerializeField] private float fadeDuration = 1f; // Duration of the fade
 
     private void Awake()
     {
