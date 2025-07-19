@@ -273,6 +273,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247410417}
   m_CullTransparentMesh: 1
+--- !u!1 &449321992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6148916017422709710, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+  m_PrefabInstance: {fileID: 1869686746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &747968201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -922,9 +927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960eb7e62a4474bba9c4c729352d66b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueObjects:
-  - {fileID: 2046769068}
-  - {fileID: 870833391}
+  transitionDelay: 1
+  pauseDialogueForTransition: 1
 --- !u!1001 &1869686746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1019,7 +1023,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6148916017422709710, guid: e409b91f99e1d492387f508576af8f85, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148916017422709710, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1162,6 +1170,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: footprint_clue
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 449321992}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2121212282 stripped
 MonoBehaviour:
