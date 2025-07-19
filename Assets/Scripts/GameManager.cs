@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,6 +24,9 @@ public class GameManager : MonoBehaviour
     public string goodEndingSceneName = "GoodEnding";
     public string badEndingSceneName = "BadEnding";
 
+    [Header("Fade Settings")]
+    [SerializeField] private float delayBeforeLoad = 1f; // Extra delay after fade
+
     private void Start()
     {
         if (Instance == null)
@@ -37,23 +41,21 @@ public class GameManager : MonoBehaviour
 
         currentSceneName = SceneManager.GetActiveScene().name;
         _score = 0; // Initialize score
-    
     }
 
     public void LoadCutScene()
     {
-        SceneManager.LoadScene(cutSceneName);
+        StartCoroutine(LoadSceneWithDelay(cutSceneName));
     }
     
     public void LoadMainGame()
     {
-        SceneManager.LoadScene(tutorialGameSceneName);
+        StartCoroutine(LoadSceneWithDelay(tutorialGameSceneName));
     }
 
     public void ReturnToMainMenu()
     {
-        Time.timeScale = 1f; // Reset time scale
-        SceneManager.LoadScene(mainMenuSceneName);
+        StartCoroutine(LoadSceneWithDelay(mainMenuSceneName));
     }
     
     public void QuitGame()
@@ -63,6 +65,12 @@ public class GameManager : MonoBehaviour
         #else
             Application.Quit();
         #endif
+    }
+
+    IEnumerator LoadSceneWithDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(delayBeforeLoad);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void AddScore(int amount)
