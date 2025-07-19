@@ -4,18 +4,12 @@ Narrator: Crashing waves echo off the cave walls, a sound like a constant ringin
 Narrator: Dampened sand coats each splayed digit of Nisaea's fresh, human, toes as she carefully scales the outside wall of the alcove. Dipping inside quickly to ensure no one sees her Nesaea lets out a loud groan.
 Nisaea: "My precious time wasted on command. I ought to be with my pod, hunting, rendering myself useful. I would rather watch pups or feed elders than suffer what turned out to be a trivial errand. I'll return with few fish more than we had, so I suppose what reason have I to cavil?"
 Narrator: Nisaea looped the string of fish she bartered for around her waist and began looking in the sand for her pelt.
-<<display_object footprint>>
--> Footprints
-	<<jump footprint_clue>>
 ===
 title: footprint_clue
 ---
 <<expression Nisaea Nervous>>
 Narrator: A footprint larger than her own is preserved in the damp sand near the edge of the alcove mouth. It looks as if someone tried to disturb it get rid of the print alltogether, but was in too much of a hurry to successfully destroy it. Upon closer inspection, the print is a shoeprint, one, Nisaea can fit her entire human foot inside of. 
 Nisaea: Who would wear their boots upon the strand?
-<<display_object rock>>
--> Overturned Rock
-	<<jump overturnedrock_clue>>
 ===
 title: overturnedrock_clue
 ---

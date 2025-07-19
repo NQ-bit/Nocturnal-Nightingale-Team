@@ -1,15 +1,16 @@
 using UnityEngine;
 using Yarn.Unity;
 using System.Collections;
+using System.Linq;
+using System;
 
 public class YarnSceneCommands : MonoBehaviour
 {
-    [Header("Scene Transition Settings")]
-    public float transitionDelay = 1f; // Delay before transition starts
-    public bool pauseDialogueForTransition = true;
+    [Header("Target Clue Objects")]
+    [SerializeField] private GameObject[] clueObjects;
     
     private DialogueRunner dialogueRunner;
-    
+
     private void Start()
     {
         dialogueRunner = FindFirstObjectByType<DialogueRunner>();
@@ -17,28 +18,25 @@ public class YarnSceneCommands : MonoBehaviour
         {
             Debug.LogError("YarnSceneCommands requires a DialogueRunner in the scene!");
         }
+        
+        clueObjects = GameObject.FindGameObjectsWithTag("Clue");
+    }
+
+    [YarnCommand("display_object")]
+    public void DisplayObject(string objectName)
+    {
+        Debug.Log($"Yarn Command: Displaying object '{objectName}'");
     }
     
     // Basic scene transition command
     [YarnCommand("change_scene")]
-    public static void ChangeScene(string sceneName)
+    public void ChangeScene(string sceneName)
     {
         Debug.Log($"Yarn Command: Changing to scene '{sceneName}'");
         
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
-    
-    // Scene transition with delay (useful for dramatic effect)
-    [YarnCommand("change_scene_delayed")]
-    public static void ChangeSceneDelayed(string sceneName, float delay = 2f)
-    {
-        YarnSceneCommands instance = FindFirstObjectByType<YarnSceneCommands>();
-        if (instance != null)
-        {
-            instance.StartCoroutine(instance.DelayedSceneChange(sceneName, delay));
-        }
-    }
-    
+        
     // End dialogue and then change scene
     [YarnCommand("end_dialogue_and_change_scene")]
     public static void EndDialogueAndChangeScene(string sceneName)
@@ -50,17 +48,6 @@ public class YarnSceneCommands : MonoBehaviour
         }
     }
     
-    // Change scene with specific player position (useful for doorways)
-    [YarnCommand("change_scene_with_position")]
-    public static void ChangeSceneWithPosition(string sceneName, float x, float y)
-    {
-            // Store position for after scene load
-            PlayerPrefs.SetFloat("NextSceneX", x);
-            PlayerPrefs.SetFloat("NextSceneY", y);
-            PlayerPrefs.SetInt("SetPlayerPosition", 1);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
-        
-    }
     
     // Trigger ending directly from dialogue
     [YarnCommand("trigger_ending")]
@@ -83,20 +70,6 @@ public class YarnSceneCommands : MonoBehaviour
         {
             instance.StartCoroutine(instance.FadeTransition(sceneName, fadeTime));
         }
-    }
-    
-    private IEnumerator DelayedSceneChange(string sceneName, float delay)
-    {
-        Debug.Log($"Waiting {delay} seconds before changing to {sceneName}");
-        
-        // Optionally pause dialogue during delay
-        if (pauseDialogueForTransition && dialogueRunner != null)
-        {
-            // You can add visual cues here (screen effects, etc.)
-        }
-        
-        yield return new WaitForSeconds(delay);
-        ChangeScene(sceneName);
     }
     
     private IEnumerator EndDialogueAndTransition(string sceneName)
