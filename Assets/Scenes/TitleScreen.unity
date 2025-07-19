@@ -907,9 +907,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 934872944}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: GoToCutscene
+      - m_Target: {fileID: 46109248}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadCutScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2086,7 +2086,6 @@ GameObject:
   - component: {fileID: 934872942}
   - component: {fileID: 934872941}
   - component: {fileID: 934872940}
-  - component: {fileID: 934872944}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2180,18 +2179,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &934872944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934872939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a6d347e79963df41a076d2509f50521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &935396699
 GameObject:
   m_ObjectHideFlags: 0

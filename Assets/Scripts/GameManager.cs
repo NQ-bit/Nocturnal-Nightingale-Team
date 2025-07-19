@@ -9,21 +9,20 @@ public class GameManager : MonoBehaviour
     public string currentSceneName;
     private int _score;
 
-    [Header("Ending Threshold")]
-    [Tooltip("Score above this loads Bad Ending; otherwise Good Ending")] 
+    [Header("Score Settings")]
+    [Tooltip("Score threshold for triggering the ending scene")]
     public int endingThreshold = 20; // need to be discussed with team
 
     [Header("Scene Names")]
     public string mainMenuSceneName = "TitleScreen";
-    public string cutSceneName = "CutScene";
-
+    public string cutSceneName = "Cutscene";
     public string tutorialGameSceneName = "Tutorial";
     public string firstGameSceneName = "Beach";
     public string secondGameSceneName = "TownSquare";
     public string thirdGameSceneName = "Warehouse";
     public string goodEndingSceneName = "GoodEnding";
     public string badEndingSceneName = "BadEnding";
-    
+
     private void Start()
     {
         if (Instance == null)
@@ -38,6 +37,7 @@ public class GameManager : MonoBehaviour
 
         currentSceneName = SceneManager.GetActiveScene().name;
         _score = 0; // Initialize score
+    
     }
 
     public void LoadCutScene()
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(cutSceneName);
     }
     
-    public void PlayGame()
+    public void LoadMainGame()
     {
         SceneManager.LoadScene(tutorialGameSceneName);
     }
