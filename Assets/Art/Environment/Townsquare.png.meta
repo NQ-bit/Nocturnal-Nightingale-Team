@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Townsquare_0: -7964835513543181036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
