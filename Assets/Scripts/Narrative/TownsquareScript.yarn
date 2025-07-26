@@ -108,6 +108,9 @@ Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 Victor: How did those fall out of my pocket?
 Nisaea:
     ->Carrying bloody scissors a vice of yours? 
+     <<if nisaea_said("Carrying bloody scissors a vice of yours?")>>
+        <<set $reputation to $reputation +1>>
+    <<endif>>
 Victor: I'm sure it looks odd, but spare me a sentencing.
 Victor: My sister gifted these to me. 
 Victor: She's an amazing needleworker and swore these types of scissors were sharp and precise.
@@ -124,9 +127,73 @@ Nisaea: Please, if you will.
 
 title: EloiseOpening
 ---
+<<expression Lady Eloise Neutral>>
+ Narrator: A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm. 
+ Narrator: Couples begin to congregate near the opera house, with one soul lingering further out near the interior of the town square. 
+ Narrator: Drapped in brilliant lilac taffeta and florid needlepoint lace, a woman stood divided from the rest.
+ Nisaea: Pardon. Are you...
+    ->The Keatings' Daughter?
+      <<if nisaea_said("The Keatings' Daughter?")>>
+        <<set $reputation to $reputation +1>>
+    <<endif>>
+    <<jump EVDPOS1>>
 
+    -> Ms.Eliza or Elsa?
+    <<if nisaea_said("Ms.Eliza or Elsa?")>>
+        <<set $reputation to $reputation -1>>
+    <<endif>>
+<<jump EVDNeg1>>
 ===
+
+title: EVDNeg1
+---
+Eloise: "Are you not as charming as a hare with half the brain?"
+Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service. "
+Nisaea: "Pleasure to meet you?"
+<<if nisaea_said("Pleasure to meet you?")>>
+        <<set $reputation to $reputation -1>>
+    <<endif>
+<<jump EMD>>
+===
+
+title:EVDPOS1
+---
+Eloise: "Depends on the party inquiring." 
+Narrator: "Eloise offers Nisaea  a tentative hand."
+Eloise: "Eloise. Eloise Keating."
+Nisaea: "Pleasure to meet you."
+<<jump EMD>>
+===
+// Can leave for Momo and Marley to try out if they like! If not I will continue on tomorrow aka 7/26/25
+title: EMD
+---
+===
+
+title: handkerchief
+---
+Narrator: A silken white handkerchief with skillfully embroidered violet and lavender flowers. 
+Narrator: Either imported or commissioned for an appropriate price. 
+Narrator: The letters E.K are painstalingly sewn into the corner of the fabric. 
+Nisaea: "What beautiful needlework."
+===
+
 
 title:JessamineOpening
 ---
+===
+
+title: JVDNeg1
+---
+===
+
+title:JVDPOS1
+---
+===
+
+title: book
+---
+Narrator: A titleless book cleverly hides the inside contents of a second edition translation of The Pillow Book. 
+Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
+Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
+Nisaea: "How queer..."
 ===
