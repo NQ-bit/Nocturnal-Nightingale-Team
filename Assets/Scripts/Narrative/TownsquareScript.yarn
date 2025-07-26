@@ -1,0 +1,199 @@
+﻿title: TownsquareScript
+---
+<<declare $reputation = 10>>
+Narrator: Booted heels and walking sticks clatter noisily upon the ground adding to the cacophony in town. 
+As nightfall readily approached, the soul of Point Ecrin was beginning to transform from bustling commerce to quieter pursuits of the evening.
+Few souls loomed by their shops as they shuttered for the eventide, but one lone figure advancing from the docks Nisaea glimpsed, caught her attention. 
+A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaea's pleasure. He seems like he's in a hurry.
+
+<<expression Victor Interactable>>
+Victor: Nisaea! 
+<<expression Victor Neutral>>
+Victor: Darling. Sorry, I have no crab for you today– traps were empty. I thought you would be gone for several weeks. 
+Nisaea: Oh..
+    ->I missed Point Ecrin already! 
+   <<jump VD1NEG>>
+    ->I've lost something...
+    <<jump VD1POS >>
+    <<if nisaea_said("I missed Point Ecrin already!")>>
+        <<set $reputation to $reputation -1>>
+    <<endif>>
+    <<if nisaea_said("I've lost something...")>>
+        <<set $reputation to $reputation +1>>
+    <<endif>>
+===
+
+title: VD1NEG
+---
+Nisaea: "Something about this town calls to me, I just couldn't stay away."
+<<expression Victor Aggrieved>>
+Victor: "Right... Glad to have you back then. Is everything alright? I love our chats but I'm in a bit of a bind."
+Nisaea: "Apolpgies..."
+<<jump VRMD>>
+===
+title:VD1POS
+---
+Nisaea: "That is my intention, but as I was leaving, I noticed something dear to me has become misplaced. I've come back in to town in hopes of finding it."
+Victor: "I'm terribly sorry to hear that. If it's quick, I'll lend you my hand."
+Nisaea: "You have my eternal thanks."
+<<jump VRMD>>
+===
+
+title:VRMD
+---
+Nisaea: Victor...
+    ->Have you seen anything suspicious?
+    <<jump VD1NEUT>>
+    ->Has anyone been acting strangely?
+    <<jump VD2NEUT>>
+===
+
+title: VD1NEUT
+---
+Victor: "You'll have to be more specific."
+Nisaea: He seems a bit closed off. Thats unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
+===
+
+title: VD2NEUT
+---
+Victor: "I... couldn't say."
+Nisaea: He seems a bit closed off. Thats unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
+//point and click transition
+<<jump CamphoRing>>
+<<jump BloodyCraneScissors>>
+===
+
+title: CamphorRing
+---
+Narrator: A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
+//Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
+Nisaea: I should ask Victor about this.
+<<jump CRPostVD>>
+===
+title: BloodyCraneScissors
+---
+Narrator: Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp. 
+Nisaea: I should ask Victor about this.
+<<jump BCSPostVD>>
+===
+
+title: CRPostVD
+---
+Victor: "Back so soon?"
+Narrator: Nisaea interrupts Victor, showing him the precious ring.
+<<expression Victor Nervous>>
+Victor: By the gods! You found it! I've been looking all over for this.
+    ->What does the inscription mean?
+     <<if nisaea_said("What does the inscription mean?")>>
+        <<set $reputation to $reputation -1>>
+    <<endif>>
+Victor: Family over everything. We protect each other first and foremost. 
+Nisaea:
+    -> You have a pod?
+Victor: I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect. 
+Nisaea: And you guard this sister?
+Victor: I protect her as best I can...
+Victor:... You asked about *anyone* acting strangely?
+Nisaea: Anything you remember could be of use to me.
+Victor: It may be worth visiting the Keating's girl. She's been in stitches for weeks. 
+Nisaea:
+    ->Where can I find her?
+Victor: Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine– my sister.
+===
+title: BCSPostVD
+---
+Victor: "Back so soon, love?"
+Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
+<<expression Victor Nervous>>
+Victor: How did those fall out of my pocket?
+Nisaea:
+    ->Carrying bloody scissors a vice of yours? 
+     <<if nisaea_said("Carrying bloody scissors a vice of yours?")>>
+        <<set $reputation to $reputation +1>>
+    <<endif>>
+Victor: I'm sure it looks odd, but spare me a sentencing.
+Victor: My sister gifted these to me. 
+Victor: She's an amazing needleworker and swore these types of scissors were sharp and precise.
+Victor: I use them to cut off scales, excess fat– you name it.
+Victor: Perfectly sane and normal.
+Nisaea: Right....
+Victor: N-Now that I mention it. Jessamine– my sister, may know something.
+Victor: She sees far more people in her line of work than I. 
+Victor: Maybe she's heard some gossip? I can point you in her direction for your troubles.
+Narrator: Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
+Nisaea: Please, if you will.
+<<jump JessamineOpening>>
+===
+
+title: EloiseOpening
+---
+<<expression Lady Eloise Neutral>>
+ Narrator: A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm. 
+ Narrator: Couples begin to congregate near the opera house, with one soul lingering further out near the interior of the town square. 
+ Narrator: Drapped in brilliant lilac taffeta and florid needlepoint lace, a woman stood divided from the rest.
+ Nisaea: Pardon. Are you...
+    ->The Keatings' Daughter?
+      <<if nisaea_said("The Keatings' Daughter?")>>
+        <<set $reputation to $reputation +1>>
+    <<endif>>
+    <<jump EVDPOS1>>
+
+    -> Ms.Eliza or Elsa?
+    <<if nisaea_said("Ms.Eliza or Elsa?")>>
+        <<set $reputation to $reputation -1>>
+    <<endif>>
+<<jump EVDNeg1>>
+===
+
+title: EVDNeg1
+---
+Eloise: "Are you not as charming as a hare with half the brain?"
+Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service. "
+Nisaea: "Pleasure to meet you?"
+<<if nisaea_said("Pleasure to meet you?")>>
+        <<set $reputation to $reputation -1>>
+    <<endif>
+<<jump EMD>>
+===
+
+title:EVDPOS1
+---
+Eloise: "Depends on the party inquiring." 
+Narrator: "Eloise offers Nisaea  a tentative hand."
+Eloise: "Eloise. Eloise Keating."
+Nisaea: "Pleasure to meet you."
+<<jump EMD>>
+===
+// Can leave for Momo and Marley to try out if they like! If not I will continue on tomorrow aka 7/26/25
+title: EMD
+---
+===
+
+title: handkerchief
+---
+Narrator: A silken white handkerchief with skillfully embroidered violet and lavender flowers. 
+Narrator: Either imported or commissioned for an appropriate price. 
+Narrator: The letters E.K are painstalingly sewn into the corner of the fabric. 
+Nisaea: "What beautiful needlework."
+===
+
+
+title:JessamineOpening
+---
+===
+
+title: JVDNeg1
+---
+===
+
+title:JVDPOS1
+---
+===
+
+title: book
+---
+Narrator: A titleless book cleverly hides the inside contents of a second edition translation of The Pillow Book. 
+Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
+Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
+Nisaea: "How queer..."
+===
