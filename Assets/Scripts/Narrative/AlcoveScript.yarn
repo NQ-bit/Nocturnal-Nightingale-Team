@@ -1,8 +1,8 @@
 ﻿title: AlcoveScript
 ---
 Narrator: Crashing waves echo off the cave walls, a sound like a constant ringing which never fully deserts the space. The sun bathes the walls in honeyed rays that gently heat them like palming a mug of warmed tea. 
-Narrator: Dampened sand coats each splayed digit of Nisaea's fresh, human, toes as she carefully scales the outside wall of the alcove. Dipping inside quickly to ensure no one sees her Nesaea lets out a loud groan.
-Nisaea: "My precious time wasted on command. I ought to be with my pod, hunting, rendering myself useful. I would rather watch pups or feed elders than suffer what turned out to be a trivial errand. I'll return with few fish more than we had, so I suppose what reason have I to cavil?"
+Narrator: Dampened sand coats each splayed digit of Nisaea's fresh, human, toes as she carefully scales the outside wall of the alcove. Dipping inside quickly to ensure no one sees her Nisaea lets out a loud groan.
+Nisaea: "My precious time wasted on command. I ought to be with my pod, hunting, rendering myself useful. I would rather watch pups or feed elders than suffer what turned out to be a trivial errand. I'll return with a few fish more than we had, so I suppose what reason have I to cavil?"
 Narrator: Nisaea looped the string of fish she bartered for around her waist and began looking in the sand for her pelt.
 ===
 title: footprint_clue
@@ -17,7 +17,7 @@ title: overturnedrock_clue
 Narrator:A large, smooth rock is sprayed wet with sea water. It is ashy and flaking with salt in the areas it's since dried off, and in the depressions brilliant pink coraline algae has made it's home making it difficult to grip it from any angle. Yet, the rock seems to have been disturbed, with sand bunched up around the edges of it where it has been dragged from it's original position. 
 Narrator: Nisaea's pelt is missing from it's hiding spot.
 <<expression Nisaea Nervous>>
-Narrator: Nisaea's heart began to race. She can't differentiate between the sound of blood rushing in hear ears and the waves creeping in to deposit sea foam on her feet. A guttural wail leaves her body, startling the gulls from their cozy perches. Nesaea is stranded. Without her pelt she can't return to her pod. She can never return home again. 
+Narrator: Nisaea's heart began to race. She can't differentiate between the sound of blood rushing in hear ears and the waves creeping in to deposit sea foam on her feet. A guttural wail leaves her body, startling the gulls from their cozy perches. Nisaea is stranded. Without her pelt she can't return to her pod. She can never return home again. 
 Nisaea:"I exercised caution. I obscured my passage. Who might have tracked me?– Who desires to harm me?"
 Narrator: Nisaea palmed the footprints and eyed the direction it was headed in. 
 Nisaea:"It's wends its way toward the town. Maybe I can find clues there."
