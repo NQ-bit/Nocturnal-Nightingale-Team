@@ -6,29 +6,28 @@ As nightfall readily approached, the soul of Point Ecrin was beginning to transf
 Few souls loomed by their shops as they shuttered for the eventide, but one lone figure advancing from the docks Nisaea glimpsed, caught her attention. 
 A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaea's pleasure. He seems like he's in a hurry.
 
-<<expression Victor Interactable>>
-Victor: Nisaea! 
+===
+
+title: VictorOpening
+---
 <<expression Victor Neutral>>
+Victor: Nisaea!
 Victor: Darling. Sorry, I have no crab for you today– traps were empty. I thought you would be gone for several weeks. 
 Nisaea: Oh..
-    ->I missed Point Ecrin already! 
-   <<jump VD1NEG>>
-    ->I've lost something...
-    <<jump VD1POS >>
-    <<if nisaea_said("I missed Point Ecrin already!")>>
+    ->I missed Point Ecrin already!
         <<set $reputation to $reputation -1>>
-    <<endif>>
-    <<if nisaea_said("I've lost something...")>>
+        <<jump VD1NEG>>
+    ->I've lost something...
         <<set $reputation to $reputation +1>>
-    <<endif>>
+        <<jump VD1POS>>
 ===
 
 title: VD1NEG
 ---
 Nisaea: "Something about this town calls to me, I just couldn't stay away."
-<<expression Victor Aggrieved>>
+<<expression Victor Concerned>>
 Victor: "Right... Glad to have you back then. Is everything alright? I love our chats but I'm in a bit of a bind."
-Nisaea: "Apolpgies..."
+Nisaea: "Apologies..."
 <<jump VRMD>>
 ===
 title:VD1POS
@@ -43,24 +42,24 @@ title:VRMD
 ---
 Nisaea: Victor...
     ->Have you seen anything suspicious?
-    <<jump VD1NEUT>>
+         <<jump VD1NEUT>>
     ->Has anyone been acting strangely?
-    <<jump VD2NEUT>>
+        <<jump VD2NEUT>>
 ===
 
 title: VD1NEUT
 ---
 Victor: "You'll have to be more specific."
-Nisaea: He seems a bit closed off. Thats unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
+Nisaea: He seems a bit closed off. That's unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
 ===
 
 title: VD2NEUT
 ---
 Victor: "I... couldn't say."
-Nisaea: He seems a bit closed off. Thats unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
+Nisaea: He seems a bit closed off. That's unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
 //point and click transition
-<<jump CamphoRing>>
-<<jump BloodyCraneScissors>>
+// <<jump CamphoRing>>
+// <<jump BloodyCraneScissors>>
 ===
 
 title: CamphorRing
@@ -86,7 +85,7 @@ Victor: By the gods! You found it! I've been looking all over for this.
     ->What does the inscription mean?
      <<if nisaea_said("What does the inscription mean?")>>
         <<set $reputation to $reputation -1>>
-    <<endif>>
+        <<endif>>
 Victor: Family over everything. We protect each other first and foremost. 
 Nisaea:
     -> You have a pod?
@@ -110,7 +109,7 @@ Nisaea:
     ->Carrying bloody scissors a vice of yours? 
      <<if nisaea_said("Carrying bloody scissors a vice of yours?")>>
         <<set $reputation to $reputation +1>>
-    <<endif>>
+        <<endif>>
 Victor: I'm sure it looks odd, but spare me a sentencing.
 Victor: My sister gifted these to me. 
 Victor: She's an amazing needleworker and swore these types of scissors were sharp and precise.
@@ -135,7 +134,7 @@ title: EloiseOpening
     ->The Keatings' Daughter?
       <<if nisaea_said("The Keatings' Daughter?")>>
         <<set $reputation to $reputation +1>>
-    <<endif>>
+        <<endif>>
     <<jump EVDPOS1>>
 
     -> Ms.Eliza or Elsa?
@@ -152,7 +151,7 @@ Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service.
 Nisaea: "Pleasure to meet you?"
 <<if nisaea_said("Pleasure to meet you?")>>
         <<set $reputation to $reputation -1>>
-    <<endif>
+    <<endif>>
 <<jump EMD>>
 ===
 
