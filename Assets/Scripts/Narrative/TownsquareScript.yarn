@@ -86,7 +86,7 @@ Victor: By the gods! You found it! I've been looking all over for this.
     ->What does the inscription mean?
      <<if nisaea_said("What does the inscription mean?")>>
         <<set $reputation to $reputation -1>>
-    <<endif>>
+        <<endif>>
 Victor: Family over everything. We protect each other first and foremost. 
 Nisaea:
     -> You have a pod?
@@ -110,7 +110,7 @@ Nisaea:
     ->Carrying bloody scissors a vice of yours? 
      <<if nisaea_said("Carrying bloody scissors a vice of yours?")>>
         <<set $reputation to $reputation +1>>
-    <<endif>>
+        <<endif>>
 Victor: I'm sure it looks odd, but spare me a sentencing.
 Victor: My sister gifted these to me. 
 Victor: She's an amazing needleworker and swore these types of scissors were sharp and precise.
@@ -135,7 +135,7 @@ title: EloiseOpening
     ->The Keatings' Daughter?
       <<if nisaea_said("The Keatings' Daughter?")>>
         <<set $reputation to $reputation +1>>
-    <<endif>>
+        <<endif>>
     <<jump EVDPOS1>>
 
     -> Ms.Eliza or Elsa?
@@ -152,7 +152,7 @@ Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service.
 Nisaea: "Pleasure to meet you?"
 <<if nisaea_said("Pleasure to meet you?")>>
         <<set $reputation to $reputation -1>>
-    <<endif>
+    <<endif>>
 <<jump EMD>>
 ===
 
