@@ -22,5 +22,5 @@ Nisaea:"I exercised caution. I obscured my passage. Who might have tracked me?â€
 Narrator: Nisaea palmed the footprints and eyed the direction it was headed in. 
 Nisaea:"It's wends its way toward the town. Maybe I can find clues there."
 
-<<change_scene TitleScreen>>
+<<change_scene TownSquare>>
 ===
