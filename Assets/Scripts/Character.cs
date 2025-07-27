@@ -11,9 +11,11 @@ public class Character : MonoBehaviour {
         public Sprite spriteExpression;
     }
 
+    // components needed to render new textures on Character face
+    private SpriteRenderer faceRenderer;
+    private RawImage rawImage;
     // objects needed to render new textures on Character face
     [SerializeField] List<Expression> expressions = new List<Expression>();
-    [SerializeField] Renderer faceRenderer;
     [SerializeField] int faceMaterialIndex;
 
     // when this character is first created
@@ -23,6 +25,16 @@ public class Character : MonoBehaviour {
             Debug.LogError($"Character {name} has no available facial textures.");
             return;
         }
+
+        faceRenderer = GetComponent<SpriteRenderer>();
+        rawImage = GetComponent<RawImage>();
+
+        if (faceRenderer == null && rawImage == null)
+        {
+            Debug.LogError($"Character {name} needs either a SpriteRenderer component.");
+            return;
+        }
+
         SetFaceExpression(expressions[0].spriteExpression);
         Debug.Log($"Character {name} created.");
     }
@@ -30,6 +42,11 @@ public class Character : MonoBehaviour {
     // sets character expression texture to {expressionName} texture
     [YarnCommand("expression")]
     public void SetExpression(string expressionName){
+        Debug.Log($"Setting expression for {gameObject.name} to {expressionName}");
+        Debug.Log($"Has SpriteRenderer: {GetComponent<SpriteRenderer>() != null}");
+        Debug.Log($"Has RawImage: {GetComponent<RawImage>() != null}");
+        Debug.Log($"Number of expressions: {expressions.Count}");
+        
         // find the expression with the same name as we are looking for
         Expression expressionToUse = FindExpressionWithName(expressionName);
         if (expressionToUse == null) {
@@ -51,7 +68,14 @@ public class Character : MonoBehaviour {
 
     private void SetFaceExpression(Sprite sprite)
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
-        gameObject.GetComponent<RawImage>().texture = sprite.texture;
+        if (faceRenderer != null)
+        {
+            faceRenderer.sprite = sprite;
+        }
+
+         if (rawImage != null)
+        {
+            rawImage.texture = sprite.texture;
+        }
     }
 }

@@ -797,6 +797,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 449321992}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 2121212282}
         m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
         m_MethodName: StartDialogue
@@ -1029,7 +1041,40 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[0].name
+      value: Neutral
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[1].name
+      value: Angry
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[2].name
+      value: Happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[3].name
+      value: Nervous
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[0].spriteExpression
+      value: 
+      objectReference: {fileID: 21300000, guid: fd9434915c192d949b81a177f21d41fd, type: 3}
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[1].spriteExpression
+      value: 
+      objectReference: {fileID: 21300000, guid: 1971ba274de3b1e42aa7ace501694651, type: 3}
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[2].spriteExpression
+      value: 
+      objectReference: {fileID: 21300000, guid: e888275a5696df340b99077aef478522, type: 3}
+    - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: expressions.Array.data[3].spriteExpression
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e69e3ec0f362ed4084e76f9e42b15f0, type: 3}
+    m_RemovedComponents:
+    - {fileID: 6862337105029292940, guid: e409b91f99e1d492387f508576af8f85, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1159,18 +1204,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121212282}
-        m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
-        m_MethodName: StartDialogue
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: footprint_clue
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 449321992}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1182,6 +1215,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2121212282}
+        m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
+        m_MethodName: StartDialogue
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: footprint_clue
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2121212282 stripped
 MonoBehaviour:
