@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ef53047b9fe02e7448f7b4148e9f1665
+guid: c94997a6e4e757147bbc7d3b2518909b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8941366810094874450
-    second: Doctor_Neutral_0
+      213: -7550279939323528814
+    second: Doctor_Ecstatic_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Doctor_Neutral_0
+      name: Doctor_Ecstatic_0
       rect:
         serializedVersion: 2
         x: 308
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25f2c2a8dbd161c70800000000000000
-      internalID: 8941366810094874450
+      spriteID: 299fcd5f564083790800000000000000
+      internalID: -7550279939323528814
       vertices: []
       indices: 
       edges: []

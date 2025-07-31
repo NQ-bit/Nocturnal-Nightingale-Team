@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ef53047b9fe02e7448f7b4148e9f1665
+guid: a066b9a05844bf94e8b169d7b895dae2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8941366810094874450
-    second: Doctor_Neutral_0
+      213: 590189346370066193
+    second: Eloise_Guarded_0
+  - first:
+      213: -337966654219542590
+    second: Eloise_Guarded_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Doctor_Neutral_0
+      name: Eloise_Guarded_0
       rect:
         serializedVersion: 2
-        x: 308
-        y: 0
-        width: 1754
-        height: 3004
+        x: 31
+        y: 2074
+        width: 99
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25f2c2a8dbd161c70800000000000000
-      internalID: 8941366810094874450
+      spriteID: 1179b946516c03800800000000000000
+      internalID: 590189346370066193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eloise_Guarded_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 2417
+        height: 3419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf115d5e1d4f4bf0800000000000000
+      internalID: -337966654219542590
       vertices: []
       indices: 
       edges: []

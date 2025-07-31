@@ -3,8 +3,8 @@ guid: 8e69e3ec0f362ed4084e76f9e42b15f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7964421295687612819
-    second: FINISHED SPRITE MC SELKIE_0
+      213: 5838436613912556493
+    second: MC NERVOUS SPRITE_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FINISHED SPRITE MC SELKIE_0
+      name: MC NERVOUS SPRITE_0
       rect:
         serializedVersion: 2
         x: 286
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 399340b98fe478e60800000000000000
-      internalID: 7964421295687612819
+      spriteID: dc374efba2b460150800000000000000
+      internalID: 5838436613912556493
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FINISHED SPRITE MC SELKIE_0: 7964421295687612819
+      MC NERVOUS SPRITE_0: 5838436613912556493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
