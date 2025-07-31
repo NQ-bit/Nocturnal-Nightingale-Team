@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 213256801a53ae149a3d8215b4f95dcd
+guid: d72e8874d1af8ed42bf58efe8de7b7c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2538947763536922547
-    second: KeyboardControls_0
-  - first:
-      213: -8416562896430686303
-    second: KeyboardControls_1
-  - first:
-      213: 7830534764367469174
-    second: KeyboardControls_2
-  - first:
-      213: 974450015110918864
-    second: KeyboardControls_3
-  - first:
-      213: -3754758142747312652
-    second: KeyboardControls_4
+      213: 1322410121196867894
+    second: Doctor_Angry_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -125,101 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KeyboardControls_0
+      name: Doctor_Angry_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 29
-        width: 1430
-        height: 687
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b704ecf9872c3320800000000000000
-      internalID: 2538947763536922547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KeyboardControls_1
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 687
-        width: 56
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1af148873ac523b80800000000000000
-      internalID: -8416562896430686303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KeyboardControls_2
-      rect:
-        serializedVersion: 2
-        x: 833
-        y: 21
-        width: 76
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67a587751e5abac60800000000000000
-      internalID: 7830534764367469174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KeyboardControls_3
-      rect:
-        serializedVersion: 2
-        x: 876
-        y: 20
-        width: 167
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d27f0a3021f58d00800000000000000
-      internalID: 974450015110918864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KeyboardControls_4
-      rect:
-        serializedVersion: 2
-        x: 1057
+        x: 308
         y: 0
-        width: 217
-        height: 72
+        width: 1754
+        height: 3004
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fd7a0cdc5b64ebc0800000000000000
-      internalID: -3754758142747312652
+      spriteID: 6311251bff42a5210800000000000000
+      internalID: 1322410121196867894
       vertices: []
       indices: 
       edges: []
@@ -238,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -247,12 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      KeyboardControls_0: 2538947763536922547
-      KeyboardControls_1: -8416562896430686303
-      KeyboardControls_2: 7830534764367469174
-      KeyboardControls_3: 974450015110918864
-      KeyboardControls_4: -3754758142747312652
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

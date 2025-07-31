@@ -3,8 +3,8 @@ guid: ef53047b9fe02e7448f7b4148e9f1665
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5550819369323420490
-    second: DOCTOR HUMPHREY ANTAGONIST Emotion Sprites NEUTRAL_0
+      213: 8941366810094874450
+    second: Doctor_Neutral_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DOCTOR HUMPHREY ANTAGONIST Emotion Sprites NEUTRAL_0
+      name: Doctor_Neutral_0
       rect:
         serializedVersion: 2
         x: 308
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4b51e09ec8780d40800000000000000
-      internalID: 5550819369323420490
+      spriteID: 25f2c2a8dbd161c70800000000000000
+      internalID: 8941366810094874450
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DOCTOR HUMPHREY ANTAGONIST Emotion Sprites NEUTRAL_0: 5550819369323420490
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
