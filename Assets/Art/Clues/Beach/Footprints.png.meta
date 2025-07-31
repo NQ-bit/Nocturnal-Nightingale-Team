@@ -35,6 +35,39 @@ TextureImporter:
   - first:
       213: 8668614295847691222
     second: Footprints_10
+  - first:
+      213: -7306934632270167776
+    second: Footprints_11
+  - first:
+      213: -3565694764139935841
+    second: Footprints_12
+  - first:
+      213: -9000542591187433644
+    second: Footprints_13
+  - first:
+      213: 3325774805553643706
+    second: Footprints_14
+  - first:
+      213: 5437731638551004823
+    second: Footprints_15
+  - first:
+      213: -6130926460227943289
+    second: Footprints_16
+  - first:
+      213: 9117491056297226829
+    second: Footprints_17
+  - first:
+      213: -980200672890627122
+    second: Footprints_18
+  - first:
+      213: -5991974706573925010
+    second: Footprints_19
+  - first:
+      213: -1639382691573619963
+    second: Footprints_20
+  - first:
+      213: -1683152440165853055
+    second: Footprints_21
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -146,10 +179,10 @@ TextureImporter:
       name: Footprints_0
       rect:
         serializedVersion: 2
-        x: 147
-        y: 64
-        width: 32
-        height: 37
+        x: 0
+        y: 116
+        width: 71
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +201,10 @@ TextureImporter:
       name: Footprints_1
       rect:
         serializedVersion: 2
-        x: 174
-        y: 71
-        width: 75
-        height: 43
+        x: 147
+        y: 132
+        width: 34
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +223,10 @@ TextureImporter:
       name: Footprints_2
       rect:
         serializedVersion: 2
-        x: 365
-        y: 87
-        width: 32
-        height: 40
+        x: 175
+        y: 139
+        width: 78
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +245,10 @@ TextureImporter:
       name: Footprints_3
       rect:
         serializedVersion: 2
-        x: 397
-        y: 88
-        width: 75
-        height: 42
+        x: 366
+        y: 152
+        width: 34
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +267,10 @@ TextureImporter:
       name: Footprints_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 46
-        width: 69
-        height: 40
+        x: 398
+        y: 151
+        width: 77
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +289,10 @@ TextureImporter:
       name: Footprints_5
       rect:
         serializedVersion: 2
-        x: 85
-        y: 6
-        width: 76
-        height: 41
+        x: 589
+        y: 113
+        width: 70
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +311,10 @@ TextureImporter:
       name: Footprints_6
       rect:
         serializedVersion: 2
-        x: 240
-        y: 34
-        width: 33
-        height: 38
+        x: 54
+        y: 72
+        width: 35
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +333,10 @@ TextureImporter:
       name: Footprints_7
       rect:
         serializedVersion: 2
-        x: 269
-        y: 39
-        width: 75
-        height: 42
+        x: 85
+        y: 75
+        width: 78
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,10 +355,10 @@ TextureImporter:
       name: Footprints_8
       rect:
         serializedVersion: 2
-        x: 450
-        y: 39
-        width: 24
-        height: 38
+        x: 239
+        y: 100
+        width: 36
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +377,10 @@ TextureImporter:
       name: Footprints_9
       rect:
         serializedVersion: 2
-        x: 494
-        y: 35
-        width: 61
-        height: 43
+        x: 269
+        y: 105
+        width: 78
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +399,10 @@ TextureImporter:
       name: Footprints_10
       rect:
         serializedVersion: 2
-        x: 55
-        y: 2
-        width: 32
-        height: 40
+        x: 451
+        y: 100
+        width: 35
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,6 +413,248 @@ TextureImporter:
       bones: []
       spriteID: 6d3efd616ca1d4870800000000000000
       internalID: 8668614295847691222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_11
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 97
+        width: 66
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021898e6aad889a90800000000000000
+      internalID: -7306934632270167776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_12
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 101
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9708fdf08b148ec0800000000000000
+      internalID: -3565694764139935841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_13
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 101
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457cf724336a71380800000000000000
+      internalID: -9000542591187433644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_14
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 79
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab008ff9096872e20800000000000000
+      internalID: 3325774805553643706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_15
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 68
+        width: 75
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7964cbb6d14b67b40800000000000000
+      internalID: 5437731638551004823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_16
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 60
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78402121ed29aeaa0800000000000000
+      internalID: -6130926460227943289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_17
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 54
+        width: 75
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42b5652fc5d78e70800000000000000
+      internalID: 9117491056297226829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_18
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 52
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb51cb6ea0a562f0800000000000000
+      internalID: -980200672890627122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_19
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 50
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65298f40ca38dca0800000000000000
+      internalID: -5991974706573925010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_20
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 11
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503a4d9b02ebf39e0800000000000000
+      internalID: -1639382691573619963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints_21
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 0
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188151df5cd34a8e0800000000000000
+      internalID: -1683152440165853055
       vertices: []
       indices: 
       edges: []
@@ -401,7 +676,18 @@ TextureImporter:
       Footprints_0: 3787613946425201018
       Footprints_1: -9033198905511046180
       Footprints_10: 8668614295847691222
+      Footprints_11: -7306934632270167776
+      Footprints_12: -3565694764139935841
+      Footprints_13: -9000542591187433644
+      Footprints_14: 3325774805553643706
+      Footprints_15: 5437731638551004823
+      Footprints_16: -6130926460227943289
+      Footprints_17: 9117491056297226829
+      Footprints_18: -980200672890627122
+      Footprints_19: -5991974706573925010
       Footprints_2: -2178715186989659812
+      Footprints_20: -1639382691573619963
+      Footprints_21: -1683152440165853055
       Footprints_3: 2530613806334632592
       Footprints_4: -2409438113832799267
       Footprints_5: -6290496549043731052
