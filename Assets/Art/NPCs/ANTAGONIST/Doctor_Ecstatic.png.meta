@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Doctor_Ecstatic_0: -7550279939323528814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eloise_Guarded_0: 590189346370066193
+      Eloise_Guarded_1: -337966654219542590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

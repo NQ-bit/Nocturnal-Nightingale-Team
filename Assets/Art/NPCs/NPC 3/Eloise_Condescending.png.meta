@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eloise_Condescending_0: -548825432655600975
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
