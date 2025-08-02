@@ -23,6 +23,7 @@ Nisaea:"Oh.."
 ===
 
 title: VD1NEG
+position: 20,20
 ---
 Nisaea:"Something about this town calls to me, I just couldn't stay away."
 <<expression Victor concerned>>
@@ -49,14 +50,13 @@ Nisaea: Victor...
 
 title: VD1NEUT
 ---
-Victor:"You'll have to be more specific."
-Nisaea:He seems a bit closed off. That's unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
-===
+Victor:"You'll have to be more specific. 'Er's never a dull moment in Ecrin." 
+Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
 
 title: VD2NEUT
 ---
-Victor:"I... couldn't say."
-Nisaea:He seems a bit closed off. That's unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
+Victor:"I wouldn't say so. Not since the Doctor stopped taking orders. And that was quite a bit ago."
+Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste...
 //point and click transition
 // <<jump CamphoRing>>
 // <<jump BloodyCraneScissors>>
@@ -137,7 +137,7 @@ title: EloiseOpening
 
 title: EVDNeg1
 ---
-<<expression Eloise condescending>>
+<<expression Lady Eloise condescending>>
 Eloise:"Are you not as charming as a hare with half the brain?"
 Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service. "
 Nisaea:"Pleasure to meet you?"
@@ -147,7 +147,7 @@ Nisaea:"Pleasure to meet you?"
 
 title:EVDPOS1
 ---
-<<expression Eloise neutral>>
+<<expression Lady Eloise neutral>>
 Eloise:"Depends on the party inquiring." 
 Narrator:"Eloise offers Nisaea a tentative hand."
 Eloise:"Eloise. Eloise Keating."
@@ -157,7 +157,7 @@ Nisaea:"Pleasure to meet you."
 
 title: EMD
 ---
-<<expression Eloise Condescending>>
+<<expression Lady Eloise Condescending>>
 Eloise:"What great honor's bestowed upon me, that fate caused us to meet?""
 Nisaea:"I'm searching for someone. Someone a believe to be a thief."
 Eloise:"And you think I'd fraternize with that sort?"
@@ -200,9 +200,14 @@ Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
 
 title: EHKC
 ---
-Narrator:Nisaea gently offers the silken handkerchief to Eloise.
+//upon clicking Eloise again:
+
+Eloise: "I already told you, I can't help  you."
+
+//presenting the handkerchief
+
 Nisaea:"Is this–"
-<<expression Eloise guarded>>
+<<expression Lady Eloise guarded>>
 Eloise: Thief!
 <<expression Nisaea nervous>>
 Nisaea:"N-No, I-""
@@ -220,18 +225,96 @@ Nisaea:
 
 title: ECNeg
 ---
-Narrator: A twinge of pain seems to flash within Eloise's eyes before she buries it deep within. 
-Eloise: Has anyone ever told you, you're quite an intrusive girl and it's not the least bit endearing?
-Nisaea: No? 
-Narrator: Eloises groans in frustration at Nisaea's obvious confusion.
-Eloise: It's just expensive fabric now. I'm lucky to have gotten a commission done by one of this era's most brilliant needleworkers, but that's all this ever will be. 
+Narrator:A twinge of pain seems to flash within Eloise's eyes before she buries it deep within. 
+Eloise:"Has anyone ever told you, you're quite an intrusive girl and it's not the least bit endearing?"
+Nisaea:"No?""
+Narrator:Eloises groans in frustration at Nisaea's obvious confusion.
+Eloise:"It's just expensive fabric now. I'm lucky to have gotten art by one of this era's most brilliant needleworkers, but that's all this ever will be." 
 
 //breaking for now
+    <<jump EMDCont>>
 ===
 
 title:ECPos
 ---
-Layia: I'll fill this tomorrow
+Eloise:"Hahaha! I could leave offerings to strange gods and still not amount to being nearly as talented Jessamine."
+Nisaea:"That's Victor's sister, yes?"
+Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel so diametric to one another." 
+Nisaea:
+    -> "You commissioned this handkerchief from her?"
+        <<set $reputation to $reputation -1>>
+            <<jump EComL>>
+    -> "You speak tenderly of her. Are you friends?"
+        <<set $reputation to $reputation -1>>
+            <<jump ETL>>
+===
+
+title: EComL
+---
+<<expression Lady Eloise condescending>>
+Eloise:"I wouldn't waste her time with such a pitiful project. I'd ask for a veil or gloves– something grand."
+Eloise:"It was a gift, of course." 
+Nisaea:"So you're quite close?"
+Narrator: Eloise fidgets with the handkerchief.
+Eloise:"No. Not anymore."
+    <<jump EMDCont>>
+===
+
+title:ETL
+---
+Eloise:"Our language is too limited to describe the depth our connection. Friends will suffice for now I suppose."
+    <<jump EMDCont>>
+===
+
+title: EMDCont
+---
+Nisaea:"You've lost Jessamine somehow?"
+<<expression Lady Eloise guarded>>
+Eloise:"Taken. My future, my livelihood, taken by that fool Humphrey Ellis."
+Eloise:"Or perhaps, I'm to blame. I've nary been a clever girl."
+Nisaea:
+    ->"Humphrey Ellis? I'm unfamilliar with that name."
+    ->"Should I know who Humphrey Ellis is?"
+Eloise:"Haven't had the pleasure of recieving a tonic or hearing the ramblings of sea women from Point Ecrin's finest doctor? Color yourself lucky."
+<<expression Nisaea nervous>>
+Nisaea:"Sea women? Does your doctor have a doctor? Heheh..."
+Narrator: Eloise does not seem amused.
+Nisaea:"I pray, contiue."
+Eloise:"My jilted fiancé, Doctor Ellis, had me preoccupied. My family was keen on us being a match and having my focus narrowed. No time for hobbies, friends, or otherwise."
+Eloise:"He however has become so distracted, our arrangement is apparently annulled. His mind has been tainted from consorting with some out of town philosphers."
+    ->"Has he left town?"
+        <<jump LTL>>
+    ->"Sea women?"
+        <<jump SWL>>
+===
+
+title:SWL
+---
+Nisaea:"How did that relate to sea women?"
+<<expression Lady Eloise guarded>>
+Eloise:"These 'philosophers' believe they've discovered a new race of people. Magical people who can transform back and forth between humans and animals on land and sea. Ridiculous."
+<<expression Nisaea nervous>>
+Nisaea:"Entirely!"
+Eloise:"The only explanation I recieved is that he met some amazing woman– one of these creatures, and has become obsessed with proving their theorum."
+Eloise:"I have not heard from him since."
+Nisaea:"Where can I find him?"
+<<jump EDir>>
+===
+
+title: LTL
+---
+Eloise:"I'm uncertain, but I believe he's still holled up in his study. It's a repurposed warehouse. I believe he and the philosophers have been studying the 'sea women' there."
+<<jump EDir>>
+===
+
+title: EDir
+---
+Eloise:"I'll do my best to give you directions."
+Nisaea:"I greatly appreciate it."
+Eloise:"... I don't believe you said what you were searching for."
+<<expression Nisaea happy>>
+Nisaea:"I don't believe I did."
+<<change_scene Warehouse>>
 ===
 
 title:JessamineOpening
@@ -244,7 +327,8 @@ Unknown: "Awfully sorry, We're closed."
     -> Are you Victor's sister? 
         <<jump JVDNeut1>>
     ->Victor sent me. He said you could be a friend.
-        <<jump JVDPOS1>>
+        <<set $reputation to $reputation +1>>
+            <<jump JVDPOS1>>
 ===
 
 title: JVDNeut1
@@ -258,7 +342,7 @@ Jessamine:"I'm not sure I have 'help' sitting around in droves..."
 
 title:JVDPOS1
 ---
- essamine:"Victor thinks everyone is a friend. But, I suppose a friend of his is an aquaintance of mine."
+Jessamine:"Victor thinks everyone is a friend. But, I suppose a friend of his is an aquaintance of mine."
 <<expression Nissea happy>>
 Jessamine:"Well out with it. What do you need, love?"
 <<jump JMD>>
@@ -276,7 +360,10 @@ Nisaea:"Right.."
 
 title: JNEUT1
 ---
-Jessamine:"I'm a needleworker. I get unique requests daily. Nothing substantial I suppose."
+Jessamine:"I'm a needleworker. I get unique requests daily. Nothing substantial I suppose. Less orders as of late perhaps?" 
+Jessamine:"More people have been interested in attending the demonstrations some philosphers have been putting on. Hogwash if you ask me."
+Nisaea:"They seem unqualified?"
+Jessamine:"Hardly. They parot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
 Nisaea:"I understand..."
     <<jump JMD2>>
 ===
@@ -307,4 +394,77 @@ Narrator: A titleless book cleverly hides the inside contents of a second editio
 Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
 Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
 Nisaea: "How queer..."
+<<jump JMDPost>>
+===
+
+title: JMDPost
+---
+Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
+Jessamine:"Alright, that's enough for tonight don't you think?"
+ 
+ Nisaea: 
+    ->"I've never seen a book like this. Is it from far away?"
+        <<set $reputation to $reputation +1>> 
+    ->"Your bookmark is beautiful."
+        <<set $reputation to $reputation +1>>
+
+Nisaea:"I've never seen a book with names like these. Is it from a land far away?"
+<<expression Jessamine sad>>
+Jessamine:"It is. It's imported. A...friend.... got it for me."
+ Nisaea: 
+    ->"Why are your spirits low?"
+        <<set $reputation to $reputation +1>>
+            <<jump JMDPostCont>>
+    ->"That's a generous gift from a friend."
+        <<set $reputation to $reputation -1>>
+            <<jump JGL>>
+===
+
+title: JMDPostCont
+---
+Narrator:Jessamine hesitates, seemingly conflicted.
+<<expression Jessamine suspicious>>
+Jessamine:"You asked me about oddities yes."
+Nisaea:"Correct."
+Jessamine:"I know-knew a woman. A brillant woman, who has been absolutely undone by a set of circumstances, no fault of her own."
+Jessamine:"That rotten, Doctor– believes he's humanity's gift to our green earth, has driven her family name into the mud while running off with that shifty eyed 'bride from the sea.' "
+<<expression Nisaea nervous>>
+Nisaea:"'Bride from the sea?' As in from across the sea? Foreign?"
+Jessamine:"That would be half sane. Only Doctor in Point Ecrin and he lost his mind consorting with those out of town philosphers."
+Jessamine:"One day he's engaged to Eloise, the next he's run off with some woman he claims lives in the ocean that these philosophers discovered."
+<<expression Jessamine sad>>
+Jessamine: "Nearly drove Eloise on a 'trip to the countryside.' She has not been the same since. We have not been the same since."
+Nisaea:"Do you miss her?"
+Jessamine:"May I ask you an absurd question?"
+Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
+Nisaea:
+    ->"Yes"
+        <<set $reputation to $reputation -1>>
+    ->"No"
+        <<set $reputation to $reputation +1>>
+Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
+Jessamine:"My apologies... 
+    <<jump JEnd>>
+===
+
+title: JEnd
+---
+Jessamine:"Perhaps you'll find more help directly from Doctor. He's typically in his study on the edge of town. I'll draw you a map."
+Nisaea:"Thank you..."
+<<change_scene Warehouse>> 
+===
+
+title: JGL
+---
+<<expression Jessamine suspicious>>
+Jessamine:"Eloise is a generous person. She's not like how other's describe her. I know her well."
+Nisaea:"I beg your pardon."
+    <<jump JMDPostCont>>
+===
+
+title: JYL
+---
+<<expression Jessamine sad>>
+Jessamine:"I hope merely seeing the waves satiates the moon then as well."
+    <<jump JEnd>>
 ===
