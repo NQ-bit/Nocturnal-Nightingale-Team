@@ -51,6 +51,7 @@ Nisaea: Victor...
 title: VD1NEUT
 ---
 Victor:"You'll have to be more specific. 'Er's never a dull moment in Ecrin." 
+Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself– All the residents are characters. "
 Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
 
 title: VD2NEUT
@@ -384,7 +385,7 @@ Nisaea:"Of course. Take your time."
 
 Nisaea: I wonder if I can find anything to help my search in the meantime?
   
-//point and click transition*
+//point and click transition
 
 ===
 
@@ -438,9 +439,9 @@ Nisaea:"Do you miss her?"
 Jessamine:"May I ask you an absurd question?"
 Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
 Nisaea:
-    ->"Yes"
+    ->"Yes."
         <<set $reputation to $reputation -1>>
-    ->"No"
+    ->"No."
         <<set $reputation to $reputation +1>>
 Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
 Jessamine:"My apologies... 
