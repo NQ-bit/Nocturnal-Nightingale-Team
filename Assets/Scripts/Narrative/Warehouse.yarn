@@ -1,0 +1,35 @@
+﻿title: Warehouse
+---
+Narrator: Nisaea carefully follows the instructions towards the edge of town. 
+Narrator:The stars over head brilliantly lit her path as crickets kept her company.
+Narrator:She had never thought of how different the sky looked while stationary as opposed to the gentle sway of the midnight pool she calls home.
+Narrator:At home there were twice as many stars, blurred and palpable, but on land they sparkled in stagnant isolation.
+
+Narrator:Soon enough she was at the outside of the warehouse. Her skin prickled from more than the cold as she took in the environment. 
+
+Nisea: Maybe I should look around inside first?
+<<change_scene WarehouseInt>>
+//this error is citing how there is a difference between the art Milo drew vs Monica. Milo is Warehouse Exterior (WarehouseExt.) and Monica's is Warehouse Int. in the script. I'm unsure if it's labeled as such in the asset folder)
+===
+title: SSkC
+---
+Narrator:A tattered skin, torn or shed? It is unclear how this skin was obtained. 
+Narrator:It is unclear if it is a Selkie skin or a very large seal molt. It is too old to bear a discernable scent anymore.
+===
+
+title: WVC
+---
+Narrator: A tiny glass vial of meticulously kept shed whiskers. They do not seem to be plucked and appear to be of similar patterns, suggesting it comes from the same subject. 
+===
+
+title: DEMD
+---
+Narrator:A well dressed man works diligently by a lamplit workspace. 
+Narrator:Nisaea's breath hitches, lungs stopping as is her body shuts down while she works up the courage. Then her mind goes blank.
+Nisaea:"Y... You ill-formed, feculent, monstrocity!"
+Nisaea:"Do you have any idea the damage you've done?! Where?! ARE?! THEY?!"
+Dr. Ellis:"..."
+<<expression Loon estatic>>
+Dr. Ellis:"Ondine."
+Dr. Ellis:"My pearl. I had never thought to gaze upon those eyes again."
+===

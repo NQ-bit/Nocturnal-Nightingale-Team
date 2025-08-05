@@ -1,62 +1,63 @@
 ﻿title: TownsquareScript
 ---
 <<declare $reputation = 10>>
-Narrator: Booted heels and walking sticks clatter noisily upon the ground adding to the cacophony in town. 
-As nightfall readily approached, the soul of Point Ecrin was beginning to transform from bustling commerce to quieter pursuits of the evening.
-Few souls loomed by their shops as they shuttered for the eventide, but one lone figure advancing from the docks Nisaea glimpsed, caught her attention. 
-A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaea's pleasure. He seems like he's in a hurry.
+Narrator:Booted heels and walking sticks clatter noisily upon the ground adding to the cacophony in town. 
+Narrator:As nightfall readily approached, the soul of Point Ecrin was beginning to transform from bustling commerce to quieter pursuits of the evening.
+Narrator:Few souls loomed by their shops as they shuttered for the eventide, but one lone figure advancing from the docks Nisaea glimpsed, caught her attention. 
+Narrator:A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaea's pleasure. He seems like he's in a hurry.
 
 ===
 
 title: VictorOpening
 ---
-<<expression Victor Neutral>>
-Victor: Nisaea!
-Victor: Darling. Sorry, I have no crab for you today– traps were empty. I thought you would be gone for several weeks. 
-Nisaea: Oh..
-    ->I missed Point Ecrin already!
+<<expression Victor neutral>>
+Victor:"Nisaea!"
+Victor:"Darling. Sorry, I have no crab for you today– traps were empty. I thought you would be gone for several weeks." 
+Nisaea:"Oh.."
+    ->"I missed Point Ecrin already!"
         <<set $reputation to $reputation -1>>
         <<jump VD1NEG>>
-    ->I've lost something...
+    ->"I've lost something..."
         <<set $reputation to $reputation +1>>
         <<jump VD1POS>>
 ===
 
 title: VD1NEG
+position: 20,20
 ---
-Nisaea: "Something about this town calls to me, I just couldn't stay away."
-<<expression Victor Concerned>>
-Victor: "Right... Glad to have you back then. Is everything alright? I love our chats but I'm in a bit of a bind."
-Nisaea: "Apologies..."
+Nisaea:"Something about this town calls to me, I just couldn't stay away."
+<<expression Victor concerned>>
+Victor:"Right... Glad to have you back then. Is everything alright? I love our chats but I'm in a bit of a bind."
+Nisaea:"Apologies..."
 <<jump VRMD>>
 ===
 title:VD1POS
 ---
-Nisaea: "That is my intention, but as I was leaving, I noticed something dear to me has become misplaced. I've come back in to town in hopes of finding it."
-Victor: "I'm terribly sorry to hear that. If it's quick, I'll lend you my hand."
-Nisaea: "You have my eternal thanks."
+Nisaea:"That is my intention, but as I was leaving, I noticed something dear to me has become misplaced. I've come back in to town in hopes of finding it."
+Victor:"I'm terribly sorry to hear that. If it's quick, I'll lend you my hand."
+Nisaea:"You have my eternal thanks."
 <<jump VRMD>>
 ===
 
 title:VRMD
 ---
 Nisaea: Victor...
-    ->Have you seen anything suspicious?
+    ->"Have you seen anything suspicious?"
          <<jump VD1NEUT>>
-    ->Has anyone been acting strangely?
+    ->"Has anyone been acting strangely?"
         <<jump VD2NEUT>>
 ===
 
 title: VD1NEUT
 ---
-Victor: "You'll have to be more specific."
-Nisaea: He seems a bit closed off. That's unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
-===
+Victor:"You'll have to be more specific. 'Er's never a dull moment in Ecrin." 
+Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself– All the residents are characters. "
+Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
 
 title: VD2NEUT
 ---
-Victor: "I... couldn't say."
-Nisaea: He seems a bit closed off. That's unusual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
+Victor:"I wouldn't say so. Not since the Doctor stopped taking orders. And that was quite a bit ago."
+Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste...
 //point and click transition
 // <<jump CamphoRing>>
 // <<jump BloodyCraneScissors>>
@@ -64,15 +65,15 @@ Nisaea: He seems a bit closed off. That's unusual. Maybe I can get him to open u
 
 title: CamphorRing
 ---
-Narrator: A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
+Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
 //Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
-Nisaea: I should ask Victor about this.
+Nisaea:I should ask Victor about this.
 <<jump CRPostVD>>
 ===
 title: BloodyCraneScissors
 ---
-Narrator: Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp. 
-Nisaea: I should ask Victor about this.
+Narrator:Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp. 
+Nisaea:"I should ask Victor about this."
 <<jump BCSPostVD>>
 ===
 
@@ -80,113 +81,312 @@ title: CRPostVD
 ---
 Victor: "Back so soon?"
 Narrator: Nisaea interrupts Victor, showing him the precious ring.
-<<expression Victor Nervous>>
-Victor: By the gods! You found it! I've been looking all over for this.
-    ->What does the inscription mean?
-     <<if nisaea_said("What does the inscription mean?")>>
+<<expression Victor nervous>>
+Victor:"By the gods! You found it! I've been looking all over for this."
+    ->"What do the scratches inside mean?"
         <<set $reputation to $reputation -1>>
-        <<endif>>
-Victor: Family over everything. We protect each other first and foremost. 
+Victor:"Family over everything. We protect each other first and foremost." 
 Nisaea:
-    -> You have a pod?
-Victor: I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect. 
-Nisaea: And you guard this sister?
-Victor: I protect her as best I can...
-Victor:... You asked about *anyone* acting strangely?
-Nisaea: Anything you remember could be of use to me.
-Victor: It may be worth visiting the Keating's girl. She's been in stitches for weeks. 
+    ->"You have kin?"
+Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
+Nisaea:"And you guard this sister?"
+Victor:"I protect her as best I can..."
+Victor:"... You asked about anyone acting strangely?"
+Nisaea:"Anything you remember could be of use to me."
+Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
 Nisaea:
-    ->Where can I find her?
-Victor: Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine– my sister.
+    ->"Where can I find her?"
+Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine– my sister."
 ===
 title: BCSPostVD
 ---
-Victor: "Back so soon, love?"
+Victor:"Back so soon, love?"
 Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
-<<expression Victor Nervous>>
-Victor: How did those fall out of my pocket?
+<<expression Victor nervous>>
+Victor:"How did those fall out of my pocket?"
 Nisaea:
-    ->Carrying bloody scissors a vice of yours? 
-     <<if nisaea_said("Carrying bloody scissors a vice of yours?")>>
+    ->"Carrying bloody scissors a vice of yours?"
         <<set $reputation to $reputation +1>>
-        <<endif>>
-Victor: I'm sure it looks odd, but spare me a sentencing.
-Victor: My sister gifted these to me. 
-Victor: She's an amazing needleworker and swore these types of scissors were sharp and precise.
-Victor: I use them to cut off scales, excess fat– you name it.
-Victor: Perfectly sane and normal.
-Nisaea: Right....
-Victor: N-Now that I mention it. Jessamine– my sister, may know something.
-Victor: She sees far more people in her line of work than I. 
-Victor: Maybe she's heard some gossip? I can point you in her direction for your troubles.
-Narrator: Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
-Nisaea: Please, if you will.
+Victor:"I'm sure it looks odd, but spare me a sentencing."
+Victor:"My sister gifted these to me."
+Victor:"She's an amazing needleworker and swore these types of scissors were sharp and precise."
+Victor:"I use them to cut off scales, excess fat– you name it."
+Victor:"Perfectly sane and normal."
+Nisaea:"Right..."
+Victor:"N-Now that I mention it. Jessamine– my sister, may know something."
+Victor:"She sees far more people in her line of work than I." 
+Victor:"Maybe she's heard some gossip? I can point you in her direction for your troubles.""
+Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
+Nisaea:"Please, if you will."
 <<jump JessamineOpening>>
 ===
 
 title: EloiseOpening
 ---
-<<expression Lady Eloise Neutral>>
+<<expression Lady Eloise neutral>>
  Narrator: A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm. 
  Narrator: Couples begin to congregate near the opera house, with one soul lingering further out near the interior of the town square. 
  Narrator: Drapped in brilliant lilac taffeta and florid needlepoint lace, a woman stood divided from the rest.
  Nisaea: Pardon. Are you...
-    ->The Keatings' Daughter?
-      <<if nisaea_said("The Keatings' Daughter?")>>
+    ->"The Keatings' Daughter?"
         <<set $reputation to $reputation +1>>
-        <<endif>>
     <<jump EVDPOS1>>
-
-    -> Ms.Eliza or Elsa?
-    <<if nisaea_said("Ms.Eliza or Elsa?")>>
+    ->"Ms.Eliza or Elsa?"
         <<set $reputation to $reputation -1>>
-    <<endif>>
 <<jump EVDNeg1>>
 ===
 
 title: EVDNeg1
 ---
-Eloise: "Are you not as charming as a hare with half the brain?"
+<<expression Lady Eloise condescending>>
+Eloise:"Are you not as charming as a hare with half the brain?"
 Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service. "
-Nisaea: "Pleasure to meet you?"
-<<if nisaea_said("Pleasure to meet you?")>>
-        <<set $reputation to $reputation -1>>
-    <<endif>>
+Nisaea:"Pleasure to meet you?"
+    <<set $reputation to $reputation -1>>
 <<jump EMD>>
 ===
 
 title:EVDPOS1
 ---
-Eloise: "Depends on the party inquiring." 
-Narrator: "Eloise offers Nisaea  a tentative hand."
-Eloise: "Eloise. Eloise Keating."
-Nisaea: "Pleasure to meet you."
+<<expression Lady Eloise neutral>>
+Eloise:"Depends on the party inquiring." 
+Narrator:"Eloise offers Nisaea a tentative hand."
+Eloise:"Eloise. Eloise Keating."
+Nisaea:"Pleasure to meet you."
 <<jump EMD>>
 ===
-// Can leave for Momo and Marley to try out if they like! If not I will continue on tomorrow aka 7/26/25
+
 title: EMD
 ---
+<<expression Lady Eloise Condescending>>
+Eloise:"What great honor's bestowed upon me, that fate caused us to meet?""
+Nisaea:"I'm searching for someone. Someone a believe to be a thief."
+Eloise:"And you think I'd fraternize with that sort?"
+    <<set $reputation to $reputation -1>>
+<<expression Nisaea angry>>
+Nisaea:"No! I'm simply asking:"
+<<expression Nisaea neutral>>
+    ->"Have you seen anything odd?"
+        <<jump EDNEUT1>>
+    ->"Has anyone around you been acting strange?"
+        <<jump EDNEUT2>>
+===
+
+title: EDNEUT1
+---
+Eloise:"The whole lot is odd if you ask me. There is not a single person in Point Ecrin of good breeding left."
+Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
+
+//point and click transition
+===
+
+title: EDNEUT2
+---
+Eloise:"I could name a few people who are strange depending on your usage of the word, but I'm not one to gossip. I'm afraid I can't help you there."
+Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
+
+//point and click transition
 ===
 
 title: handkerchief
 ---
-Narrator: A silken white handkerchief with skillfully embroidered violet and lavender flowers. 
-Narrator: Either imported or commissioned for an appropriate price. 
-Narrator: The letters E.K are painstalingly sewn into the corner of the fabric. 
-Nisaea: "What beautiful needlework."
+Narrator:A silken white handkerchief with skillfully embroidered violet and lavender flowers. 
+Narrator:Either imported or commissioned for an appropriate price. 
+Narrator:The letters E.K are painstalingly sewn into the corner of the fabric. 
+Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
+
+//transition back to option to interact with Eloise.
+<<jump EHKC>>
 ===
 
+title: EHKC
+---
+//upon clicking Eloise again:
+
+Eloise: "I already told you, I can't help  you."
+
+//presenting the handkerchief
+
+Nisaea:"Is this–"
+<<expression Lady Eloise guarded>>
+Eloise: Thief!
+<<expression Nisaea nervous>>
+Nisaea:"N-No, I-""
+Eloise:"Where did you get this?!""
+Nisaea:"I found it! I think it fell out of your purse.""
+Narrator:Eloise promptly snatches the handkerchief and looks over the embroidery to check for new imperfections. 
+Nisaea:
+    -> "It must mean a lot. What it's story?"
+         <<set $reputation to $reputation -1>>
+            <<jump ECNeg>>
+    ->"Its beautiful. Did you make it?"
+        <<set $reputation to $reputation +1>>
+            <<jump ECPos>>
+===
+
+title: ECNeg
+---
+Narrator:A twinge of pain seems to flash within Eloise's eyes before she buries it deep within. 
+Eloise:"Has anyone ever told you, you're quite an intrusive girl and it's not the least bit endearing?"
+Nisaea:"No?""
+Narrator:Eloises groans in frustration at Nisaea's obvious confusion.
+Eloise:"It's just expensive fabric now. I'm lucky to have gotten art by one of this era's most brilliant needleworkers, but that's all this ever will be." 
+
+//breaking for now
+    <<jump EMDCont>>
+===
+
+title:ECPos
+---
+Eloise:"Hahaha! I could leave offerings to strange gods and still not amount to being nearly as talented Jessamine."
+Nisaea:"That's Victor's sister, yes?"
+Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel so diametric to one another." 
+Nisaea:
+    -> "You commissioned this handkerchief from her?"
+        <<set $reputation to $reputation -1>>
+            <<jump EComL>>
+    -> "You speak tenderly of her. Are you friends?"
+        <<set $reputation to $reputation -1>>
+            <<jump ETL>>
+===
+
+title: EComL
+---
+<<expression Lady Eloise condescending>>
+Eloise:"I wouldn't waste her time with such a pitiful project. I'd ask for a veil or gloves– something grand."
+Eloise:"It was a gift, of course." 
+Nisaea:"So you're quite close?"
+Narrator: Eloise fidgets with the handkerchief.
+Eloise:"No. Not anymore."
+    <<jump EMDCont>>
+===
+
+title:ETL
+---
+Eloise:"Our language is too limited to describe the depth our connection. Friends will suffice for now I suppose."
+    <<jump EMDCont>>
+===
+
+title: EMDCont
+---
+Nisaea:"You've lost Jessamine somehow?"
+<<expression Lady Eloise guarded>>
+Eloise:"Taken. My future, my livelihood, taken by that fool Humphrey Ellis."
+Eloise:"Or perhaps, I'm to blame. I've nary been a clever girl."
+Nisaea:
+    ->"Humphrey Ellis? I'm unfamilliar with that name."
+    ->"Should I know who Humphrey Ellis is?"
+Eloise:"Haven't had the pleasure of recieving a tonic or hearing the ramblings of sea women from Point Ecrin's finest doctor? Color yourself lucky."
+<<expression Nisaea nervous>>
+Nisaea:"Sea women? Does your doctor have a doctor? Heheh..."
+Narrator: Eloise does not seem amused.
+Nisaea:"I pray, contiue."
+Eloise:"My jilted fiancé, Doctor Ellis, had me preoccupied. My family was keen on us being a match and having my focus narrowed. No time for hobbies, friends, or otherwise."
+Eloise:"He however has become so distracted, our arrangement is apparently annulled. His mind has been tainted from consorting with some out of town philosphers."
+    ->"Has he left town?"
+        <<jump LTL>>
+    ->"Sea women?"
+        <<jump SWL>>
+===
+
+title:SWL
+---
+Nisaea:"How did that relate to sea women?"
+<<expression Lady Eloise guarded>>
+Eloise:"These 'philosophers' believe they've discovered a new race of people. Magical people who can transform back and forth between humans and animals on land and sea. Ridiculous."
+<<expression Nisaea nervous>>
+Nisaea:"Entirely!"
+Eloise:"The only explanation I recieved is that he met some amazing woman– one of these creatures, and has become obsessed with proving their theorum."
+Eloise:"I have not heard from him since."
+Nisaea:"Where can I find him?"
+<<jump EDir>>
+===
+
+title: LTL
+---
+Eloise:"I'm uncertain, but I believe he's still holled up in his study. It's a repurposed warehouse. I believe he and the philosophers have been studying the 'sea women' there."
+<<jump EDir>>
+===
+
+title: EDir
+---
+Eloise:"I'll do my best to give you directions."
+Nisaea:"I greatly appreciate it."
+Eloise:"... I don't believe you said what you were searching for."
+<<expression Nisaea happy>>
+Nisaea:"I don't believe I did."
+<<change_scene Warehouse>>
+===
 
 title:JessamineOpening
 ---
+Narrator:A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm.
+Narrator:Shopkeepers begin to dim their lights as they close up for the night say for one busying themself inside a build that looked more akin to home rather than a workshop. 
+Narrator:Nisaea found herself up the steps walking inside the shop before the thought wiser of the action. 
+Unknown: "Awfully sorry, We're closed."
+<<expression Nisaea nervous>>
+    -> Are you Victor's sister? 
+        <<jump JVDNeut1>>
+    ->Victor sent me. He said you could be a friend.
+        <<set $reputation to $reputation +1>>
+            <<jump JVDPOS1>>
 ===
 
-title: JVDNeg1
+title: JVDNeut1
 ---
+Narrator:The woman in the shop glances up from her work and looks over Nisaea.
+Jessamine:"I told Victor I was done taking in new girls. Mrs. doesn't need more help in the shop and I certainly don't require more apprentices."
+Nisaea:"N-No I'm not in search of a job... I do need help, but not in that way." 
+Jessamine:"I'm not sure I have 'help' sitting around in droves..."
+<<jump JMD>>
 ===
 
 title:JVDPOS1
 ---
+Jessamine:"Victor thinks everyone is a friend. But, I suppose a friend of his is an aquaintance of mine."
+<<expression Nissea happy>>
+Jessamine:"Well out with it. What do you need, love?"
+<<jump JMD>>
+===
+
+title: JMD
+---
+Jessamine:"Victor sent you for a good reason, I'm certain of it."
+Nisaea:"Right.."
+    ->"Have you seen anything odd?"
+        <<jump JNEUT1>>
+    ->"Has anyone around you been acting strange?"
+        <<jump JNEUT2>>
+===
+
+title: JNEUT1
+---
+Jessamine:"I'm a needleworker. I get unique requests daily. Nothing substantial I suppose. Less orders as of late perhaps?" 
+Jessamine:"More people have been interested in attending the demonstrations some philosphers have been putting on. Hogwash if you ask me."
+Nisaea:"They seem unqualified?"
+Jessamine:"Hardly. They parot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
+Nisaea:"I understand..."
+    <<jump JMD2>>
+===
+
+title: JNEUT2
+---
+Jessamine:"I wouldn't say strange. When you work with your head down, people get used to not speaking in hushed voices around you."
+Jessamine:'You tend to fade into the tapestry, become decoration if you understand my intention." 
+Jessamine:"I've heard talk of poor behavior, but I have not seen any myself. That does not make me a reliable source."
+Nisaea:"I see..."
+    <<jump JMD2>> 
+===
+
+title: JMD2
+---
+Jessamine:"I can try to offer you more, I just need to finish this piece and close up if you're willimg to wait."
+Nisaea:"Of course. Take your time."
+
+Nisaea: I wonder if I can find anything to help my search in the meantime?
+  
+//point and click transition
+
 ===
 
 title: book
@@ -195,4 +395,77 @@ Narrator: A titleless book cleverly hides the inside contents of a second editio
 Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
 Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
 Nisaea: "How queer..."
+<<jump JMDPost>>
+===
+
+title: JMDPost
+---
+Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
+Jessamine:"Alright, that's enough for tonight don't you think?"
+ 
+ Nisaea: 
+    ->"I've never seen a book like this. Is it from far away?"
+        <<set $reputation to $reputation +1>> 
+    ->"Your bookmark is beautiful."
+        <<set $reputation to $reputation +1>>
+
+Nisaea:"I've never seen a book with names like these. Is it from a land far away?"
+<<expression Jessamine sad>>
+Jessamine:"It is. It's imported. A...friend.... got it for me."
+ Nisaea: 
+    ->"Why are your spirits low?"
+        <<set $reputation to $reputation +1>>
+            <<jump JMDPostCont>>
+    ->"That's a generous gift from a friend."
+        <<set $reputation to $reputation -1>>
+            <<jump JGL>>
+===
+
+title: JMDPostCont
+---
+Narrator:Jessamine hesitates, seemingly conflicted.
+<<expression Jessamine suspicious>>
+Jessamine:"You asked me about oddities yes."
+Nisaea:"Correct."
+Jessamine:"I know-knew a woman. A brillant woman, who has been absolutely undone by a set of circumstances, no fault of her own."
+Jessamine:"That rotten, Doctor– believes he's humanity's gift to our green earth, has driven her family name into the mud while running off with that shifty eyed 'bride from the sea.' "
+<<expression Nisaea nervous>>
+Nisaea:"'Bride from the sea?' As in from across the sea? Foreign?"
+Jessamine:"That would be half sane. Only Doctor in Point Ecrin and he lost his mind consorting with those out of town philosphers."
+Jessamine:"One day he's engaged to Eloise, the next he's run off with some woman he claims lives in the ocean that these philosophers discovered."
+<<expression Jessamine sad>>
+Jessamine: "Nearly drove Eloise on a 'trip to the countryside.' She has not been the same since. We have not been the same since."
+Nisaea:"Do you miss her?"
+Jessamine:"May I ask you an absurd question?"
+Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
+Nisaea:
+    ->"Yes."
+        <<set $reputation to $reputation -1>>
+    ->"No."
+        <<set $reputation to $reputation +1>>
+Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
+Jessamine:"My apologies... 
+    <<jump JEnd>>
+===
+
+title: JEnd
+---
+Jessamine:"Perhaps you'll find more help directly from Doctor. He's typically in his study on the edge of town. I'll draw you a map."
+Nisaea:"Thank you..."
+<<change_scene Warehouse>> 
+===
+
+title: JGL
+---
+<<expression Jessamine suspicious>>
+Jessamine:"Eloise is a generous person. She's not like how other's describe her. I know her well."
+Nisaea:"I beg your pardon."
+    <<jump JMDPostCont>>
+===
+
+title: JYL
+---
+<<expression Jessamine sad>>
+Jessamine:"I hope merely seeing the waves satiates the moon then as well."
+    <<jump JEnd>>
 ===
