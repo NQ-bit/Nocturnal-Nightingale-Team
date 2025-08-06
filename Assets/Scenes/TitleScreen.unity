@@ -4416,7 +4416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76, y: 44}
+  m_AnchoredPosition: {x: 76, y: -599}
   m_SizeDelta: {x: 2070, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333462569
@@ -4439,9 +4439,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Music & Sound Effects: \t\tPixabay.com\n\nMenu Music: \t\t\t\t   \tJoelFazhari
-    \n\nSound effects: \t\t\t\tfloraphonic & \n\t\t\t\t\tfreesound_community \n\nFonts:
-    \t\t\t\t\tfontget.com & \n\t\t\t\t\t\tfreefontdownload.org"
+  m_text: "Music & Sound Effects: \t\t\tPixabay.com\n\n\nMenu Music: \t\t\t\t   \t\tJoelFazhari
+    \n\t\t\t\t\t\t\tOne Thousand Years Ago \n\t\t\t\t\t\t\t- Victorian Gothic Piano
+    Music\n\nSound effects: \t\t\t\tfloraphonic & \n\t\t\t\t\tfreesound_community
+    \n\nFonts: \t\t\t\t\tfontget.com & \n\t\t\t\t\t\tfreefontdownload.org\n\nBeach
+    BG Music: \t\t\t\t\tClavier-Music \n\t\t\t\t\t\t\t\tRelaxing Piano Music\n\n\nTown
+    BG Music: \t\t\t\tOpen-Music-for-Videos \n\t\t\t\t\t\t\tSad Romantic Piano\n\n\nWarehouse
+    Music: \t\t\t\tNikitaKondrashev \n\n\t\t\t\t\t\t\tHorror Creepy Piano\n\nGood
+    End &\t \t\t\t\t\t\t\t\t\nCredits Music:\t\t \t\tClavier-Music\t\t\n\t\t\t\t\t\t\trelaxing
+    piano music\n\n\nBad End Music:\t\t\t\tNikitaKondrashev\n\t\t\t\t\t\t\tHorror
+    Dark Piano"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
   m_sharedMaterial: {fileID: -7045057111692336019, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
@@ -4530,7 +4537,7 @@ Animator:
   m_GameObject: {fileID: 1333462567}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0929c4dca50406c45aaa9a6e4946debb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4e3c3f87ea091014387db4e0fcd2b7c6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
