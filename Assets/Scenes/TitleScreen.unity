@@ -1170,6 +1170,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 905834321}
+        m_TargetAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+        m_MethodName: set_sortingOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 113054393}
         m_TargetAssemblyTypeName: FadeController, Assembly-CSharp
         m_MethodName: FadeOut
@@ -2878,6 +2890,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802895567}
   m_CullTransparentMesh: 1
+--- !u!223 &905834321 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8660871604866164947, guid: bc99ecbfa18414e909ff44a266f5cac7, type: 3}
+  m_PrefabInstance: {fileID: 381771410593399000}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &934872939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,7 +2975,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &934872943
 RectTransform:
@@ -7284,6 +7301,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadingCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7244484248296205288, guid: bc99ecbfa18414e909ff44a266f5cac7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660871604866164947, guid: bc99ecbfa18414e909ff44a266f5cac7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7295,6 +7320,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 46109247}
   - {fileID: 934872943}
-  - {fileID: 381771410593399000}
   - {fileID: 14492401}
+  - {fileID: 381771410593399000}
   - {fileID: 297104767}
