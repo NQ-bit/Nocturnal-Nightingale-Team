@@ -4219,11 +4219,11 @@ PrefabInstance:
     - target: {fileID: 1486152810451838049, guid: e8183d8580e5448ad8070c1e4e64509a, type: 3}
       propertyPath: expressions.Array.data[1].spriteExpression
       value: 
-      objectReference: {fileID: 1333195067252130230, guid: 94a24443d60a1bc4b86a877026604147, type: 3}
+      objectReference: {fileID: 21300000, guid: 94a24443d60a1bc4b86a877026604147, type: 3}
     - target: {fileID: 1486152810451838049, guid: e8183d8580e5448ad8070c1e4e64509a, type: 3}
       propertyPath: expressions.Array.data[2].spriteExpression
       value: 
-      objectReference: {fileID: -5120615917958390669, guid: 3dc918d4b4d643c40b09ed7e281d2e65, type: 3}
+      objectReference: {fileID: 21300000, guid: 3dc918d4b4d643c40b09ed7e281d2e65, type: 3}
     - target: {fileID: 3084525981544164964, guid: e8183d8580e5448ad8070c1e4e64509a, type: 3}
       propertyPath: m_Name
       value: Victor
