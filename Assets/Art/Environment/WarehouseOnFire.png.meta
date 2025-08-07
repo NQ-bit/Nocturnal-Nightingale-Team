@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f5f65e15cdc26643a6aa92a7c87cd87
+guid: a5d0d66e414039649be66c7aa43d98a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2506441178649413863
-    second: Cove NN_0
+      213: -5010320907498686566
+    second: WarehouseOnFire_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cove NN_0
+      name: WarehouseOnFire_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 917b0381705573dd0800000000000000
-      internalID: -2506441178649413863
+      spriteID: a97f3d13ea3c77ab0800000000000000
+      internalID: -5010320907498686566
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cove NN_0: -2506441178649413863
+      WarehouseOnFire_0: -5010320907498686566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
