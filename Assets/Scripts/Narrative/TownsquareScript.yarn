@@ -68,7 +68,7 @@ title: CamphorRing
 Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
 //Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
 Nisaea:I should ask Victor about this.
-<<jump CRPostVD>>
+    <<jump CRPostVD>>
 ===
 title: BloodyCraneScissors
 ---
@@ -118,7 +118,7 @@ Victor:"She sees far more people in her line of work than I."
 Victor:"Maybe she's heard some gossip? I can point you in her direction for your troubles.""
 Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
 Nisaea:"Please, if you will."
-<<jump JessamineOpening>>
+    <<jump JessamineOpening>>
 ===
 
 title: EloiseOpening
@@ -143,7 +143,7 @@ Eloise:"Are you not as charming as a hare with half the brain?"
 Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service. "
 Nisaea:"Pleasure to meet you?"
     <<set $reputation to $reputation -1>>
-<<jump EMD>>
+    <<jump EMD>>
 ===
 
 title:EVDPOS1
@@ -153,7 +153,7 @@ Eloise:"Depends on the party inquiring."
 Narrator:"Eloise offers Nisaea a tentative hand."
 Eloise:"Eloise. Eloise Keating."
 Nisaea:"Pleasure to meet you."
-<<jump EMD>>
+    <<jump EMD>>
 ===
 
 title: EMD
@@ -196,7 +196,7 @@ Narrator:The letters E.K are painstalingly sewn into the corner of the fabric.
 Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
 
 //transition back to option to interact with Eloise.
-<<jump EHKC>>
+    <<jump EHKC>>
 ===
 
 title: EHKC
@@ -217,7 +217,7 @@ Nisaea:"I found it! I think it fell out of your purse.""
 Narrator:Eloise promptly snatches the handkerchief and looks over the embroidery to check for new imperfections. 
 Nisaea:
     -> "It must mean a lot. What it's story?"
-         <<set $reputation to $reputation -1>>
+        <<set $reputation to $reputation -1>>
             <<jump ECNeg>>
     ->"Its beautiful. Did you make it?"
         <<set $reputation to $reputation +1>>
@@ -305,7 +305,7 @@ Nisaea:"Where can I find him?"
 title: LTL
 ---
 Eloise:"I'm uncertain, but I believe he's still holled up in his study. It's a repurposed warehouse. I believe he and the philosophers have been studying the 'sea women' there."
-<<jump EDir>>
+    <<jump EDir>>
 ===
 
 title: EDir
@@ -315,7 +315,7 @@ Nisaea:"I greatly appreciate it."
 Eloise:"... I don't believe you said what you were searching for."
 <<expression Nisaea happy>>
 Nisaea:"I don't believe I did."
-<<change_scene Warehouse>>
+    <<change_scene Warehouse>>
 ===
 
 title:JessamineOpening
@@ -338,7 +338,7 @@ Narrator:The woman in the shop glances up from her work and looks over Nisaea.
 Jessamine:"I told Victor I was done taking in new girls. Mrs. doesn't need more help in the shop and I certainly don't require more apprentices."
 Nisaea:"N-No I'm not in search of a job... I do need help, but not in that way." 
 Jessamine:"I'm not sure I have 'help' sitting around in droves..."
-<<jump JMD>>
+    <<jump JMD>>
 ===
 
 title:JVDPOS1
@@ -346,7 +346,7 @@ title:JVDPOS1
 Jessamine:"Victor thinks everyone is a friend. But, I suppose a friend of his is an aquaintance of mine."
 <<expression Nissea happy>>
 Jessamine:"Well out with it. What do you need, love?"
-<<jump JMD>>
+    <<jump JMD>>
 ===
 
 title: JMD
@@ -395,7 +395,7 @@ Narrator: A titleless book cleverly hides the inside contents of a second editio
 Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
 Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
 Nisaea: "How queer..."
-<<jump JMDPost>>
+    <<jump JMDPost>>
 ===
 
 title: JMDPost
