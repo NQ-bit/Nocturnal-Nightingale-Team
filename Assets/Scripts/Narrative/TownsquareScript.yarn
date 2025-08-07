@@ -45,7 +45,7 @@ Nisaea: Victor...
     ->"Have you seen anything suspicious?"
          <<jump VD1NEUT>>
     ->"Has anyone been acting strangely?"
-        <<jump VD2NEUT>>
+         <<jump VD2NEUT>>
 ===
 
 title: VD1NEUT
