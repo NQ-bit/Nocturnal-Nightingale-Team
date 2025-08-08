@@ -1,4 +1,4 @@
-﻿title: Warehouse
+﻿title: WarehouseExt
 ---
 Narrator: Nisaea carefully follows the instructions towards the edge of town. 
 Narrator:The stars over head brilliantly light her path as crickets keep her company.
@@ -73,6 +73,7 @@ Nisaea:"Then make the first step."
 Dr. Ellis: "Very well..."
 <<expression Nisaea happy>>
 Narrator: With quiet steps and without much protest, Nisaea carefully tiptoed over to the hanging pelt and unhooked it while standing on the tips of her toes. The small hole would leave a mark when transformed, but it would heal over time. 
+  <<change_background WarehouseGoodEnding>>
 Narrator: With the pelt in her hands, it was undeniable that it belonged to her. The markings, scent, and pattern was the coat she had grown painstakingly over several years. 
 Narrator: Nisaea gives it a squeaze and darts towards the exit, afraid to raise a mailson against the situation. Yet, she pauses at the door, to look over her shoulder.
 Nisaea: "Be well."
@@ -99,6 +100,7 @@ Narrator: Dr. Ellis sighs and adjusts the dial on the gaslamp to increase the br
 Dr. Ellis: "Of course I did. It was me. We had discussed our bethrotal in detail. Which makes your dissapperance that much more bewildering."
 Nisaea:"My–"
 Narrator: In a smooth, composed motion, Dr. Ellis held the rim of the gaslamp under Nisaea's pelt. In an instant, a conflagration of flame engulfed the space, dousing the environment in shades of vermillion and amber.
+  <<change_background BurningWarehouseBG>>
 Dr. Ellis: "Now we'll try this again. Perhaps take a day to think things over more clearly and we can reconvene."
 Narrator: Through watery eyes, Nisaea yanked at her crumbling milleu. Her world roasting to cinders in her charring hands, the pain of the reality, paling in comparison.
 ===
