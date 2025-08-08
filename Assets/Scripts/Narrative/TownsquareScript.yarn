@@ -315,7 +315,7 @@ Nisaea:"I greatly appreciate it."
 Eloise:"... I don't believe you said what you were searching for."
 <<expression Nisaea happy>>
 Nisaea:"I don't believe I did."
-    <<change_scene Warehouse>>
+    <<change_scene WarehouseExt>>
 ===
 
 title:JessamineOpening
@@ -452,7 +452,7 @@ title: JEnd
 ---
 Jessamine:"Perhaps you'll find more help directly from Doctor. He's typically in his study on the edge of town. I'll draw you a map."
 Nisaea:"Thank you..."
-<<change_scene Warehouse>> 
+<<change_scene WarehouseExt>> 
 ===
 
 title: JGL
