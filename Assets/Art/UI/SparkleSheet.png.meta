@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: e774f79fb2eb3f647bb6d8255314ed14
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8444650072307163729
+    second: SparkleSheet_0
+  - first:
+      213: -4858177270949213888
+    second: SparkleSheet_1
+  - first:
+      213: 5889921350809125477
+    second: SparkleSheet_2
+  - first:
+      213: 218512785867894541
+    second: SparkleSheet_3
+  - first:
+      213: -3419046356712246611
+    second: SparkleSheet_4
+  - first:
+      213: -8848317448496714571
+    second: SparkleSheet_5
+  - first:
+      213: -3116316587907419894
+    second: SparkleSheet_6
+  - first:
+      213: 5252276794263345432
+    second: SparkleSheet_7
+  - first:
+      213: -7675008026273606461
+    second: SparkleSheet_8
+  - first:
+      213: 659647079889601766
+    second: SparkleSheet_9
+  - first:
+      213: 7246236348256573424
+    second: SparkleSheet_10
+  - first:
+      213: -465778860034837877
+    second: SparkleSheet_11
+  - first:
+      213: 3037654472293740701
+    second: SparkleSheet_12
+  - first:
+      213: -7831150918995942172
+    second: SparkleSheet_13
+  - first:
+      213: 515194904077727851
+    second: SparkleSheet_14
+  - first:
+      213: 8474266157895322854
+    second: SparkleSheet_15
+  - first:
+      213: 4923236385496477650
+    second: SparkleSheet_16
+  - first:
+      213: 590086816232587040
+    second: SparkleSheet_17
+  - first:
+      213: -5643264537917987077
+    second: SparkleSheet_18
+  - first:
+      213: -5030775940953493284
+    second: SparkleSheet_19
+  - first:
+      213: 7348734135779762420
+    second: SparkleSheet_20
+  - first:
+      213: -6720324896192674337
+    second: SparkleSheet_21
+  - first:
+      213: 145019903456431311
+    second: SparkleSheet_22
+  - first:
+      213: -7306422858767453157
+    second: SparkleSheet_23
+  - first:
+      213: -8360874934998909701
+    second: SparkleSheet_24
+  - first:
+      213: 7120859593192620284
+    second: SparkleSheet_25
+  - first:
+      213: -1077454324096497563
+    second: SparkleSheet_26
+  - first:
+      213: -659809791492988432
+    second: SparkleSheet_27
+  - first:
+      213: 8885812821156760140
+    second: SparkleSheet_28
+  - first:
+      213: -3771899524307988706
+    second: SparkleSheet_29
+  - first:
+      213: 864894103949476012
+    second: SparkleSheet_30
+  - first:
+      213: 3794164376099687545
+    second: SparkleSheet_31
+  - first:
+      213: 5769661392623591960
+    second: SparkleSheet_32
+  - first:
+      213: 1326423954451447596
+    second: SparkleSheet_33
+  - first:
+      213: -5876586082655860889
+    second: SparkleSheet_34
+  - first:
+      213: 8505110441286846181
+    second: SparkleSheet_35
+  - first:
+      213: -4591828040301658550
+    second: SparkleSheet_36
+  - first:
+      213: 3385178977351053606
+    second: SparkleSheet_37
+  - first:
+      213: -2890199344331325902
+    second: SparkleSheet_38
+  - first:
+      213: 5134203450697703408
+    second: SparkleSheet_39
+  - first:
+      213: -2142279823806447909
+    second: SparkleSheet_40
+  - first:
+      213: -8290734123364624060
+    second: SparkleSheet_41
+  - first:
+      213: 8970785856658549492
+    second: SparkleSheet_42
+  - first:
+      213: -5182522263656561410
+    second: SparkleSheet_43
+  - first:
+      213: -3529505522969688421
+    second: SparkleSheet_44
+  - first:
+      213: -7745956568297076917
+    second: SparkleSheet_45
+  - first:
+      213: 5227789302374196710
+    second: SparkleSheet_46
+  - first:
+      213: -3220595699739070150
+    second: SparkleSheet_47
+  - first:
+      213: 3432956886257705331
+    second: SparkleSheet_48
+  - first:
+      213: 1796124336170313500
+    second: SparkleSheet_49
+  - first:
+      213: 6442502614862581929
+    second: SparkleSheet_50
+  - first:
+      213: 1534302019752614257
+    second: SparkleSheet_51
+  - first:
+      213: -7074235690409822644
+    second: SparkleSheet_52
+  - first:
+      213: -728501402078477885
+    second: SparkleSheet_53
+  - first:
+      213: 6757070683639805894
+    second: SparkleSheet_54
+  - first:
+      213: -6175955166228327825
+    second: SparkleSheet_55
+  - first:
+      213: -1906428098215278901
+    second: SparkleSheet_56
+  - first:
+      213: 426064909589560977
+    second: SparkleSheet_57
+  - first:
+      213: -3255790758584458931
+    second: SparkleSheet_58
+  - first:
+      213: 9026884593412408879
+    second: SparkleSheet_59
+  - first:
+      213: -4857821876790380402
+    second: SparkleSheet_60
+  - first:
+      213: 1040949668956091193
+    second: SparkleSheet_61
+  - first:
+      213: 5845860979735817354
+    second: SparkleSheet_62
+  - first:
+      213: -6798082613446308515
+    second: SparkleSheet_63
+  - first:
+      213: -8281667955298231125
+    second: SparkleSheet_64
+  - first:
+      213: -3115722427793831911
+    second: SparkleSheet_65
+  - first:
+      213: 4410861544189681078
+    second: SparkleSheet_66
+  - first:
+      213: -8578539915540238653
+    second: SparkleSheet_67
+  - first:
+      213: -2220739010408743971
+    second: SparkleSheet_68
+  - first:
+      213: -3528618747942387526
+    second: SparkleSheet_69
+  - first:
+      213: 5301260327271159976
+    second: SparkleSheet_70
+  - first:
+      213: 7649046058666935344
+    second: SparkleSheet_71
+  - first:
+      213: 5067466932220010096
+    second: SparkleSheet_72
+  - first:
+      213: -5011419992154734395
+    second: SparkleSheet_73
+  - first:
+      213: -6071744079444566610
+    second: SparkleSheet_74
+  - first:
+      213: 6162826911145280259
+    second: SparkleSheet_75
+  - first:
+      213: 1863503088183575164
+    second: SparkleSheet_76
+  - first:
+      213: -2061467511715821619
+    second: SparkleSheet_77
+  - first:
+      213: -2648998365390672097
+    second: SparkleSheet_78
+  - first:
+      213: -7709821213629476790
+    second: SparkleSheet_79
+  - first:
+      213: 8315784990710735837
+    second: SparkleSheet_80
+  - first:
+      213: -9057953522324109860
+    second: SparkleSheet_81
+  - first:
+      213: 322470140673223507
+    second: SparkleSheet_82
+  - first:
+      213: 5964986968937489894
+    second: SparkleSheet_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SparkleSheet_84
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1359
+        width: 104
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c68b34b158e9924eb1b804102217f58
+      internalID: 373547431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparkleSheet_86
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1220
+        width: 272
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2c3e841cbd3414b95836987cd0fae4
+      internalID: 521188420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparkleSheet_87
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1101
+        width: 356
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520a17254d275ce45a966cc4c0a08c9d
+      internalID: -461963512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparkleSheet_89
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 105
+        width: 731
+        height: 697
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed20153dacf3c9041b98071007792e99
+      internalID: -397784007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparkleSheet_90
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 9
+        width: 855
+        height: 874
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276d7062bb1ac1c4cab4baf3ce829c8a
+      internalID: -1609478863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparkleSheet_8
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1292
+        width: 207
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a267daeee8ad249bbc8e2ee29d3a87
+      internalID: -881143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparkleSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 1002
+        width: 520
+        height: 598
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a891490517de2449931a5b04e8d91f8
+      internalID: 625419169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 78996b2301bbead4482e666cfd73941b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SparkleSheet_0: 625419169
+      SparkleSheet_37: 939323637
+      SparkleSheet_8: -881143
+      SparkleSheet_84: 373547431
+      SparkleSheet_85: 575950168
+      SparkleSheet_86: 521188420
+      SparkleSheet_87: -461963512
+      SparkleSheet_88: -387873836
+      SparkleSheet_89: -397784007
+      SparkleSheet_90: -1609478863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
