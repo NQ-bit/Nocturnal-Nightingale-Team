@@ -53,14 +53,12 @@ title: VD1NEUT
 Victor:"You'll have to be more specific. 'Er's never a dull moment in Ecrin." 
 Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself– All the residents are characters. "
 Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
+===
 
 title: VD2NEUT
 ---
 Victor:"I wouldn't say so. Not since the Doctor stopped taking orders. And that was quite a bit ago."
 Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste...
-//point and click transition
-// <<jump CamphoRing>>
-// <<jump BloodyCraneScissors>>
 ===
 
 title: CamphorRing
