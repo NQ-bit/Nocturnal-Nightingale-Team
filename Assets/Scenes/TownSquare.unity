@@ -889,7 +889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &252609267
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1711,6 +1711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1423363687}
     m_Modifications:
+    - target: {fileID: 2821017626948617163, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4379969998724628089, guid: e409b91f99e1d492387f508576af8f85, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1961,7 +1965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &768904021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2636,7 +2640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1324678592
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3110,6 +3114,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 584311138}
+  - {fileID: 2023640995}
+  - {fileID: 1324678592}
+  - {fileID: 768904021}
+  - {fileID: 252609267}
   - {fileID: 610885919}
   - {fileID: 1559676846}
   - {fileID: 1998117717616251457}
@@ -3118,10 +3126,6 @@ RectTransform:
   - {fileID: 223268950}
   - {fileID: 199759248}
   - {fileID: 2068459699}
-  - {fileID: 2023640995}
-  - {fileID: 1324678592}
-  - {fileID: 768904021}
-  - {fileID: 252609267}
   - {fileID: 1249886138}
   - {fileID: 579167045}
   - {fileID: 971595081}
@@ -4343,7 +4347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2023640995
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4654,6 +4658,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1423363687}
     m_Modifications:
+    - target: {fileID: 2395172208562176286, guid: a4510c8caca1ee8478459a0896f7c086, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3228353440921528917, guid: a4510c8caca1ee8478459a0896f7c086, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4865,6 +4873,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6394374894396956257, guid: e8183d8580e5448ad8070c1e4e64509a, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4969,6 +4981,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1970020211489772026, guid: b6acfa499990ff746968c186370c2a73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491886738606965833, guid: b6acfa499990ff746968c186370c2a73, type: 3}
+      propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
