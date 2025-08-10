@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscene.unity
     guid: 22ef4a820c26608408f39be227ffe875
-  - enabled: 0
-    path: Assets/Scenes/Tutorial.unity
-    guid: 72a968ef55a6e45c795185c4579d654d
   - enabled: 1
     path: Assets/Scenes/Beach.unity
     guid: 8df2d8c1889f74d7bb74ceee4bdad2a5

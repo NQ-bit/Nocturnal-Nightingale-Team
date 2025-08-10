@@ -6824,8 +6824,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52
-  m_fontSizeBase: 52
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8455,7 +8455,7 @@ GameObject:
   - component: {fileID: 1639394309}
   - component: {fileID: 1639394308}
   m_Layer: 5
-  m_Name: BGPlaceholder
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
