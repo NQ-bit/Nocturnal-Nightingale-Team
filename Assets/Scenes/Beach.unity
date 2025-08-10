@@ -214,7 +214,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 847013749}
+      - m_Target: {fileID: 847013751}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -2021,7 +2021,7 @@ GameObject:
   - component: {fileID: 847013747}
   - component: {fileID: 847013746}
   - component: {fileID: 847013750}
-  - component: {fileID: 847013749}
+  - component: {fileID: 847013751}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2103,29 +2103,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &847013749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847013745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281bad627611e476f9a9f026b8b98819, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSceneName: 
-  endingThreshold: 20
-  mainMenuSceneName: TitleScreen
-  cutSceneName: Cutscene
-  tutorialGameSceneName: Tutorial
-  firstGameSceneName: Beach
-  secondGameSceneName: TownSquare
-  thirdGameSceneName: Warehouse
-  goodEndingSceneName: GoodEnding
-  badEndingSceneName: BadEnding
-  delayBeforeLoad: 1
 --- !u!114 &847013750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2170,6 +2147,29 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &847013751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847013745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281bad627611e476f9a9f026b8b98819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSceneName: Beach
+  endingThreshold: 20
+  mainMenuSceneName: TitleScreen
+  cutSceneName: Cutscene
+  tutorialGameSceneName: Tutorial
+  firstGameSceneName: Beach
+  secondGameSceneName: TownSquare
+  thirdGameSceneName: Warehouse
+  goodEndingSceneName: GoodEnding
+  badEndingSceneName: BadEnding
+  delayBeforeLoad: 1
 --- !u!1 &870833391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3595,7 +3595,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 847013749}
+      - m_Target: {fileID: 847013751}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ReturnToMainMenu
         m_Mode: 1
