@@ -270,7 +270,6 @@ title:ECPos
 Eloise:"Hahaha! I could leave offerings to strange gods and still not amount to being nearly as talented Jessamine."
 Nisaea:"That's Victor's sister, yes?"
 Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel so diametric to one another." 
-Nisaea:
     -> "You commissioned this handkerchief from her?"
         <<set $reputation to $reputation -1>>
         <<jump EComL>>

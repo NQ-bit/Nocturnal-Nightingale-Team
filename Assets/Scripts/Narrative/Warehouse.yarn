@@ -1,5 +1,6 @@
 ﻿title: WarehouseExt
 ---
+<<play_music "DefaultBGMusic">>
 Narrator: Nisaea carefully follows the instructions towards the edge of town. 
 Narrator:The stars over head brilliantly light her path as crickets keep her company.
 Narrator:She had never thought of how different the sky looks while stationary as opposed to the gentle sway of the midnight pool she calls home.
@@ -13,7 +14,6 @@ Nisaea: Maybe I should look around inside first?
 <<reveal_object "FakeSelkieSkin">>
 <<reveal_object "WhiskersVial">>
 <<hide_object "Nisaea">>
-<<reveal_object "Doctor-Interactable">>
 //this error is citing how there is a difference between the art Milo drew vs Monica. Milo is Warehouse Exterior (WarehouseExt.) and Monica's is Warehouse Int. in the script. I'm unsure if it's labeled as such in the asset folder)
 ===
 title: SSkCT
@@ -25,12 +25,14 @@ Nisaea:"Regardless of how this was aquired, makes one prematurely visit lunch."
 <<hide_object "RealSelkieSkin">>
 <<hide_object "FakeSelkieSkin">>
 <<hide_object "WhiskersVial">>
+<<reveal_object "Doctor-Interactable">>
 ===
 
 title: SSkCF
 ---
 Narrator:A carefully encased pelt, colored in shades of grey and asymmetrical dots that do not completely cover the fur. It is unclear how this skin was obtained. 
 Narrator:It is difficult to tell if it is a Selkie pup skin or large juvenile seal molt. The case prevents any further identification without Nisaea advancing and disturbing the doctor.
+<<reveal_object "Doctor-Interactable">>
 <<reveal_object "Nisaea">>
 Nisaea:"How unique. An incomplete pattern. I hope the creature it comes from is ok..."
 <<hide_object "RealSelkieSkin">>
@@ -46,6 +48,7 @@ Nisaea: "Peculiar. What need would one have with whiskers? They're quite long as
 <<hide_object "RealSelkieSkin">>
 <<hide_object "FakeSelkieSkin">>
 <<hide_object "WhiskersVial">>
+<<reveal_object "Doctor-Interactable">>
 ===
 //proceed inside
 
@@ -60,9 +63,9 @@ Dr. Ellis:"..."
 <<expression Doctor Ecstatic>>
 Dr. Ellis:"Ondine."
 Dr. Ellis:"My pearl. I had never thought to gaze upon those eyes again."
-<<set $reputation += 1>>
+// <<set $reputation += 1>>
 <<set $reputation -= 1>>
-
+// Narrator: Your ending repuation is {$reputation}! // for debugging
 <<if $reputation >= 10>>
   <<jump DEGoodEnding>>
 <<else>>
@@ -75,6 +78,7 @@ Dr. Ellis:"My pearl. I had never thought to gaze upon those eyes again."
 ===
 title: DEGoodEnding
 ---
+<<play_music "GoodEnding">>
 Narrator: Nisaea recoils in disgust and confusion.
 <<expression Nisaea angry>>
 Nisaea:"Ondine?"
@@ -103,7 +107,8 @@ Narrator: The doctor nods to her.
 
 title: DEBadEnding
 ---
-Nisaea recoils in disgust and anger.
+<<play_music "BadEnding">>
+Narrator:Nisaea recoils in disgust and anger.
 <<expression Nisaea angry>>
 Nisaea:"You blithering idiot– aberrant fiend! Arrogation has addled you, leaving naught but putrefaction in your wake."
 Nisaea: "I demand satisfaction."
