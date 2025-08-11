@@ -2524,8 +2524,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1491137457}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1800446694}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -3738,7 +3738,6 @@ GameObject:
   - component: {fileID: 1491137454}
   - component: {fileID: 1491137453}
   - component: {fileID: 1491137456}
-  - component: {fileID: 1491137457}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3864,29 +3863,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1491137457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491137452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281bad627611e476f9a9f026b8b98819, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSceneName: TownSquare
-  endingThreshold: 20
-  mainMenuSceneName: TitleScreen
-  cutSceneName: Cutscene
-  tutorialGameSceneName: Tutorial
-  firstGameSceneName: Beach
-  secondGameSceneName: TownSquare
-  thirdGameSceneName: Warehouse
-  goodEndingSceneName: GoodEnding
-  badEndingSceneName: BadEnding
-  delayBeforeLoad: 1
 --- !u!1 &1516299794
 GameObject:
   m_ObjectHideFlags: 0
@@ -4689,8 +4665,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1491137457}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1800446694}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
         m_MethodName: ReturnToMainMenu
         m_Mode: 1
         m_Arguments:
@@ -4810,6 +4786,7 @@ GameObject:
   - component: {fileID: 1800446692}
   - component: {fileID: 1800446691}
   - component: {fileID: 1800446690}
+  - component: {fileID: 1800446694}
   m_Layer: 5
   m_Name: PauseCanvas
   m_TagString: Untagged
@@ -4905,6 +4882,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1800446694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800446689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf542b0e1064384ba4fe32b0705f756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840961545
 GameObject:
   m_ObjectHideFlags: 0

@@ -840,6 +840,7 @@ GameObject:
   - component: {fileID: 139135405}
   - component: {fileID: 139135404}
   - component: {fileID: 139135403}
+  - component: {fileID: 139135407}
   m_Layer: 5
   m_Name: PauseCanvas
   m_TagString: Untagged
@@ -935,6 +936,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &139135407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139135402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf542b0e1064384ba4fe32b0705f756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &159804007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1149,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: c9d9a12c9e441cf4da30bd039e6b205b, type: 3}
   - trackName: BadEnding
     audioClip: {fileID: 8300000, guid: a2a6a7047ca6fde449cdf1e38aacced7, type: 3}
+  - trackName: BadEndingFireBurningSFX
+    audioClip: {fileID: 8300000, guid: 64fd363753fe5284da44ce71c54f6efd, type: 3}
   - trackName: DefaultBGMusic
     audioClip: {fileID: 8300000, guid: 029899feb371c6d4dae7cfed7d6c2e1c, type: 3}
 --- !u!4 &205026678
@@ -3442,8 +3457,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2104889557}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 139135407}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -3684,8 +3699,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2104889557}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 139135407}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
         m_MethodName: ReturnToMainMenu
         m_Mode: 1
         m_Arguments:
@@ -5143,7 +5158,6 @@ GameObject:
   - component: {fileID: 2104889554}
   - component: {fileID: 2104889553}
   - component: {fileID: 2104889556}
-  - component: {fileID: 2104889557}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5269,29 +5283,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &2104889557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104889552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281bad627611e476f9a9f026b8b98819, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSceneName: Warehouse
-  endingThreshold: 20
-  mainMenuSceneName: TitleScreen
-  cutSceneName: Cutscene
-  tutorialGameSceneName: Tutorial
-  firstGameSceneName: Beach
-  secondGameSceneName: TownSquare
-  thirdGameSceneName: Warehouse
-  goodEndingSceneName: GoodEnding
-  badEndingSceneName: BadEnding
-  delayBeforeLoad: 1
 --- !u!1001 &41182212104221349
 PrefabInstance:
   m_ObjectHideFlags: 0
