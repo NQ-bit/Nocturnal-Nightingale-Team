@@ -107,7 +107,7 @@ Victor:"By the gods! You found it! I've been looking all over for this."
         Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
     ->"Where can I find her?"
         Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine– my sister."
-        Nisaaea:"You have my thanks."
+        Nisaea:"You have my thanks."
 <<reveal_object "Eloise-Interactable">>
 <<hide_object "Victor">>
 <<hide_object "Nisaea">>
