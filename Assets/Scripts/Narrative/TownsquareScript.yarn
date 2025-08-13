@@ -76,7 +76,7 @@ Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
-    <<jump CRPostVD>>
+
 ===
 title: BloodyCraneScissors
 ---
@@ -84,7 +84,16 @@ Narrator:Ornate crane scissors used for embroidery, stained with almost-brown bl
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
-<<jump BCSPostVD>>
+===
+
+title: VYdecision
+---
+Narrator: Nisaea approached Victor, both items in her pocket. 
+Nisaea: "Victor..."
+    -> Camphor Ring
+        <<jump CRPostVD>>
+    -> Bloody Crane Scissors 
+        <<BCSPostVD>>
 ===
 
 title: CRPostVD
