@@ -76,8 +76,8 @@ Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
-
 ===
+
 title: BloodyCraneScissors
 ---
 Narrator:Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp.
@@ -123,6 +123,7 @@ Victor:"By the gods! You found it! I've been looking all over for this."
 <<hide_object "Ring">>
 <<hide_object "Scissors">>
 ===
+
 title: BCSPostVD
 ---
 <<reveal_object "Victor">>
