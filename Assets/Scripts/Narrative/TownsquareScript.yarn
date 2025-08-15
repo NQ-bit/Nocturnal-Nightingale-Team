@@ -94,6 +94,7 @@ Nisaea:"I should ask Victor about this."
 <<else>>
     <<jump VYdecision>>
 <<endif>>
+//still fixing the if/else statements 
 ===
 
 title: VYdecision

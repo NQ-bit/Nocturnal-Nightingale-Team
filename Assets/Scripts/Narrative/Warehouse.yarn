@@ -102,7 +102,7 @@ Nisaea: "Be well."
 Narrator: The doctor nods to her.
 
 //tbd: ending or credits sequence
-<<change_scene TitleScreen>>
+<<change_scene GoodEndingOutro>>
 ===
 
 title: DEBadEnding
@@ -130,5 +130,5 @@ Dr. Ellis: "Now we'll try this again. Perhaps take a day to think things over mo
 Narrator: Through watery eyes, Nisaea yanked at her crumbling milleu. Her world roasting to cinders in her charring hands, the pain of the reality, paling in comparison.
 
 //tbd: ending or credits sequence
-<<change_scene TitleScreen>>
+<<change_scene BadEndingOutro>>
 ===
