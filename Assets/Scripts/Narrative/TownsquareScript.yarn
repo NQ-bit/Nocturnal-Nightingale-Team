@@ -155,8 +155,6 @@ Nisaea:"Please, if you will."
 <<reveal_object "Jessa-Interactable">>
 <<hide_object "Victor">>
 <<hide_object "Nisaea">>
-<<hide_object "Ring">>
-<<hide_object "Scissors">>
 ===
 
 title: EloiseOpening
