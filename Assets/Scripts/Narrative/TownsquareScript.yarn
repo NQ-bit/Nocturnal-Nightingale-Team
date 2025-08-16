@@ -72,19 +72,35 @@ Nisaea:His answers are more stilted than usual. Maybe I can get him to open up s
 title: CamphorRing
 ---
 Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
-//Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
-    <<jump CRPostVD>>
+<<hide_object "Ring">>
+<<if visited ("BloodyCraneScissors")>>
+    <<jump VYdecision>>
+<<endif>>
 ===
+
 title: BloodyCraneScissors
 ---
 Narrator:Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp.
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
-<<jump BCSPostVD>>
+<<hide_object "Scissors">>
+<<if visited ("CamphorRing")>>
+    <<jump VYdecision>>
+<<endif>>
+===
+
+title: VYdecision
+---
+Narrator: Nisaea approached Victor, both items in her pocket. 
+Nisaea: "Victor..."
+    -> Camphor Ring
+        <<jump CRPostVD>>
+    -> Bloody Crane Scissors 
+        <<jump BCSPostVD>>
 ===
 
 title: CRPostVD
@@ -106,13 +122,15 @@ Victor:"By the gods! You found it! I've been looking all over for this."
         Nisaea:"Anything you remember could be of use to me."
         Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
     ->"Where can I find her?"
-        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine– my sister."
+        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine- my sister."
+        Nisaea:"You have my thanks."
 <<reveal_object "Eloise-Interactable">>
 <<hide_object "Victor">>
 <<hide_object "Nisaea">>
 <<hide_object "Ring">>
 <<hide_object "Scissors">>
 ===
+
 title: BCSPostVD
 ---
 <<reveal_object "Victor">>
@@ -126,10 +144,10 @@ Nisaea:"Carrying bloody scissors a vice of yours?"
 Victor:"I'm sure it looks odd, but spare me a sentencing."
 Victor:"My sister gifted these to me."
 Victor:"She's an amazing needleworker and swore these types of scissors were sharp and precise."
-Victor:"I use them to cut off scales, excess fat– you name it."
+Victor:"I use them to cut off scales, excess fat- you name it."
 Victor:"Perfectly sane and normal."
 Nisaea:"Right..."
-Victor:"N-Now that I mention it. Jessamine– my sister, may know something."
+Victor:"N-Now that I mention it. Jessamine- my sister, may know something."
 Victor:"She sees far more people in her line of work than I." 
 Victor:"Maybe she's heard some gossip? I can point you in her direction for your troubles."
 Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
@@ -137,8 +155,6 @@ Nisaea:"Please, if you will."
 <<reveal_object "Jessa-Interactable">>
 <<hide_object "Victor">>
 <<hide_object "Nisaea">>
-<<hide_object "Ring">>
-<<hide_object "Scissors">>
 ===
 
 title: EloiseOpening
@@ -260,8 +276,6 @@ Eloise:"Has anyone ever told you, you're quite an intrusive girl and it's not th
 Nisaea:"No?"
 Narrator:Eloises groans in frustration at Nisaea's obvious confusion.
 Eloise:"It's just expensive fabric now. I'm lucky to have gotten art by one of this era's most brilliant needleworkers, but that's all this ever will be." 
-
-//breaking for now
     <<jump EMDCont>>
 ===
 
@@ -316,7 +330,7 @@ Eloise:"He however has become so distracted, our arrangement is apparently annul
         <<jump SWL>>
 ===
 
-title:SWL
+title: SWL
 ---
 Nisaea:"How did that relate to sea women?"
 <<expression Eloise guarded>>
@@ -345,7 +359,7 @@ Nisaea:"I don't believe I did."
 <<change_scene Warehouse>>
 ===
 
-title:JessamineOpening
+title: JessamineOpening
 ---
 <<reveal_object "Nisaea">>
 <<reveal_object "Jessa">>
