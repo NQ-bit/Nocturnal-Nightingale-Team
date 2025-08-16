@@ -110,20 +110,20 @@ title: DEBadEnding
 <<play_music "BadEnding">>
 Narrator:Nisaea recoils in disgust and anger.
 <<expression Nisaea angry>>
-Nisaea:"You blithering idiot– aberrant fiend! Arrogation has addled you, leaving naught but putrefaction in your wake."
+Nisaea:"You blithering idiot- aberrant fiend! Arrogation has addled you, leaving naught but putrefaction in your wake."
 Nisaea: "I demand satisfaction."
 <<expression Doctor angry>>
 Dr. Ellis: "When did I hurt my love, so? What causes you to lash out at me in this way?"
 Nisaea: "Do you possess the faculty of sight, or are you willfully ignoring me? This Ondine you speak of has abandoned you and the reason is evident."
 Nisaea:"I've heard rumor the denizens of Point Ecrin keeps their pets with more dignity than you've treated the mates you've been signed on for."
-Dr. Ellis:"I loved Ondine–"
+Dr. Ellis:"I loved Ondine-"
 Nisaea: "Yet you go in with lads keen on exploiting her kind?"
 Dr. Ellis: "I thought if I could understand her, I could make her feel safe here. Keep her from needing to return to the ocean so frequently."
 Nisaea:"Did you ask what she wanted?"
 <<expression Doctor neutral>>
 Narrator: Dr. Ellis sighs and adjusts the dial on the gaslamp to increase the brightness in the room. The flame roars inside the glass, begging to be freed.
 Dr. Ellis: "Of course I did. It was me. We had discussed our bethrotal in detail. Which makes your dissapperance that much more bewildering."
-Nisaea:"My–"
+Nisaea:"My-"
 Narrator: In a smooth, composed motion, Dr. Ellis held the rim of the gaslamp under Nisaea's pelt. In an instant, a conflagration of flame engulfed the space, dousing the environment in shades of vermillion and amber.
 <<reveal_object "BurningWarehouseBG">>
 Dr. Ellis: "Now we'll try this again. Perhaps take a day to think things over more clearly and we can reconvene."
