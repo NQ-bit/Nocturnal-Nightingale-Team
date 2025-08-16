@@ -6541,6 +6541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eloise
       objectReference: {fileID: 0}
+    - target: {fileID: 6943469124224965124, guid: a4510c8caca1ee8478459a0896f7c086, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
