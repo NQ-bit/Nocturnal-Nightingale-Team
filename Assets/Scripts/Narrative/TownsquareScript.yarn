@@ -79,7 +79,6 @@ Nisaea:"I should ask Victor about this."
 <<if visited ("BloodyCraneScissors")>>
     <<jump VYdecision>>
 <<endif>>
-<<hide_object "CamphorRing">>
 ===
 
 title: BloodyCraneScissors
@@ -91,7 +90,6 @@ Nisaea:"I should ask Victor about this."
 <<if visited ("CamphorRing")>>
     <<jump VYdecision>>
 <<endif>>
-<<hide_object "BloodyCraneScissors">>
 //still fixing the if/else statements 
 ===
 
