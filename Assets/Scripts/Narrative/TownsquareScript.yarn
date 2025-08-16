@@ -72,10 +72,10 @@ Nisaea:His answers are more stilted than usual. Maybe I can get him to open up s
 title: CamphorRing
 ---
 Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
-//Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
+<<hide_object "Ring">>
 <<if visited ("BloodyCraneScissors")>>
     <<jump VYdecision>>
 <<endif>>
@@ -87,10 +87,10 @@ Narrator:Ornate crane scissors used for embroidery, stained with almost-brown bl
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
+<<hide_object "Scissors">>
 <<if visited ("CamphorRing")>>
     <<jump VYdecision>>
 <<endif>>
-//still fixing the if/else statements 
 ===
 
 title: VYdecision
