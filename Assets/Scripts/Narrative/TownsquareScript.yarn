@@ -122,7 +122,7 @@ Victor:"By the gods! You found it! I've been looking all over for this."
         Nisaea:"Anything you remember could be of use to me."
         Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
     ->"Where can I find her?"
-        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine– my sister."
+        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine- my sister."
         Nisaea:"You have my thanks."
 <<reveal_object "Eloise-Interactable">>
 <<hide_object "Victor">>
@@ -144,10 +144,10 @@ Nisaea:"Carrying bloody scissors a vice of yours?"
 Victor:"I'm sure it looks odd, but spare me a sentencing."
 Victor:"My sister gifted these to me."
 Victor:"She's an amazing needleworker and swore these types of scissors were sharp and precise."
-Victor:"I use them to cut off scales, excess fat– you name it."
+Victor:"I use them to cut off scales, excess fat- you name it."
 Victor:"Perfectly sane and normal."
 Nisaea:"Right..."
-Victor:"N-Now that I mention it. Jessamine– my sister, may know something."
+Victor:"N-Now that I mention it. Jessamine- my sister, may know something."
 Victor:"She sees far more people in her line of work than I." 
 Victor:"Maybe she's heard some gossip? I can point you in her direction for your troubles."
 Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
@@ -276,8 +276,6 @@ Eloise:"Has anyone ever told you, you're quite an intrusive girl and it's not th
 Nisaea:"No?"
 Narrator:Eloises groans in frustration at Nisaea's obvious confusion.
 Eloise:"It's just expensive fabric now. I'm lucky to have gotten art by one of this era's most brilliant needleworkers, but that's all this ever will be." 
-
-//breaking for now
     <<jump EMDCont>>
 ===
 
