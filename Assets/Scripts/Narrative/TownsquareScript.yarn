@@ -76,9 +76,7 @@ Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
-<<if visited ("CamphorRing")>>
-    <<jump BloodyCraneScissors>>
-<<else>>
+<<if visited ("BloodyCraneScissors")>>
     <<jump VYdecision>>
 <<endif>>
 ===
@@ -89,9 +87,7 @@ Narrator:Ornate crane scissors used for embroidery, stained with almost-brown bl
 <<reveal_object "Nisaea">> 
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea">>
-<<if visited ("BloodyCraneScissors")>>
-    <<jump CamphorRing>>
-<<else>>
+<<if visited ("CamphorRing")>>
     <<jump VYdecision>>
 <<endif>>
 //still fixing the if/else statements 
