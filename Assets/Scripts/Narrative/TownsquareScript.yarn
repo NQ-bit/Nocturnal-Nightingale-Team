@@ -73,24 +73,24 @@ title: CamphorRing
 ---
 Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
 //Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
-<<reveal_object "Nisaea">> 
+
 Nisaea:"I should ask Victor about this."
-<<hide_object "Nisaea">>
+
     <<jump CRPostVD>>
 ===
 title: BloodyCraneScissors
 ---
 Narrator:Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp.
-<<reveal_object "Nisaea">> 
+
 Nisaea:"I should ask Victor about this."
-<<hide_object "Nisaea">>
+
 <<jump BCSPostVD>>
 ===
 
 title: CRPostVD
 ---
-<<reveal_object "Victor">>
-<<reveal_object "Nisaea">>
+// <<reveal_object "Victor">>
+// <<reveal_object "Nisaea">>
 Victor: "Back so soon?"
 Narrator: Nisaea interrupts Victor, showing him the precious ring.
 <<expression Victor nervous>>
@@ -115,8 +115,8 @@ Victor:"By the gods! You found it! I've been looking all over for this."
 ===
 title: BCSPostVD
 ---
-<<reveal_object "Victor">>
-<<reveal_object "Nisaea">>
+// <<reveal_object "Victor">>
+// <<reveal_object "Nisaea">>
 Victor:"Back so soon, love?"
 Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 <<expression Victor nervous>>
@@ -201,7 +201,6 @@ Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow.
 <<hide_object "Nisaea">>
 <<hide_object "Eloise">>
 
-//point and click transition
 ===
 
 title: EDNEUT2
@@ -213,7 +212,6 @@ Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow.
 <<hide_object "Nisaea">>
 <<hide_object "Eloise">>
 
-//point and click transition
 ===
 
 title: handkerchief
@@ -221,9 +219,7 @@ title: handkerchief
 Narrator:A silken white handkerchief with skillfully embroidered violet and lavender flowers. 
 Narrator:Either imported or commissioned for an appropriate price. 
 Narrator:The letters E.K are painstalingly sewn into the corner of the fabric.
-<<reveal_object "Nisaea">>
 Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
-
 //transition back to option to interact with Eloise.
     <<jump EHKC>>
 ===
@@ -231,8 +227,8 @@ Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
 title: EHKC
 ---
 <<hide_object "Handkerchief">>
-<<reveal_object "Eloise">>
-<<reveal_object "Nisaea">>
+// <<reveal_object "Eloise">>
+// <<reveal_object "Nisaea">>
 Eloise: "I already told you, I can't help you."
 
 //presenting the handkerchief
@@ -424,15 +420,16 @@ title: book
 Narrator: A titleless book cleverly hides the inside contents of a second edition translation of The Pillow Book. 
 Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
 Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
-<<reveal_object "Nisaea">>
+
 Nisaea: "How queer..."
+
     <<jump JMDPost>>
 ===
 
 title: JMDPost
 ---
-<<reveal_object "Jessa">>
-<<reveal_object "Nisaea">>
+// <<reveal_object "Jessa">>
+// <<reveal_object "Nisaea">>
 <<hide_object "Book">>
 Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
 Jessamine:"Alright, that's enough for tonight don't you think?"
