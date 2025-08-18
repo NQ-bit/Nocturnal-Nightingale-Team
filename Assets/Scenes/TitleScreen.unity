@@ -6833,7 +6833,8 @@ MonoBehaviour:
     Music: \t\t\t\tNikitaKondrashev \n\t\t\t\t\t\t\t\tHorror Creepy Piano\n\nGood
     End &\t \t\t\t\t\t\t\t\t\nCredits Music:\t\t \t\tClavier-Music\t\t\n\t\t\t\t\t\t\trelaxing
     piano music\n\n\nBad End Music:\t\t\t\tNikitaKondrashev\n\t\t\t\t\t\t\tHorror
-    Dark Piano"
+    Dark Piano\n\nPause Menu Music:\t\t\t\t\t\tWaveMaster  \n\t\t\t\t\t\t\t\t\tSad
+    Piano Lost \n\t\t\t\t\t\t\t\t\t\tLove_30sec"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
   m_sharedMaterial: {fileID: -7045057111692336019, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}

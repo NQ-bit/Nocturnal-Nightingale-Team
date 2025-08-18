@@ -208,7 +208,8 @@ MonoBehaviour:
     \n\t\t\t\t\t\t\tSad Romantic Piano\n\n\n\nWarehouse Music: \t\t\t\tNikitaKondrashev
     \n\t\t\t\t\t\t\tHorror Creepy Piano\n\n\n\nGood End &\t \t\t\t\t\t\t\t\t\nCredits
     Music:\t\t \t\t\tClavier-Music\t\t\n\t\t\t\t\t\t\trelaxing piano music\n\n\n\nBad
-    End Music:\t\t\t\t\tNikitaKondrashev\n\t\t\t\t\t\t\t\tHorror Dark Piano\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
+    End Music:\t\t\t\t\tNikitaKondrashev\n\t\t\t\t\t\t\t\tHorror Dark Piano\n\n\nPause
+    Menu Music:\t\t\t\t\t\tWaveMaster  \n\t\t\t\t\t\t\t\t\tSad Piano Lost \n\t\t\t\t\t\t\t\t\t\tLove_30sec\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
     You For Playing\nThe Lament"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
