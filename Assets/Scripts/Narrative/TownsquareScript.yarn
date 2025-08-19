@@ -74,18 +74,17 @@ title: NRVMDB1
 Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste...
 <<reveal_object "Ring">>
 <<reveal_object "Scissors">>
-<<hide_object "Victor">>
-<<hide_object "Nisaea">>
+<<hide_object "Victor-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 ===
 
 title: CamphorRing
 ---
 Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
-<<reveal_object "Nisaea">> 
 //Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
-
+<<reveal_object "Nisaea-FullBody">>
 Nisaea:"I should ask Victor about this."
-<<hide_object "Nisaea">>
+<<hide_object "Nisaea-FullBody">>
 <<hide_object "Ring">>
 <<if visited ("BloodyCraneScissors")>>
     <<jump VYdecision>>
@@ -95,9 +94,9 @@ Nisaea:"I should ask Victor about this."
 title: BloodyCraneScissors
 ---
 Narrator:Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp.
-
+<<reveal_object "Nisaea-FullBody">>
 Nisaea:"I should ask Victor about this."
-<<hide_object "Nisaea">>
+<<hide_object "Nisaea-FullBody">>
 <<hide_object "Scissors">>
 <<if visited ("CamphorRing")>>
     <<jump VYdecision>>
@@ -106,6 +105,8 @@ Nisaea:"I should ask Victor about this."
 
 title: VYdecision
 ---
+<<reveal_object "Victor-FullBody">>
+<<reveal_object "Nisaea-FullBody">>
 Narrator: Nisaea approached Victor, both items in her pocket. 
 Nisaea: "Victor..."
     -> Camphor Ring
@@ -116,8 +117,6 @@ Nisaea: "Victor..."
 
 title: CRPostVD
 ---
-// <<reveal_object "Victor">>
-// <<reveal_object "Nisaea">>
 Victor: "Back so soon?"
 Narrator: Nisaea interrupts Victor, showing him the precious ring.
 <<expression Victor nervous>>
@@ -136,16 +135,12 @@ Victor:"By the gods! You found it! I've been looking all over for this."
                         Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine- my sister."
                         Nisaea:"You have my thanks."
 <<reveal_object "Eloise-Interactable">>
-<<hide_object "Victor">>
-<<hide_object "Nisaea">>
-<<hide_object "Ring">>
-<<hide_object "Scissors">>
+<<hide_object "Victor-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 ===
 
 title: BCSPostVD
 ---
-// <<reveal_object "Victor">>
-// <<reveal_object "Nisaea">>
 Victor:"Back so soon, love?"
 Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 <<expression Victor nervous>>
@@ -164,8 +159,8 @@ Victor:"Maybe she's heard some gossip? I can point you in her direction for your
 Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
 Nisaea:"Please, if you will."
 <<reveal_object "Jessa-Interactable">>
-<<hide_object "Victor">>
-<<hide_object "Nisaea">>
+<<hide_object "Victor-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 ===
 
 title: EloiseOpening
@@ -249,8 +244,8 @@ title: NREFD
 ---
 Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
 <<reveal_object "Handkerchief">>
-<<hide_object "Nisaea">>
-<<hide_object "Eloise">>
+<<hide_object "Nisaea-FullBody">>
+<<hide_object "Eloise-FullBody">>
 ===
 
 title: handkerchief
@@ -266,8 +261,8 @@ Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
 title: EHKC
 ---
 <<hide_object "Handkerchief">>
-// <<reveal_object "Eloise">>
-// <<reveal_object "Nisaea">>
+<<reveal_object "Eloise-FullBody">>
+<<reveal_object "Nisaea-FullBody">>
 Eloise: "I already told you, I can't help you."
 
 //presenting the handkerchief
@@ -380,8 +375,8 @@ Nisaea:"I don't believe I did."
 
 title: JessamineOpening
 ---
-<<reveal_object "Nisaea">>
-<<reveal_object "Jessa">>
+<<reveal_object "Nisaea-FullBody">>
+<<reveal_object "Jessa-FullBody">>
 Narrator:A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm.
 Narrator:Shopkeepers begin to dim their lights as they close up for the night say for one busying themself inside a build that looked more akin to home rather than a workshop. 
 Narrator:Nisaea found herself up the steps walking inside the shop before the thought wiser of the action. 
@@ -454,8 +449,8 @@ Jessamine:"I can try to offer you more, I just need to finish this piece and clo
 Nisaea:"Of course. Take your time."
 
 Nisaea: I wonder if I can find anything to help my search in the meantime?
-<<hide_object "Jessa">>
-<<hide_object "Nisaea">>
+<<hide_object "Jessa-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 <<reveal_object "Book">>
 ===
 
@@ -471,8 +466,8 @@ Nisaea: "How queer..."
 
 title: JMDPost
 ---
-// <<reveal_object "Jessa">>
-// <<reveal_object "Nisaea">>
+<<reveal_object "Jessa-FullBody">>
+<<reveal_object "Nisaea-FullBody">>
 <<hide_object "Book">>
 Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
 Jessamine:"Alright, that's enough for tonight don't you think?"

@@ -1,71 +1,62 @@
 using UnityEngine;
 using Yarn.Unity;
 using System.Collections.Generic;
-using System;
-using System.Linq;
 
+[RequireComponent(typeof(DialogueRunner))]
 public class UIManager : MonoBehaviour
 {
-
-    // YARN COMMANDS
-
-    [YarnCommand("reveal_object")]
-    public static void RevealObject(string objectName)
+    [System.Serializable]
+    public class ManagedObject
     {
-        Debug.Log($"[UIManager] Attempting to reveal: {objectName}");
-        
-        Debug.Log($"[Yarn Command] reveal_object called with: '{objectName}'");
+        public string id;
+        public GameObject gameObject;
+    }
 
-        GameObject obj = GameObject.Find(objectName);
+    [SerializeField]
+    private List<ManagedObject> managedObjects = new List<ManagedObject>();
+    private Dictionary<string, GameObject> objectDictionary = new Dictionary<string, GameObject>();
+    
+    private DialogueRunner dialogueRunner;
 
-        if (obj == null)
+    private void Awake()
+    {
+        dialogueRunner = GetComponent<DialogueRunner>();
+        dialogueRunner.AddCommandHandler<string>("reveal_object", RevealObject);
+        dialogueRunner.AddCommandHandler<string>("hide_object", HideObject);
+
+        // Build dictionary from serialized list
+        foreach (var obj in managedObjects)
         {
-            // Try finding it as an inactive object
-            obj = Resources.FindObjectsOfTypeAll<GameObject>()
-                .FirstOrDefault(g => g.name == objectName);
-                
-            if (obj == null)
+            if (obj.gameObject != null && !string.IsNullOrEmpty(obj.id))
             {
-                Debug.LogError($"Yarn Command: Object '{objectName}' not found in scene");
-                return;
+                objectDictionary[obj.id] = obj.gameObject;
             }
         }
-        
-        try 
+    }
+
+    private void RevealObject(string objectName)
+    {
+        if (objectDictionary.TryGetValue(objectName, out GameObject obj))
         {
             obj.SetActive(true);
-            Debug.Log($"Successfully displayed object: {objectName}");
+            Debug.Log($"Successfully revealed: {objectName}");
         }
-        catch (Exception e)
+        else
         {
-            Debug.LogError($"Error activating object '{objectName}': {e.Message}");
+            Debug.LogWarning($"Object not found in managed objects: {objectName}");
         }
     }
-    
-    [YarnCommand("hide_object")]
-    public static void HideObject(string objectName)
+
+    private void HideObject(string objectName)
     {
-       Debug.Log($"[UIManager] Attempting to hide: {objectName}");
-        
-        Debug.Log($"[Yarn Command] hide_object called with: '{objectName}'");
-
-        GameObject obj = GameObject.Find(objectName);
-
-        if (obj == null)
-        {
-            Debug.LogError($"Yarn Command: Object '{objectName}' not found in scene");
-            return;
-        }
-        
-        try 
+        if (objectDictionary.TryGetValue(objectName, out GameObject obj))
         {
             obj.SetActive(false);
-            Debug.Log($"Successfully hid object: {objectName}");
+            Debug.Log($"Successfully hidden: {objectName}");
         }
-        catch (Exception e)
+        else
         {
-            Debug.LogError($"Error hiding object '{objectName}': {e.Message}");
+            Debug.LogWarning($"Object not found in managed objects: {objectName}");
         }
     }
-    
 }

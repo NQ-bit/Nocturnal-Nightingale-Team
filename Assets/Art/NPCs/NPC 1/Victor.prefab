@@ -94,11 +94,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6148916017422709710, guid: e409b91f99e1d492387f508576af8f85, type: 3}
       propertyPath: m_Name
-      value: Victor Variant
+      value: Victor
       objectReference: {fileID: 0}
     - target: {fileID: 6148916017422709710, guid: e409b91f99e1d492387f508576af8f85, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6862337105029292940, guid: e409b91f99e1d492387f508576af8f85, type: 3}
       propertyPath: m_Sprite
