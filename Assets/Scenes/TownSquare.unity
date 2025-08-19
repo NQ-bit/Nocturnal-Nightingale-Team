@@ -225,30 +225,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1050140757}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 5195682086851916536}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &51678006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,30 +504,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1050140757}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: overturnedrock_clue
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 5195682086851916536}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &170938046
 MonoBehaviour:
@@ -1623,18 +1575,6 @@ MonoBehaviour:
           m_StringArgument: overturnedrock_clue
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1998117717616251456}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &511902808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,18 +2192,6 @@ MonoBehaviour:
           m_StringArgument: overturnedrock_clue
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 7571808873243918255}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &606235376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2402,6 +2330,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6148916017422709710, guid: e409b91f99e1d492387f508576af8f85, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7711506821704956363, guid: e409b91f99e1d492387f508576af8f85, type: 3}
       propertyPath: expressions.Array.data[3].spriteExpression
       value: 
@@ -2415,6 +2347,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4379969998724628089, guid: e409b91f99e1d492387f508576af8f85, type: 3}
   m_PrefabInstance: {fileID: 610885918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &630952356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262066351540048079, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 1933905181}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &649290176
 GameObject:
@@ -4998,50 +4935,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396999448}
   m_CullTransparentMesh: 1
---- !u!1 &1398770600
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1398770601}
-  - component: {fileID: 1398770602}
-  m_Layer: 0
-  m_Name: UI Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1398770601
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398770600}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1243.5432, y: 842.60425, z: 3.0265632}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1398770602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398770600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d28deec9e4354004b9f2d76ba2088f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1423363683
 GameObject:
   m_ObjectHideFlags: 0
@@ -7494,6 +7387,10 @@ PrefabInstance:
       propertyPath: onNodeComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8790380584632356852, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9078442560890639579, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7505,14 +7402,17 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2958262985454349539, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1516299795}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7262066351540048079, guid: 52571f68872914e24837210513edea1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2068459701}
   m_SourcePrefab: {fileID: 100100000, guid: 52571f68872914e24837210513edea1d, type: 3}
 --- !u!114 &1933905182 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
   m_PrefabInstance: {fileID: 1933905181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 630952356}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
@@ -8160,6 +8060,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7985477256237130417, guid: 52571f68872914e24837210513edea1d, type: 3}
   m_PrefabInstance: {fileID: 1933905181}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2068459701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630952356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d28deec9e4354004b9f2d76ba2088f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managedObjects:
+  - id: Nisaea-FullBody
+    gameObject: {fileID: 1050140757}
+  - id: Victor-FullBody
+    gameObject: {fileID: 5195682086851916536}
+  - id: Eloise-FullBody
+    gameObject: {fileID: 1998117717616251456}
+  - id: Jessa-FullBody
+    gameObject: {fileID: 7571808873243918255}
+  - id: Victor-Interactable
+    gameObject: {fileID: 535137455}
+  - id: Eloise-Interactable
+    gameObject: {fileID: 223268949}
+  - id: Jessa-Interactable
+    gameObject: {fileID: 199759247}
+  - id: Ring
+    gameObject: {fileID: 2023640994}
+  - id: Scissors
+    gameObject: {fileID: 1324678591}
+  - id: Handkerchief
+    gameObject: {fileID: 768904020}
+  - id: Book
+    gameObject: {fileID: 252609266}
 --- !u!1 &2077703853
 GameObject:
   m_ObjectHideFlags: 0
@@ -8339,6 +8274,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6943469124224965124, guid: a4510c8caca1ee8478459a0896f7c086, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8384,6 +8323,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084525981544164964, guid: e8183d8580e5448ad8070c1e4e64509a, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084525981544164964, guid: e8183d8580e5448ad8070c1e4e64509a, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4851468623498109907, guid: e8183d8580e5448ad8070c1e4e64509a, type: 3}
@@ -8496,6 +8439,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 966978011511928021, guid: b6acfa499990ff746968c186370c2a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1970020211489772026, guid: b6acfa499990ff746968c186370c2a73, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8602,7 +8549,6 @@ SceneRoots:
   - {fileID: 1491137455}
   - {fileID: 1423363687}
   - {fileID: 1800446693}
-  - {fileID: 1398770601}
   - {fileID: 1556879733}
   - {fileID: 1619063834}
   - {fileID: 1484158574}
