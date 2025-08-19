@@ -462,6 +462,17 @@
                 },
                 {
                     "name": "",
+                    "id": "107666d9-05f5-498d-81f9-100208556a01",
+                    "path": "<Mouse>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Speed Up Dialogue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "64fecd8f-8963-4860-b18f-51fb86c05c33",
                     "path": "<XInputController>/buttonSouth",
                     "interactions": "",
@@ -475,6 +486,17 @@
                     "name": "",
                     "id": "883e15d6-2f76-4472-b62c-792121047e1a",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Next Line Dialogue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02ec4ae4-fa1e-4cae-8eb9-2460f14677bd",
+                    "path": "<Mouse>/press",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
