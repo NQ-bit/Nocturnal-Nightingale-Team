@@ -429,9 +429,9 @@ Nisaea:"They seem unqualified?"
 Jessamine:"Hardly. They parrot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
 Nisaea:"I understand..."
 <<if visited ("JNEUT2")>>
-   <<jump JMD>>
+   <<jump JMD2>>
     <<else>>
-        <<jump JMD2>>
+        <<jump JMD>>
 <<endif>>
 ===
 
@@ -442,9 +442,9 @@ Jessamine:"You tend to fade into the tapestry, become decoration if you understa
 Jessamine:"I've heard talk of poor behavior, but I have not seen any myself. That does not make me a reliable source."
 Nisaea:"I see..."
 <<if visited ("JNEUT1")>>
-   <<jump JMD>>
+   <<jump JMD2>>
     <<else>>
-        <<jump JMD2>>
+        <<jump JMD>>
 <<endif>>
 ===
 
