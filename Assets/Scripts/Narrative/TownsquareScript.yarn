@@ -206,13 +206,19 @@ Nisaea:"Pleasure to meet you."
 title: EMD
 ---
 <<expression Eloise Condescending>>
-Eloise:"What great honor's bestowed upon me, that fate caused us to meet?"
-Nisaea:"I'm searching for someone. Someone a believe to be a thief."
+Eloise:"What great honors' bestowed upon me, that fate caused us to meet?"
+Nisaea:"I'm searching for someone. Someone I believe to be a thief."
 Eloise:"And you think I'd fraternize with that sort?"
 <<set $reputation to $reputation -1>>
 <<expression Nisaea angry>>
-Nisaea:"No! I'm simply asking:"
+Nisaea:"No! 
+<<jump NEIQ>>
+===
+
+title: NEIQ
+---
 <<expression Nisaea neutral>>
+Nisaea:"I'm simply asking:"
     ->"Have you seen anything odd?"
         <<jump EDNEUT1>>
     ->"Has anyone around you been acting strange?"
@@ -222,23 +228,29 @@ Nisaea:"No! I'm simply asking:"
 title: EDNEUT1
 ---
 Eloise:"The whole lot is odd if you ask me. There is not a single person in Point Ecrin of good breeding left."
-Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
-
-<<reveal_object "Handkerchief">>
-<<hide_object "Nisaea">>
-<<hide_object "Eloise">>
-
+<<if visited ("EDNEUT2")>>
+   <<jump NREFD>>
+      <<else>>
+       <<jump NEIQ>>
+<<endif>>
 ===
 
 title: EDNEUT2
 ---
 Eloise:"I could name a few people who are strange depending on your usage of the word, but I'm not one to gossip. I'm afraid I can't help you there."
-Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
+<<if visited ("EDNEUT1")>>
+   <<jump NREFD>>
+      <<else>>
+       <<jump NEIQ>>
+<<endif>>
 
+===
+title: NREFD
+---
+Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
 <<reveal_object "Handkerchief">>
 <<hide_object "Nisaea">>
 <<hide_object "Eloise">>
-
 ===
 
 title: handkerchief
@@ -412,11 +424,13 @@ Nisaea:"Right.."
 title: JNEUT1
 ---
 Jessamine:"I'm a needleworker. I get unique requests daily. Nothing substantial I suppose. Less orders as of late perhaps?" 
-Jessamine:"More people have been interested in attending the demonstrations some philosphers have been putting on. Hogwash if you ask me."
+Jessamine:"More people have been interested in attending the demonstrations some philosophers have been putting on. Hogwash if you ask me."
 Nisaea:"They seem unqualified?"
-Jessamine:"Hardly. They parot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
+Jessamine:"Hardly. They parrot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
 Nisaea:"I understand..."
-<<jump JMD2>>
+<<if visited ("JNEUT2")>>
+   <<jump JMD2>>
+<<endif>>
 ===
 
 title: JNEUT2
@@ -425,16 +439,17 @@ Jessamine:"I wouldn't say strange. When you work with your head down, people get
 Jessamine:"You tend to fade into the tapestry, become decoration if you understand my intention." 
 Jessamine:"I've heard talk of poor behavior, but I have not seen any myself. That does not make me a reliable source."
 Nisaea:"I see..."
-<<jump JMD2>> 
+<<if visited ("JNEUT1")>>
+   <<jump JMD2>>
+<<endif>>
 ===
 
 title: JMD2
 ---
-Jessamine:"I can try to offer you more, I just need to finish this piece and close up if you're willimg to wait."
+Jessamine:"I can try to offer you more, I just need to finish this piece and close up if you're willing to wait."
 Nisaea:"Of course. Take your time."
 
 Nisaea: I wonder if I can find anything to help my search in the meantime?
-
 <<hide_object "Jessa">>
 <<hide_object "Nisaea">>
 <<reveal_object "Book">>
@@ -447,7 +462,6 @@ Narrator: Inside is a hastily written note signed by a "E.K" and a locket servin
 Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
 
 Nisaea: "How queer..."
-
     <<jump JMDPost>>
 ===
 
