@@ -2255,7 +2255,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2958262985454349539, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 1
       addedObject: {fileID: 601271141}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7262066351540048079, guid: 52571f68872914e24837210513edea1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 811058466}
   m_SourcePrefab: {fileID: 100100000, guid: 52571f68872914e24837210513edea1d, type: 3}
 --- !u!4 &811058462 stripped
 Transform:
@@ -2272,12 +2275,46 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
   m_PrefabInstance: {fileID: 811058461}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 811058465}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &811058465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262066351540048079, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 811058461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &811058466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811058465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d28deec9e4354004b9f2d76ba2088f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managedObjects:
+  - id: Nisaea-FullBody
+    gameObject: {fileID: 1122885434}
+  - id: Doctor-Interactable
+    gameObject: {fileID: 2051942212}
+  - id: RealSelkieSkin
+    gameObject: {fileID: 1810664846}
+  - id: FakeSelkieSkin
+    gameObject: {fileID: 713686628}
+  - id: WhiskersVial
+    gameObject: {fileID: 468503555}
+  - id: GoodEndingWarehouseBG
+    gameObject: {fileID: 326186169}
+  - id: BurningWarehouseBG
+    gameObject: {fileID: 1866047286}
+  - id: WarehouseInt
+    gameObject: {fileID: 2014207333}
 --- !u!1 &844294770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,50 +3896,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506817188}
   m_CullTransparentMesh: 1
---- !u!1 &1575502016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1575502018}
-  - component: {fileID: 1575502017}
-  m_Layer: 0
-  m_Name: UI Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1575502017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575502016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d28deec9e4354004b9f2d76ba2088f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1575502018
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575502016}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 726.03754, y: 674.2017, z: 4.5723515}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677236283
 GameObject:
   m_ObjectHideFlags: 0
@@ -5169,5 +5162,4 @@ SceneRoots:
   - {fileID: 139135406}
   - {fileID: 63083622}
   - {fileID: 517899128}
-  - {fileID: 1575502018}
   - {fileID: 205026678}
