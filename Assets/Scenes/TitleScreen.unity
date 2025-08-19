@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 46109245}
   - component: {fileID: 46109244}
   - component: {fileID: 46109248}
+  - component: {fileID: 46109249}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -475,6 +476,20 @@ MonoBehaviour:
   goodEndingSceneName: GoodEnding
   badEndingSceneName: BadEnding
   delayBeforeLoad: 1
+--- !u!114 &46109249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46109242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64dd78c2abfb754ca83eb272648b438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  clickCooldown: 0.5
 --- !u!1 &50055985
 GameObject:
   m_ObjectHideFlags: 0
