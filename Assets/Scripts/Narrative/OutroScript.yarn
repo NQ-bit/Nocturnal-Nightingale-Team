@@ -1,0 +1,33 @@
+﻿title: OutroScript
+---
+General Ending Dialogue here 
+//maybe need to but a small modular connecting piece here unsure as of now.
+===
+
+title: BadEndingOutro
+---
+Narrator:"And there was nothing more than that."
+
+Narrator:"No perfectly shed tears in coteries of seven on the edge of the strand would bring back mothers' life."
+
+Narrator:"Her pod and home were forever lost to a conflagration and one man's selfishness."
+
+Narrator:"I'd like to tell you mothers' perseverance was as effortless as breathing, but it was clear she yearned for home so much it hurt. Especially once I could return to the sea."
+
+Narrator:"She made sure I always swam forward, kept my skin close and my pod closer. You should too."
+===
+
+title: GoodEndingOutro
+---
+Narrator:"Mother returned to the sea with answers albeit some more mystifying to her pod than the questions she set out with."
+
+Narrator:"The sea embraced her like a lost child returned home and the lessons she brought with her colored the years to come."
+
+Narrator:"Her fondness for humans and land though damaged, was not broken given the aid she received along her journey."
+
+Narrator:"Her weariness for humans was earned, but her trust in her allies, pod, and most importantly her own faculties solidified her aplomb when scrutinized most."
+
+Narrator:"Now I have learned the same, as will all of you…"
+
+Narrator: "The End..."
+===

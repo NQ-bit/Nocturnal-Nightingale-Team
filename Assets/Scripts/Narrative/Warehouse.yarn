@@ -7,20 +7,20 @@ Narrator:She had never thought of how different the sky looks while stationary a
 Narrator:At home there were twice as many stars, blurred and droukit, but on land they sparkled in stagnant isolation.
 Narrator:Soon enough she was outside of the warehouse. Her skin prickled like plucked chicken from more than the cold as she took in the environment. 
 
-<<reveal_object "Nisaea">>
+<<reveal_object "Nisaea-FullBody">>
 Nisaea: Maybe I should look around inside first?
 <<reveal_object "WarehouseInt">>
 <<reveal_object "RealSelkieSkin">>
 <<reveal_object "FakeSelkieSkin">>
 <<reveal_object "WhiskersVial">>
-<<hide_object "Nisaea">>
+<<hide_object "Nisaea-FullBody">>
 //this error is citing how there is a difference between the art Milo drew vs Monica. Milo is Warehouse Exterior (WarehouseExt.) and Monica's is Warehouse Int. in the script. I'm unsure if it's labeled as such in the asset folder)
 ===
 title: SSkCT
 ---
 Narrator:An impeccable pelt, colored in shades of grey and symmetrical dots skewered on a rusty meat hook. It is unclear how this skin was obtained. 
 Narrator:It is difficult to tell if it is a Selkie skin or a very large seal molt. It is too far away to bear a discernable scent and Nisaea cannot advance without disturbing the doctor.
-<<reveal_object "Nisaea">>
+<<reveal_object "Nisaea-FullBody">>
 Nisaea:"Regardless of how this was aquired, makes one prematurely visit lunch."
 <<hide_object "RealSelkieSkin">>
 <<hide_object "FakeSelkieSkin">>
@@ -33,7 +33,7 @@ title: SSkCF
 Narrator:A carefully encased pelt, colored in shades of grey and asymmetrical dots that do not completely cover the fur. It is unclear how this skin was obtained. 
 Narrator:It is difficult to tell if it is a Selkie pup skin or large juvenile seal molt. The case prevents any further identification without Nisaea advancing and disturbing the doctor.
 <<reveal_object "Doctor-Interactable">>
-<<reveal_object "Nisaea">>
+<<reveal_object "Nisaea-FullBody">>
 Nisaea:"How unique. An incomplete pattern. I hope the creature it comes from is ok..."
 <<hide_object "RealSelkieSkin">>
 <<hide_object "FakeSelkieSkin">>
@@ -43,7 +43,7 @@ Nisaea:"How unique. An incomplete pattern. I hope the creature it comes from is 
 title: WVC
 ---
 Narrator: A tiny glass vial of meticulously kept shed whiskers. They do not seem to be plucked and appear to be of similar patterns, suggesting it comes from the same subject. 
-<<reveal_object "Nisaea">>
+<<reveal_object "Nisaea-FullBody">>
 Nisaea: "Peculiar. What need would one have with whiskers? They're quite long as well. I suspect an adult or a selkie."
 <<hide_object "RealSelkieSkin">>
 <<hide_object "FakeSelkieSkin">>
@@ -101,7 +101,8 @@ Narrator: Nisaea gives it a squeaze and darts towards the exit, afraid to raise 
 Nisaea: "Be well."
 Narrator: The doctor nods to her.
 
-//tbd: ending or credits sequence
+// to-do: add back when scene is ready
+// <<change_scene GoodEndingOutro>>
 <<change_scene TitleScreen>>
 ===
 
@@ -110,25 +111,26 @@ title: DEBadEnding
 <<play_music "BadEnding">>
 Narrator:Nisaea recoils in disgust and anger.
 <<expression Nisaea angry>>
-Nisaea:"You blithering idiot– aberrant fiend! Arrogation has addled you, leaving naught but putrefaction in your wake."
+Nisaea:"You blithering idiot- aberrant fiend! Arrogation has addled you, leaving naught but putrefaction in your wake."
 Nisaea: "I demand satisfaction."
 <<expression Doctor angry>>
 Dr. Ellis: "When did I hurt my love, so? What causes you to lash out at me in this way?"
 Nisaea: "Do you possess the faculty of sight, or are you willfully ignoring me? This Ondine you speak of has abandoned you and the reason is evident."
 Nisaea:"I've heard rumor the denizens of Point Ecrin keeps their pets with more dignity than you've treated the mates you've been signed on for."
-Dr. Ellis:"I loved Ondine–"
+Dr. Ellis:"I loved Ondine-"
 Nisaea: "Yet you go in with lads keen on exploiting her kind?"
 Dr. Ellis: "I thought if I could understand her, I could make her feel safe here. Keep her from needing to return to the ocean so frequently."
 Nisaea:"Did you ask what she wanted?"
 <<expression Doctor neutral>>
 Narrator: Dr. Ellis sighs and adjusts the dial on the gaslamp to increase the brightness in the room. The flame roars inside the glass, begging to be freed.
 Dr. Ellis: "Of course I did. It was me. We had discussed our bethrotal in detail. Which makes your dissapperance that much more bewildering."
-Nisaea:"My–"
+Nisaea:"My-"
 Narrator: In a smooth, composed motion, Dr. Ellis held the rim of the gaslamp under Nisaea's pelt. In an instant, a conflagration of flame engulfed the space, dousing the environment in shades of vermillion and amber.
 <<reveal_object "BurningWarehouseBG">>
 Dr. Ellis: "Now we'll try this again. Perhaps take a day to think things over more clearly and we can reconvene."
 Narrator: Through watery eyes, Nisaea yanked at her crumbling milleu. Her world roasting to cinders in her charring hands, the pain of the reality, paling in comparison.
 
-//tbd: ending or credits sequence
+// to-do: add back when scene is ready
+// <<change_scene BadEndingOutro>>
 <<change_scene TitleScreen>>
 ===

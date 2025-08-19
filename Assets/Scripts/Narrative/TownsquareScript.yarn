@@ -52,71 +52,95 @@ title: VD1NEUT
 ---
 Victor:"You'll have to be more specific. 'Er's never a dull moment in Ecrin." 
 Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself– All the residents are characters. "
-Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste... 
-<<reveal_object "Ring">>
-<<reveal_object "Scissors">>
-<<hide_object "Victor">>
-<<hide_object "Nisaea">>
+<<if visited ("VD2NEUT")>>
+    <<jump NRVMDB1>>
+       <<else>>
+        <<jump VRMD>>
+<<endif>>
 ===
 
 title: VD2NEUT
 ---
 Victor:"I wouldn't say so. Not since the Doctor stopped taking orders. And that was quite a bit ago."
+<<if visited ("VD1NEUT")>>
+    <<jump NRVMDB1>>
+       <<else>>
+        <<jump VRMD>>
+<<endif>>
+===
+
+title: NRVMDB1
+---
 Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste...
 <<reveal_object "Ring">>
 <<reveal_object "Scissors">>
-<<hide_object "Victor">>
-<<hide_object "Nisaea">>
+<<hide_object "Victor-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 ===
 
 title: CamphorRing
 ---
 Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
 //Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
-
+<<reveal_object "Nisaea-FullBody">>
 Nisaea:"I should ask Victor about this."
-
-    <<jump CRPostVD>>
+<<hide_object "Nisaea-FullBody">>
+<<hide_object "Ring">>
+<<if visited ("BloodyCraneScissors")>>
+    <<jump VYdecision>>
+<<endif>>
 ===
+
 title: BloodyCraneScissors
 ---
 Narrator:Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp.
-
+<<reveal_object "Nisaea-FullBody">>
 Nisaea:"I should ask Victor about this."
+<<hide_object "Nisaea-FullBody">>
+<<hide_object "Scissors">>
+<<if visited ("CamphorRing")>>
+    <<jump VYdecision>>
+<<endif>>
+===
 
-<<jump BCSPostVD>>
+title: VYdecision
+---
+<<reveal_object "Victor-FullBody">>
+<<reveal_object "Nisaea-FullBody">>
+Narrator: Nisaea approached Victor, both items in her pocket. 
+Nisaea: "Victor..."
+    -> Camphor Ring
+        <<jump CRPostVD>>
+    -> Bloody Crane Scissors 
+        <<jump BCSPostVD>>
 ===
 
 title: CRPostVD
 ---
-// <<reveal_object "Victor">>
-// <<reveal_object "Nisaea">>
 Victor: "Back so soon?"
 Narrator: Nisaea interrupts Victor, showing him the precious ring.
 <<expression Victor nervous>>
 Victor:"By the gods! You found it! I've been looking all over for this."
-    ->"What do the scratches inside mean?"
+    -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
         Victor:"Family over everything. We protect each other first and foremost." 
-    ->"You have kin?"
-        Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
-        Nisaea:"And you guard this sister?"
-        Victor:"I protect her as best I can..."
-        Victor:"... You asked about anyone acting strangely?"
-        Nisaea:"Anything you remember could be of use to me."
-        Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
-    ->"Where can I find her?"
-        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine– my sister."
+            -><color=red>"You have kin?"</color>
+                Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
+                Nisaea:"And you guard this sister?"
+                Victor:"I protect her as best I can..."
+                Victor:"... You asked about anyone acting strangely?"
+                Nisaea:"Anything you remember could be of use to me."
+                Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
+                    -><color=red>"Where can I find her?"</color>
+                        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine- my sister."
+                        Nisaea:"You have my thanks."
 <<reveal_object "Eloise-Interactable">>
-<<hide_object "Victor">>
-<<hide_object "Nisaea">>
-<<hide_object "Ring">>
-<<hide_object "Scissors">>
+<<hide_object "Victor-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 ===
+
 title: BCSPostVD
 ---
-// <<reveal_object "Victor">>
-// <<reveal_object "Nisaea">>
 Victor:"Back so soon, love?"
 Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 <<expression Victor nervous>>
@@ -126,19 +150,17 @@ Nisaea:"Carrying bloody scissors a vice of yours?"
 Victor:"I'm sure it looks odd, but spare me a sentencing."
 Victor:"My sister gifted these to me."
 Victor:"She's an amazing needleworker and swore these types of scissors were sharp and precise."
-Victor:"I use them to cut off scales, excess fat– you name it."
+Victor:"I use them to cut off scales, excess fat- you name it."
 Victor:"Perfectly sane and normal."
 Nisaea:"Right..."
-Victor:"N-Now that I mention it. Jessamine– my sister, may know something."
+Victor:"N-Now that I mention it. Jessamine- my sister, may know something."
 Victor:"She sees far more people in her line of work than I." 
 Victor:"Maybe she's heard some gossip? I can point you in her direction for your troubles."
 Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
 Nisaea:"Please, if you will."
 <<reveal_object "Jessa-Interactable">>
-<<hide_object "Victor">>
-<<hide_object "Nisaea">>
-<<hide_object "Ring">>
-<<hide_object "Scissors">>
+<<hide_object "Victor-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 ===
 
 title: EloiseOpening
@@ -179,13 +201,19 @@ Nisaea:"Pleasure to meet you."
 title: EMD
 ---
 <<expression Eloise Condescending>>
-Eloise:"What great honor's bestowed upon me, that fate caused us to meet?"
-Nisaea:"I'm searching for someone. Someone a believe to be a thief."
+Eloise:"What great honors' bestowed upon me, that fate caused us to meet?"
+Nisaea:"I'm searching for someone. Someone I believe to be a thief."
 Eloise:"And you think I'd fraternize with that sort?"
 <<set $reputation to $reputation -1>>
 <<expression Nisaea angry>>
-Nisaea:"No! I'm simply asking:"
+Nisaea:"No! 
+<<jump NEIQ>>
+===
+
+title: NEIQ
+---
 <<expression Nisaea neutral>>
+Nisaea:"I'm simply asking:"
     ->"Have you seen anything odd?"
         <<jump EDNEUT1>>
     ->"Has anyone around you been acting strange?"
@@ -195,23 +223,29 @@ Nisaea:"No! I'm simply asking:"
 title: EDNEUT1
 ---
 Eloise:"The whole lot is odd if you ask me. There is not a single person in Point Ecrin of good breeding left."
-Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
-
-<<reveal_object "Handkerchief">>
-<<hide_object "Nisaea">>
-<<hide_object "Eloise">>
-
+<<if visited ("EDNEUT2")>>
+   <<jump NREFD>>
+      <<else>>
+       <<jump NEIQ>>
+<<endif>>
 ===
 
 title: EDNEUT2
 ---
 Eloise:"I could name a few people who are strange depending on your usage of the word, but I'm not one to gossip. I'm afraid I can't help you there."
+<<if visited ("EDNEUT1")>>
+   <<jump NREFD>>
+      <<else>>
+       <<jump NEIQ>>
+<<endif>>
+
+===
+title: NREFD
+---
 Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.
-
 <<reveal_object "Handkerchief">>
-<<hide_object "Nisaea">>
-<<hide_object "Eloise">>
-
+<<hide_object "Nisaea-FullBody">>
+<<hide_object "Eloise-FullBody">>
 ===
 
 title: handkerchief
@@ -227,8 +261,8 @@ Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
 title: EHKC
 ---
 <<hide_object "Handkerchief">>
-// <<reveal_object "Eloise">>
-// <<reveal_object "Nisaea">>
+<<reveal_object "Eloise-FullBody">>
+<<reveal_object "Nisaea-FullBody">>
 Eloise: "I already told you, I can't help you."
 
 //presenting the handkerchief
@@ -256,8 +290,6 @@ Eloise:"Has anyone ever told you, you're quite an intrusive girl and it's not th
 Nisaea:"No?"
 Narrator:Eloises groans in frustration at Nisaea's obvious confusion.
 Eloise:"It's just expensive fabric now. I'm lucky to have gotten art by one of this era's most brilliant needleworkers, but that's all this ever will be." 
-
-//breaking for now
     <<jump EMDCont>>
 ===
 
@@ -312,7 +344,7 @@ Eloise:"He however has become so distracted, our arrangement is apparently annul
         <<jump SWL>>
 ===
 
-title:SWL
+title: SWL
 ---
 Nisaea:"How did that relate to sea women?"
 <<expression Eloise guarded>>
@@ -341,10 +373,10 @@ Nisaea:"I don't believe I did."
 <<change_scene Warehouse>>
 ===
 
-title:JessamineOpening
+title: JessamineOpening
 ---
-<<reveal_object "Nisaea">>
-<<reveal_object "Jessa">>
+<<reveal_object "Nisaea-FullBody">>
+<<reveal_object "Jessa-FullBody">>
 Narrator:A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm.
 Narrator:Shopkeepers begin to dim their lights as they close up for the night say for one busying themself inside a build that looked more akin to home rather than a workshop. 
 Narrator:Nisaea found herself up the steps walking inside the shop before the thought wiser of the action. 
@@ -387,11 +419,15 @@ Nisaea:"Right.."
 title: JNEUT1
 ---
 Jessamine:"I'm a needleworker. I get unique requests daily. Nothing substantial I suppose. Less orders as of late perhaps?" 
-Jessamine:"More people have been interested in attending the demonstrations some philosphers have been putting on. Hogwash if you ask me."
+Jessamine:"More people have been interested in attending the demonstrations some philosophers have been putting on. Hogwash if you ask me."
 Nisaea:"They seem unqualified?"
-Jessamine:"Hardly. They parot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
+Jessamine:"Hardly. They parrot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
 Nisaea:"I understand..."
-<<jump JMD2>>
+<<if visited ("JNEUT2")>>
+   <<jump JMD2>>
+    <<else>>
+        <<jump JMD>>
+<<endif>>
 ===
 
 title: JNEUT2
@@ -400,18 +436,21 @@ Jessamine:"I wouldn't say strange. When you work with your head down, people get
 Jessamine:"You tend to fade into the tapestry, become decoration if you understand my intention." 
 Jessamine:"I've heard talk of poor behavior, but I have not seen any myself. That does not make me a reliable source."
 Nisaea:"I see..."
-<<jump JMD2>> 
+<<if visited ("JNEUT1")>>
+   <<jump JMD2>>
+    <<else>>
+        <<jump JMD>>
+<<endif>>
 ===
 
 title: JMD2
 ---
-Jessamine:"I can try to offer you more, I just need to finish this piece and close up if you're willimg to wait."
+Jessamine:"I can try to offer you more, I just need to finish this piece and close up if you're willing to wait."
 Nisaea:"Of course. Take your time."
 
 Nisaea: I wonder if I can find anything to help my search in the meantime?
-
-<<hide_object "Jessa">>
-<<hide_object "Nisaea">>
+<<hide_object "Jessa-FullBody">>
+<<hide_object "Nisaea-FullBody">>
 <<reveal_object "Book">>
 ===
 
@@ -422,14 +461,13 @@ Narrator: Inside is a hastily written note signed by a "E.K" and a locket servin
 Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
 
 Nisaea: "How queer..."
-
     <<jump JMDPost>>
 ===
 
 title: JMDPost
 ---
-// <<reveal_object "Jessa">>
-// <<reveal_object "Nisaea">>
+<<reveal_object "Jessa-FullBody">>
+<<reveal_object "Nisaea-FullBody">>
 <<hide_object "Book">>
 Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
 Jessamine:"Alright, that's enough for tonight don't you think?"
