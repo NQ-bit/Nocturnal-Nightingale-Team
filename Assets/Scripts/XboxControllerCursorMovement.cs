@@ -78,6 +78,11 @@ public static XboxControllerCursorMovement Instance { get; private set; }
         Mouse.current.WarpCursorPosition(screenPos);
         Debug.Log($"Using Xbox Controller cursor at {screenPos}");
 
+        if (Input.GetButtonDown("A"))
+        {
+            Debug.Log($"Pressing A button");
+        }
+
         // Raycast to detect Yarn Spinner buttons
         PointerEventData pointerData = new PointerEventData(EventSystem.current)
         {
@@ -99,4 +104,6 @@ public static XboxControllerCursorMovement Instance { get; private set; }
             }
         }
     }
+
+
 }
