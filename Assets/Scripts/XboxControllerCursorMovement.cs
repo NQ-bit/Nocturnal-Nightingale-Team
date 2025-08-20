@@ -81,29 +81,28 @@ public static XboxControllerCursorMovement Instance { get; private set; }
         if (Input.GetButtonDown("Jump"))
         {
             Debug.Log($"Pressing Jump button");
-        }
 
-        // Raycast to detect Yarn Spinner buttons
-        PointerEventData pointerData = new PointerEventData(EventSystem.current)
-        {
-            position = screenPos
-        };
-
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(pointerData, results);
-
-        if (results.Count > 0)
-        {
-            GameObject target = results[0].gameObject;
-
-            if (target.GetComponent<Button>() != null && Time.time - lastClickTime > clickCooldown)
+            PointerEventData pointerData = new PointerEventData(EventSystem.current)
             {
-                ExecuteEvents.Execute(target, pointerData, ExecuteEvents.pointerClickHandler);
-                Debug.Log($"Auto-clicked on {target.name} via joystick");
-                lastClickTime = Time.time;
+                position = screenPos
+            };
+
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerData, results);
+
+            if (results.Count > 0)
+            {
+                GameObject target = results[0].gameObject;
+
+                if (target.GetComponent<Button>() != null && Time.time - lastClickTime > clickCooldown)
+                {
+                    ExecuteEvents.Execute(target, pointerData, ExecuteEvents.pointerClickHandler);
+                    Debug.Log($"Auto-clicked on {target.name} via joystick");
+                    lastClickTime = Time.time;
+                }
             }
+
         }
+
     }
-
-
 }
