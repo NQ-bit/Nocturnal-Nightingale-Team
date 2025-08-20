@@ -16,11 +16,11 @@ Victor:"Darling. Sorry, I have no crab for you today– traps were empty. I thou
 Nisaea:"Oh.."
     ->"I missed Point Ecrin already!"
         <<set $reputation to $reputation -1>>
-         Narrator: Your ending repuation is {$reputation}! // for debugging
+         Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1NEG>>
     ->"I've lost something..."
         <<set $reputation to $reputation +1>>
-         Narrator: Your ending repuation is {$reputation}! // for debugging
+         Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1POS>>
 ===
 
