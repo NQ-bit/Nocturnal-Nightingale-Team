@@ -78,9 +78,9 @@ public static XboxControllerCursorMovement Instance { get; private set; }
         Mouse.current.WarpCursorPosition(screenPos);
         Debug.Log($"Using Xbox Controller cursor at {screenPos}");
 
-        if (Input.GetButtonDown("A"))
+        if (Input.GetButtonDown("Jump"))
         {
-            Debug.Log($"Pressing A button");
+            Debug.Log($"Pressing Jump button");
         }
 
         // Raycast to detect Yarn Spinner buttons
