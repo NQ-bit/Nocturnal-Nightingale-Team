@@ -16,9 +16,11 @@ Victor:"Darling. Sorry, I have no crab for you today– traps were empty. I thou
 Nisaea:"Oh.."
     ->"I missed Point Ecrin already!"
         <<set $reputation to $reputation -1>>
+        //  Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1NEG>>
     ->"I've lost something..."
         <<set $reputation to $reputation +1>>
+        //  Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1POS>>
 ===
 
@@ -51,7 +53,7 @@ Nisaea: Victor...
 title: VD1NEUT
 ---
 Victor:"You'll have to be more specific. 'Er's never a dull moment in Ecrin." 
-Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself– All the residents are characters. "
+Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself- All the residents are characters. "
 <<if visited ("VD2NEUT")>>
     <<jump NRVMDB1>>
        <<else>>
@@ -123,6 +125,7 @@ Narrator: Nisaea interrupts Victor, showing him the precious ring.
 Victor:"By the gods! You found it! I've been looking all over for this."
     -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         Victor:"Family over everything. We protect each other first and foremost." 
             -><color=red>"You have kin?"</color>
                 Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
@@ -147,6 +150,7 @@ Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 Victor:"How did those fall out of my pocket?"
 Nisaea:"Carrying bloody scissors a vice of yours?"
 <<set $reputation to $reputation +1>>
+// Narrator: Your current repuation is {$reputation}! // for debugging
 Victor:"I'm sure it looks odd, but spare me a sentencing."
 Victor:"My sister gifted these to me."
 Victor:"She's an amazing needleworker and swore these types of scissors were sharp and precise."
@@ -172,9 +176,11 @@ title: EloiseOpening
  Nisaea: Pardon. Are you...
     ->"The Keatings' Daughter?"
         <<set $reputation to $reputation +1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EVDPOS1>>
     ->"Ms.Eliza or Elsa?"
         <<set $reputation to $reputation -1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EVDNeg1>>
 ===
 
@@ -205,6 +211,7 @@ Eloise:"What great honors' bestowed upon me, that fate caused us to meet?"
 Nisaea:"I'm searching for someone. Someone I believe to be a thief."
 Eloise:"And you think I'd fraternize with that sort?"
 <<set $reputation to $reputation -1>>
+// Narrator: Your current repuation is {$reputation}! // for debugging
 <<expression Nisaea angry>>
 Nisaea:"No! 
 <<jump NEIQ>>
@@ -253,7 +260,7 @@ title: handkerchief
 Narrator:A silken white handkerchief with skillfully embroidered violet and lavender flowers. 
 Narrator:Either imported or commissioned for an appropriate price. 
 Narrator:The letters E.K are painstalingly sewn into the corner of the fabric.
-Nisaea: "What beautiful flowers... I wonder if this belongs to Ms. Keating."
+Nisaea:"What beautiful flowers... I wonder if this belongs to Ms. Keating."
 //transition back to option to interact with Eloise.
     <<jump EHKC>>
 ===
@@ -267,7 +274,7 @@ Eloise: "I already told you, I can't help you."
 
 //presenting the handkerchief
 
-Nisaea:"Is this–"
+Nisaea:"Is this-"
 <<expression Eloise guarded>>
 Eloise: Thief!
 <<expression Nisaea nervous>>
@@ -277,9 +284,11 @@ Nisaea:"I found it! I think it fell out of your purse."
 Narrator:Eloise promptly snatches the handkerchief and looks over the embroidery to check for new imperfections. 
     -> "It must mean a lot. What it's story?"
         <<set $reputation to $reputation -1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ECNeg>>
     ->"Its beautiful. Did you make it?"
         <<set $reputation to $reputation +1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ECPos>>
 ===
 
@@ -300,16 +309,18 @@ Nisaea:"That's Victor's sister, yes?"
 Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel so diametric to one another." 
     -> "You commissioned this handkerchief from her?"
         <<set $reputation to $reputation -1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EComL>>
     -> "You speak tenderly of her. Are you friends?"
         <<set $reputation to $reputation -1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ETL>>
 ===
 
 title: EComL
 ---
 <<expression Eloise condescending>>
-Eloise:"I wouldn't waste her time with such a pitiful project. I'd ask for a veil or gloves– something grand."
+Eloise:"I wouldn't waste her time with such a pitiful project. I'd ask for a veil or gloves- something grand."
 Eloise:"It was a gift, of course." 
 Nisaea:"So you're quite close?"
 Narrator: Eloise fidgets with the handkerchief.
@@ -386,6 +397,7 @@ Unknown: "Awfully sorry, We're closed."
         <<jump JVDNeut1>>
     ->Victor sent me. He said you could be a friend.
         <<set $reputation to $reputation +1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JVDPOS1>>
 ===
 
@@ -472,17 +484,21 @@ title: JMDPost
 Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
 Jessamine:"Alright, that's enough for tonight don't you think?"
     ->"I've never seen a book like this. Is it from far away?"
-        <<set $reputation to $reputation +1>> 
+        <<set $reputation to $reputation +1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging 
     ->"Your bookmark is beautiful."
         <<set $reputation to $reputation +1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
 Nisaea:"I've never seen a book with names like these. Is it from a land far away?"
 <<expression Jessa sad>>
 Jessamine:"It is. It's imported. A...friend.... got it for me."
     ->"Why are your spirits low?"
         <<set $reputation to $reputation +1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JMDPostCont>>
     ->"That's a generous gift from a friend."
         <<set $reputation to $reputation -1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JGL>>
 ===
 
@@ -505,8 +521,10 @@ Jessamine:"May I ask you an absurd question?"
 Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
     ->"Yes."
         <<set $reputation to $reputation -1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
     ->"No."
         <<set $reputation to $reputation +1>>
+        // Narrator: Your current repuation is {$reputation}! // for debugging
 Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
 Jessamine:"My apologies... 
     <<jump JEnd>>
