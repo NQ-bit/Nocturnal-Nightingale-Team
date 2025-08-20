@@ -4,21 +4,26 @@ Narrator:Crashing waves echo off the cave walls, a sound like a constant ringing
 Narrator:The sun bathes the walls in honeyed rays that gently heat them like palming a mug of warmed tea. 
 Narrator:Dampened sand coats each splayed digit of Nisaea's fresh, human, toes as she carefully scales the outside wall of the alcove. 
 Narrator:Dipping inside quickly to ensure no one sees her Nisaea lets out a loud groan.
+<<reveal_object "Nisaea-FullBody">>
 Nisaea:"My precious time wasted on command. I ought to be with my pod, hunting, rendering myself useful."
 Nisaea:"I would rather watch pups or feed elders than suffer what turned out to be a trivial errand." 
 Nisaea:"I'll return with a few fish more than we had, so I suppose what reason have I to cavil?"
 Narrator:Nisaea looped the string of fish she bartered for around her waist and began looking in the sand for her pelt.
+<<hide_object "Nisaea-FullBody">>
 ===
 title: footprint_clue
 ---
+<<reveal_object "Nisaea-FullBody">>
 <<expression Nisaea Nervous>>
 Narrator:A footprint larger than her own is preserved in the damp sand near the edge of the alcove mouth.
 Narrator:It looks as if someone tried to disturb it get rid of the print alltogether, but was in too much of a hurry to successfully destroy it.
 Narrator:Upon closer inspection, the print is a shoeprint, one, Nisaea can fit her entire human foot inside of. 
 Nisaea: Who would wear their boots upon the strand?
+<<hide_object "Nisaea-FullBody">>
 ===
 title: overturnedrock_clue
 ---
+<<reveal_object "Nisaea-FullBody">>
 <<expression Nisaea Angry>>
 Narrator:A large, smooth rock is sprayed wet with sea water. 
 Narrator:It is ashy and flaking with salt in the areas it's since dried off, and in the depressions brilliant pink coraline algae has made it's home making it difficult to grip it from any angle. 
