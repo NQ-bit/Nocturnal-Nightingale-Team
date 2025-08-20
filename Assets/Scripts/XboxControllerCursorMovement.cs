@@ -20,7 +20,7 @@ public static XboxControllerCursorMovement Instance { get; private set; }
 
     void Awake()
     {
-        if (Instance == null)
+       /* if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
@@ -29,7 +29,7 @@ public static XboxControllerCursorMovement Instance { get; private set; }
         {
             Destroy(gameObject);
             return;
-        }
+        }*/
             
         foreach (var map in playerInput.actionMaps)
         {
