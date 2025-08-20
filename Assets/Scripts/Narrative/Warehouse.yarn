@@ -65,7 +65,7 @@ Dr. Ellis:"Ondine."
 Dr. Ellis:"My pearl. I had never thought to gaze upon those eyes again."
 // <<set $reputation += 1>>
 <<set $reputation -= 1>>
-// Narrator: Your ending repuation is {$reputation}! // for debugging
+ Narrator: Your ending repuation is {$reputation}! // for debugging
 <<if $reputation >= 10>>
   <<jump DEGoodEnding>>
 <<else>>
