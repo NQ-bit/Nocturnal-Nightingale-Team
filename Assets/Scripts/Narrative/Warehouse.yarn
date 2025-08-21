@@ -19,7 +19,6 @@ title: INT
 <<reveal_object "FakeSelkieSkin">>
 <<reveal_object "WhiskersVial">>
 <<hide_object "Nisaea-FullBody">>
-  <<jump DEMD>>
 ===
 title: SSkCT
 ---
@@ -49,6 +48,7 @@ Nisaea: "Peculiar. What need would one have with whiskers? They're quite long as
 title: DEMD
 ---
 <<reveal_object "Doctor-Interactable">>
+<<hide_object "Doctor-Interactable">>
 Narrator:A well dressed man works diligently by a lamplit workspace. 
 Narrator:Nisaea's breath hitches, lungs stopping as is her body idles while she works up the courage. Then her mind goes blank.
 <<expression Nisaea angry>>
