@@ -7,7 +7,7 @@ Narrator:Dipping inside quickly to ensure no one sees her Nisaea lets out a loud
 <<reveal_object "Nisaea-FullBody">>
 Nisaea:"My precious time wasted on command. I ought to be with my pod, hunting, rendering myself useful."
 Nisaea:"I would rather watch pups or feed elders than suffer what turned out to be a trivial errand." 
-Nisaea:"I'll return with a few fish more than we had, so I suppose what reason have I to cavil?"
+Nisaea:"I'll return with a few more fish than we had, so I suppose what reason have I to cavil?"
 Narrator:Nisaea looped the string of fish she bartered for around her waist and began looking in the sand for her pelt.
 <<hide_object "Nisaea-FullBody">>
 ===
@@ -16,8 +16,8 @@ title: footprint_clue
 <<reveal_object "Nisaea-FullBody">>
 <<expression Nisaea Nervous>>
 Narrator:A footprint larger than her own is preserved in the damp sand near the edge of the alcove mouth.
-Narrator:It looks as if someone tried to disturb it get rid of the print alltogether, but was in too much of a hurry to successfully destroy it.
-Narrator:Upon closer inspection, the print is a shoeprint, one, Nisaea can fit her entire human foot inside of. 
+Narrator:It looks as if someone tried to disturb it to get rid of the print altogether, but was in too much of a hurry to successfully destroy it.
+Narrator:Upon closer inspection, the print is a shoe print, one, Nisaea can fit her entire human foot inside of. 
 Nisaea: Who would wear their boots upon the strand?
 <<hide_object "Nisaea-FullBody">>
 ===
@@ -26,16 +26,16 @@ title: overturnedrock_clue
 <<reveal_object "Nisaea-FullBody">>
 <<expression Nisaea Angry>>
 Narrator:A large, smooth rock is sprayed wet with sea water. 
-Narrator:It is ashy and flaking with salt in the areas it's since dried off, and in the depressions brilliant pink coraline algae has made it's home making it difficult to grip it from any angle. 
-Narrator:Yet, the rock seems to have been disturbed, with sand bunched up around the edges of it where it has been dragged from it's original position. 
-Narrator:Nisaea's pelt is missing from it's hiding spot.
+Narrator:It is ashy and flaking with salt in the areas it's since dried off, and in the depressions brilliant pink coralline algae has made its home making it difficult to grip it from any angle. 
+Narrator:Yet, the rock seems to have been disturbed, with sand bunched up around the edges of it where it has been dragged from its original position. 
+Narrator:Nisaeas' pelt is missing from its hiding spot.
 <<expression Nisaea Nervous>>
-Narrator:Nisaea's heart began to race. She can't differentiate between the sound of blood rushing in hear ears and the waves creeping in to deposit sea foam on her feet.
+Narrator:Nisaeas' heart began to race. She can't differentiate between the sound of blood rushing in her ears and the waves creeping in to deposit sea foam on her feet.
 Narrator:A guttural wail leaves her body, startling the gulls from their cozy perches. 
 Narrator:Nisaea is stranded. Without her pelt she can't return to her pod. She can never return home again. 
-Nisaea:"I exercised caution. I obscured my passage. Who might have tracked me?– Who desires to harm me?"
+Nisaea:"I exercised caution. I obscured my passage. Who might have tracked me?- Who desires to harm me?"
 Narrator: Nisaea palmed the footprints and eyed the direction it was headed in. 
-Nisaea:"It's wends its way toward the town. Maybe I can find clues there."
+Nisaea:"It wends its way toward the town. Maybe I can find clues there."
 
 <<change_scene TownSquare>>
 ===

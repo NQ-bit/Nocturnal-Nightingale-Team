@@ -4,7 +4,7 @@
 Narrator:Booted heels and walking sticks clatter noisily upon the ground adding to the cacophony in town. 
 Narrator:As nightfall readily approached, the soul of Point Ecrin was beginning to transform from bustling commerce to quieter pursuits of the evening.
 Narrator:Few souls loomed by their shops as they shuttered for the eventide, but one lone figure advancing from the docks Nisaea glimpsed, caught her attention. 
-Narrator:A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaea's pleasure. He seems like he's in a hurry.
+Narrator:A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaeas' pleasure. He seems like he's in a hurry.
 
 ===
 
@@ -12,15 +12,15 @@ title: VictorOpening
 ---
 <<expression Victor neutral>>
 Victor:"Nisaea!"
-Victor:"Darling. Sorry, I have no crab for you today– traps were empty. I thought you would be gone for several weeks." 
+Victor:"Darling. Sorry, I have no crab for you today- traps were empty. I thought you would be gone for several weeks." 
 Nisaea:"Oh.."
     ->"I missed Point Ecrin already!"
         <<set $reputation to $reputation -1>>
-        //  Narrator: Your current repuation is {$reputation}! // for debugging
+         Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump VD1NEG>>
     ->"I've lost something..."
         <<set $reputation to $reputation +1>>
-        //  Narrator: Your current repuation is {$reputation}! // for debugging
+         Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump VD1POS>>
 ===
 
@@ -35,7 +35,7 @@ Nisaea:"Apologies..."
 ===
 title:VD1POS
 ---
-Nisaea:"That is my intention, but as I was leaving, I noticed something dear to me has become misplaced. I've come back in to town in hopes of finding it."
+Nisaea:"That is my intention, but as I was leaving, I noticed something dear to me has become misplaced. I've come back into town in hopes of finding it."
 Victor:"I'm terribly sorry to hear that. If it's quick, I'll lend you my hand."
 Nisaea:"You have my eternal thanks."
 <<jump VRMD>>
@@ -83,7 +83,6 @@ Nisaea:His answers are more stilted than usual. Maybe I can get him to open up s
 title: CamphorRing
 ---
 Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
-//Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
 <<reveal_object "Nisaea-FullBody">>
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea-FullBody">>
@@ -112,8 +111,12 @@ title: VYdecision
 Narrator: Nisaea approached Victor, both items in her pocket. 
 Nisaea: "Victor..."
     -> Camphor Ring
+<<reveal_object "ConWarning">>
+<<hide_object "ConWarning">>
         <<jump CRPostVD>>
-    -> Bloody Crane Scissors 
+    -> Bloody Crane Scissors
+<<reveal_object "ConWarning">>
+<<hide_object "ConWarning">> 
         <<jump BCSPostVD>>
 ===
 
@@ -125,7 +128,7 @@ Narrator: Nisaea interrupts Victor, showing him the precious ring.
 Victor:"By the gods! You found it! I've been looking all over for this."
     -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current repuation is {$reputation}! // for debugging
+        Narrator: Your current reputation is {$reputation}! // for debugging
         Victor:"Family over everything. We protect each other first and foremost." 
             -><color=red>"You have kin?"</color>
                 Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
@@ -150,7 +153,7 @@ Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 Victor:"How did those fall out of my pocket?"
 Nisaea:"Carrying bloody scissors a vice of yours?"
 <<set $reputation to $reputation +1>>
-// Narrator: Your current repuation is {$reputation}! // for debugging
+Narrator: Your current reputation is {$reputation}! // for debugging
 Victor:"I'm sure it looks odd, but spare me a sentencing."
 Victor:"My sister gifted these to me."
 Victor:"She's an amazing needleworker and swore these types of scissors were sharp and precise."
