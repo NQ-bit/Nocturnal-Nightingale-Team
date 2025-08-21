@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2c10010ac19aad341bc430ae2753fa85
+guid: d8fcc2169577fdf469fb7d8617885ac5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7408805614397540082
-    second: TextboxAlt2_0
+      213: 3640434389341436788
+    second: KeyboardControl_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TextboxAlt2_0
+      name: KeyboardControl_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 464
-        height: 385
+        x: 4
+        y: 4
+        width: 1431
+        height: 636
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f6c518e37d51d660800000000000000
-      internalID: 7408805614397540082
+      spriteID: 47bffcc0acb658230800000000000000
+      internalID: 3640434389341436788
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TextboxAlt2_0: 7408805614397540082
+      KeyboardControl_0: 3640434389341436788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: e1735e160cb552d4089b41b3813e4a10
+guid: bd1f18b924347c94ba0c32662d00b5be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4875866425433500377
-    second: ControlsTxt2_0
-  - first:
-      213: 2387974661706284895
-    second: ControlsTxt2_1
-  - first:
-      213: -9036290290861289834
-    second: ControlsTxt2_2
-  - first:
-      213: 2869351650907213738
-    second: ControlsTxt2_3
-  - first:
-      213: -5834597711002172418
-    second: ControlsTxt2_4
+      213: -4333876696256747072
+    second: MouseControl_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,101 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ControlsTxt2_0
+      name: MouseControl_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 84
-        width: 261
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9daa7343eae8aa340800000000000000
-      internalID: 4875866425433500377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ControlsTxt2_1
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 105
-        width: 75
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5ff2a38d4ac32120800000000000000
-      internalID: 2387974661706284895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ControlsTxt2_2
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 104
-        width: 166
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69ec6e55bd5a89280800000000000000
-      internalID: -9036290290861289834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ControlsTxt2_3
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 19
-        width: 61
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aaf4100cf1cf1d720800000000000000
-      internalID: 2869351650907213738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ControlsTxt2_4
-      rect:
-        serializedVersion: 2
-        x: 148
         y: 0
-        width: 179
-        height: 66
+        width: 275
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef3886c7b48570fa0800000000000000
-      internalID: -5834597711002172418
+      spriteID: 0c9e54b4b1afad3c0800000000000000
+      internalID: -4333876696256747072
       vertices: []
       indices: 
       edges: []
@@ -248,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ControlsTxt2_0: 4875866425433500377
-      ControlsTxt2_1: 2387974661706284895
-      ControlsTxt2_2: -9036290290861289834
-      ControlsTxt2_3: 2869351650907213738
-      ControlsTxt2_4: -5834597711002172418
+      MouseControl_0: -4333876696256747072
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
