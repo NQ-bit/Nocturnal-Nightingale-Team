@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: -2545}
+  m_AnchoredPosition: {x: 110, y: -2820}
   m_SizeDelta: {x: 1915, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &44972463
@@ -202,8 +202,10 @@ MonoBehaviour:
   m_text: "Credits\n\n\n\n\n\nMusic & Sound Effects: \t\t\t\tPixabay.com\n\n\n\n\n\nMenu
     Music: \t\t\t\t\t   \t\tJoelFazhari \n\t\t\t\t\t\t\t\tOne Thousand Years \n\t\t\t\t\t\t\t\t\tAgo
     - Victorian \n\t\t\t\t\t\t\t\tGothic Piano Music\n\n\n\nSound effects: \t\t\t\t\t\tfloraphonic
-    &  \n\t\t\t\t\t\t\tfreesound_community \n\n\n\nFonts: \t\t\t\t\tfontget.com &
-    \n\t\t\t\t\t\tfreefontdownload.org\n\n\n\nBeach BG Music: \t\t\t\t\tClavier-Music
+    &  \n\t\t\t\t\t\t\tfreesound_community \n\n\n\nFonts: \t\t\t\t\t\t\tfontget.com
+    & \n\t\t\t\t\t\t\tfreefontdownload.org\n\n\nCutscene Music: \t\t\t\tOpen Music
+    for Videos\n\t\t\t\t\t\t\tMelancholic ASMR Piano | \n\t\t\t\t\t\t\t\tSoft Background
+    | \n\t\t\t\t\t\t\t\tEmotional Flow\n\n\nBeach BG Music: \t\t\t\t\t\tClavier-Music
     \n\t\t\t\t\t\t\t\tRelaxing Piano Music\n\n\nTown BG Music: \t\t\t\tOpen-Music-for-Videos
     \n\t\t\t\t\t\t\tSad Romantic Piano\n\n\n\nWarehouse Music: \t\t\t\tNikitaKondrashev
     \n\t\t\t\t\t\t\tHorror Creepy Piano\n\n\n\nGood End &\t \t\t\t\t\t\t\t\t\nCredits

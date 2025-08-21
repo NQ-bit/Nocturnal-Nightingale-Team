@@ -1169,14 +1169,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicTracks:
+  - trackName: DefaultBGMusic
+    audioClip: {fileID: 8300000, guid: 029899feb371c6d4dae7cfed7d6c2e1c, type: 3}
   - trackName: GoodEnding
     audioClip: {fileID: 8300000, guid: c9d9a12c9e441cf4da30bd039e6b205b, type: 3}
   - trackName: BadEnding
     audioClip: {fileID: 8300000, guid: a2a6a7047ca6fde449cdf1e38aacced7, type: 3}
   - trackName: FireSFX
     audioClip: {fileID: 8300000, guid: 64fd363753fe5284da44ce71c54f6efd, type: 3}
-  - trackName: DefaultBGMusic
-    audioClip: {fileID: 8300000, guid: 029899feb371c6d4dae7cfed7d6c2e1c, type: 3}
 --- !u!4 &205026678
 Transform:
   m_ObjectHideFlags: 0

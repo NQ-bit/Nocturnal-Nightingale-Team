@@ -18,6 +18,12 @@ public class PauseMenuScript : MonoBehaviour
         SceneManager.LoadScene("TitleScreen");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+
     public void QuitGame()
     {
         #if UNITY_EDITOR
