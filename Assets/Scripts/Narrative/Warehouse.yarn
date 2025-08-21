@@ -19,12 +19,12 @@ title: INT
 <<reveal_object "FakeSelkieSkin">>
 <<reveal_object "WhiskersVial">>
 <<hide_object "Nisaea-FullBody">>
+<<change_scene DEMD>>
 ===
 title: SSkCT
 ---
 Narrator:An impeccable pelt, colored in shades of grey and symmetrical dots skewered on a rusty meat hook. It is unclear how this skin was obtained. 
-Narrator:It is difficult to tell if it is a Selkie skin or a very large seal molt. It is too far away to bear a discernable scent and Nisaea cannot advance without disturbing the doctor.
-<<reveal_object "Nisaea-FullBody">>
+Narrator:It is difficult to tell if it is a Selkie skin or a very large seal molt. It is too far away to bear a discernable scent without Nisaea advancing further.
 Nisaea:"Regardless of how this was acquired, it makes one prematurely visit lunch."
 <<hide_object "RealSelkieSkin">>
 ===
@@ -32,14 +32,14 @@ Nisaea:"Regardless of how this was acquired, it makes one prematurely visit lunc
 title: SSkCF
 ---
 Narrator:A carefully encased pelt, colored in shades of grey and asymmetrical dots that do not completely cover the fur. It is unclear how this skin was obtained. 
-Narrator:It is difficult to tell if it is a Selkie pup skin or large juvenile seal molt. The case prevents any further identification without Nisaea advancing and disturbing the doctor.
+Narrator:It is difficult to tell if it is a Selkie pup skin or large juvenile seal molt. The case prevents any further identification without Nisaea advancing further. 
 Nisaea:"How unique. An incomplete pattern. I hope the creature it comes from is ok..."
 <<hide_object "FakeSelkieSkin">>
 ===
 
 title: WVC
 ---
-Narrator: A tiny glass vial of meticulously kept shed whiskers. They do not seem to be plucked and appear to be of similar patterns, suggesting it comes from the same subject. 
+Narrator: A tiny glass vial of meticulously kept shed whiskers. They do not seem to be plucked and appear to be of similar patterns, suggesting it comes from the same subject. More information cannot be gathered without Nisaea advancing futher.
 Nisaea: "Peculiar. What need would one have with whiskers? They're quite long as well. I suspect an adult or a selkie."
 <<hide_object "WhiskersVial">>
 ===
