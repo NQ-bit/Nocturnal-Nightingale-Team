@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
         }
 
         currentSceneName = SceneManager.GetActiveScene().name;
-        _score = 0; // Initialize score
     }
 
     public void LoadCutScene()
@@ -76,20 +75,5 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delayBeforeLoad);
         SceneManager.LoadScene(sceneName);
-    }
-
-    public void AddScore(int amount)
-    {
-        _score += amount;
-        Debug.Log($"[GameManager] Score updated to {_score}");
-    }
-
-    public void TriggerEnding()
-    {
-        if (_score > endingThreshold) {
-                SceneManager.LoadScene(badEndingSceneName);
-        } else {
-            SceneManager.LoadScene(goodEndingSceneName);
-        }
     }
 }
