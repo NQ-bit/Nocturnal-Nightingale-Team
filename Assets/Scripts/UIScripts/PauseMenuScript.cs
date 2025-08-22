@@ -1,16 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
 
 public class PauseMenuScript : MonoBehaviour
 {
 
-    public GameObject pauseMenuCanvas;
-    private bool gamePaused;
+    //public GameObject pauseMenuCanvas;
+    //public static bool gamePaused = false;
 
-    public AudioSource pauseMenuBGMusic;
-    public AudioSource BGMuisc;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        //pauseMenuCanvas.SetActive(false);
+    }
 
     public void ReturnToMainMenu()
     {
@@ -38,43 +39,34 @@ public class PauseMenuScript : MonoBehaviour
     void Update()
     {
         #region Esc Key
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!gamePaused)
-            {
-                PauseGame(); //if the game isn't pause this will pause it
-                Debug.Log("Pause Menu");
-                pauseMenuBGMusic.Play();
-                pauseMenuBGMusic.loop = true;
-            }
-            else
-            {
-                ResumeGame();
-                Debug.Log("Resume Game");
-                pauseMenuBGMusic.Stop();
-                pauseMenuBGMusic.loop = false;
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    if (gamePaused)
+        //    {
+        //        ResumeGame();
+        //    }
+        //    else
+        //    {
+        //        PauseGame();
+        //        Debug.Log("Pause Menu open!");
+        //    }
+        //}
         #endregion
     }
 
     #region Resume & Pause
+    //public void ResumeGame()
+    //{
+    //    pauseMenuCanvas.SetActive(false);
+    //    Time.timeScale = 1f; //this is resuming the game time
+    //    gamePaused = false;
+    //}
 
-    void PauseGame()
-    {
-        gamePaused = true;
-        //Time.timeScale = 0f; //pausing the game
-        pauseMenuCanvas.SetActive(true);
-        BGMuisc.Pause();
-    }
-
-    public void ResumeGame()
-    {
-        gamePaused = false;
-        //Time.timeScale = 1f; //this is resuming the game time
-        pauseMenuCanvas.SetActive(false);
-        BGMuisc.UnPause();
-    }
+    //void PauseGame()
+    //{
+    //    pauseMenuCanvas.SetActive(true);
+    //    Time.timeScale = 0f; //pausing the game
+    //    gamePaused = true;
+    //}
     #endregion 
-
 }
