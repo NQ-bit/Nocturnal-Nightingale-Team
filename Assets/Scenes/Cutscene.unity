@@ -1107,7 +1107,6 @@ GameObject:
   - component: {fileID: 508865449}
   - component: {fileID: 508865448}
   - component: {fileID: 508865447}
-  - component: {fileID: 508865451}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1201,18 +1200,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &508865451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508865446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c4fead5280af940988aaa894aaa6ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &580278078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1439,7 +1426,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 508865451}
+      - m_Target: {fileID: 772386831}
         m_TargetAssemblyTypeName: TempMenuScript, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -1923,7 +1910,7 @@ GameObject:
   - component: {fileID: 772386827}
   - component: {fileID: 772386826}
   - component: {fileID: 772386830}
-  - component: {fileID: 772386829}
+  - component: {fileID: 772386831}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2005,29 +1992,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &772386829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772386825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281bad627611e476f9a9f026b8b98819, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSceneName: 
-  endingThreshold: 20
-  mainMenuSceneName: TitleScreen
-  cutSceneName: Cutscene
-  tutorialGameSceneName: Tutorial
-  firstGameSceneName: Beach
-  secondGameSceneName: TownSquare
-  thirdGameSceneName: Warehouse
-  goodEndingSceneName: GoodEnding
-  badEndingSceneName: BadEnding
-  delayBeforeLoad: 1
 --- !u!114 &772386830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,6 +2036,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &772386831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772386825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4fead5280af940988aaa894aaa6ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &783998465
 GameObject:
   m_ObjectHideFlags: 0
