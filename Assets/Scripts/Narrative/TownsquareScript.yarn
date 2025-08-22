@@ -113,7 +113,7 @@ Narrator: Nisaea approached Victor, both items in her pocket.
 Nisaea: "Victor..."
     -> Camphor Ring
         <<jump CRPostVD>>
-    -> Bloody Crane Scissors 
+    -> Bloody Crane Scissors
         <<jump BCSPostVD>>
 ===
 
