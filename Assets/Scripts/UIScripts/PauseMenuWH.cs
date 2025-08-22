@@ -1,17 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-
-public class PauseMenuScript : MonoBehaviour
+public class PauseMenuWH : MonoBehaviour
 {
 
     public GameObject pauseMenuCanvas;
     private bool gamePaused;
 
-    public AudioSource pauseMenuBGMusic;
-    public AudioSource BGMuisc;
-
+    //public AudioSource pauseMenuBGMusic;
+    
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("TitleScreen");
@@ -44,15 +41,15 @@ public class PauseMenuScript : MonoBehaviour
             {
                 PauseGame(); //if the game isn't pause this will pause it
                 Debug.Log("Pause Menu");
-                pauseMenuBGMusic.Play();
-                pauseMenuBGMusic.loop = true;
+                //pauseMenuBGMusic.Play();
+                //pauseMenuBGMusic.loop = true;
             }
             else
             {
                 ResumeGame();
                 Debug.Log("Resume Game");
-                pauseMenuBGMusic.Stop();
-                pauseMenuBGMusic.loop = false;
+                //pauseMenuBGMusic.Stop();
+                //pauseMenuBGMusic.loop = false;
             }
         }
         #endregion
@@ -65,7 +62,6 @@ public class PauseMenuScript : MonoBehaviour
         gamePaused = true;
         //Time.timeScale = 0f; //pausing the game
         pauseMenuCanvas.SetActive(true);
-        BGMuisc.Pause();
     }
 
     public void ResumeGame()
@@ -73,8 +69,6 @@ public class PauseMenuScript : MonoBehaviour
         gamePaused = false;
         //Time.timeScale = 1f; //this is resuming the game time
         pauseMenuCanvas.SetActive(false);
-        BGMuisc.UnPause();
     }
     #endregion 
-
 }
