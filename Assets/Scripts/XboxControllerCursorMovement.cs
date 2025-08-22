@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.UI;
 
 public class XboxControllerCursorMovement : MonoBehaviour
@@ -14,13 +15,20 @@ public static XboxControllerCursorMovement Instance { get; private set; }
     [Header("Input System")]
     [SerializeField] InputActionAsset playerInput;
     [SerializeField] float clickCooldown = 0.5f;
+    [SerializeField] float cursorSpeed = 1000f;
+
 
     private InputAction moveAction;
     private float lastClickTime = 0f;
+    private VirtualMouseInput virtualMouseInput;
+    private Vector2 currentMousePos;
+
+
 
     void Awake()
     {
-       /* if (Instance == null)
+
+       if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
@@ -29,8 +37,11 @@ public static XboxControllerCursorMovement Instance { get; private set; }
         {
             Destroy(gameObject);
             return;
-        }*/
-            
+        }
+
+        virtualMouseInput = GetComponent<VirtualMouseInput>();
+
+
         foreach (var map in playerInput.actionMaps)
         {
             foreach (var action in map.actions)
@@ -65,20 +76,55 @@ public static XboxControllerCursorMovement Instance { get; private set; }
         playerInput?.Disable();
     }
 
+    private void LateUpdate()
+    {
+        Vector2 virtualMousePosition = virtualMouseInput.virtualMouse.position.value;
+        virtualMousePosition.x = Mathf.Clamp(virtualMousePosition.x, 0f, Screen.width);
+        virtualMousePosition.y = Mathf.Clamp(virtualMousePosition.y, 0f, Screen.height);
+        InputState.Change(virtualMouseInput.virtualMouse.position, virtualMousePosition);
+    }
+
     public void OnLook(InputAction.CallbackContext context)
     {
         Vector2 joystick = context.ReadValue<Vector2>();
 
-        // Convert joystick input to screen position
-        Vector2 screenPos = new Vector2(
-            (joystick.x + 1f) / 2f * Screen.currentResolution.width,
-            (1f - (joystick.y + 1f) / 2f) * Screen.currentResolution.height
-        );
+        Vector2 delta = joystick * cursorSpeed * Time.deltaTime;
+        currentMousePos += delta;
 
-        Mouse.current.WarpCursorPosition(screenPos);
-        Debug.Log($"Using Xbox Controller cursor at {screenPos}");
+        currentMousePos.x = Mathf.Clamp(currentMousePos.x, 0f, Screen.width);
+        currentMousePos.y = Mathf.Clamp(currentMousePos.y, 0f, Screen.height);
 
-        if (Input.GetButtonDown("Jump"))
+        Debug.Log($"Xbox Controller moved cursor to {currentMousePos}");
+
+        if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+        {
+            Debug.Log("Jump button pressed");
+
+            PointerEventData pointerData = new PointerEventData(EventSystem.current)
+            {
+                position = currentMousePos
+            };
+
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerData, results);
+
+            if (results.Count > 0)
+            {
+                GameObject target = results[0].gameObject;
+
+                if (target.GetComponent<Button>() != null && Time.time - lastClickTime > clickCooldown)
+                {
+                    ExecuteEvents.Execute(target, pointerData, ExecuteEvents.pointerClickHandler);
+                    Debug.Log($"Auto-clicked on {target.name} via joystick");
+                    lastClickTime = Time.time;
+                }
+            }
+        }
+
+
+
+
+        /*if (Input.GetButtonDown("Jump"))
         {
             Debug.Log($"Pressing Jump button");
 
@@ -102,7 +148,7 @@ public static XboxControllerCursorMovement Instance { get; private set; }
                 }
             }
 
-        }
+        } */
 
     }
 }
