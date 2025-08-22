@@ -29,15 +29,16 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //This was causing the camera to be deleted which resulted in player not being able to quit/replay the game
+        //if (Instance == null)
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
 
         currentSceneName = SceneManager.GetActiveScene().name;
         _score = 0; // Initialize score

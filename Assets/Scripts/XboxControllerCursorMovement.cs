@@ -28,16 +28,16 @@ public static XboxControllerCursorMovement Instance { get; private set; }
     void Awake()
     {
 
-       if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
+       //if (Instance == null)
+       // {
+       //     Instance = this;
+       //     DontDestroyOnLoad(gameObject);
+       // }
+       // else
+       // {
+       //     Destroy(gameObject);
+       //     return;
+       // }
 
         virtualMouseInput = GetComponent<VirtualMouseInput>();
         Debug.Log($"### mouse input: {virtualMouseInput}");
@@ -130,13 +130,13 @@ public static XboxControllerCursorMovement Instance { get; private set; }
 
 
 
-        /*if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             Debug.Log($"Pressing Jump button");
 
             PointerEventData pointerData = new PointerEventData(EventSystem.current)
             {
-                position = screenPos
+                position = currentMousePos //screenPos
             };
 
             List<RaycastResult> results = new List<RaycastResult>();
@@ -154,7 +154,7 @@ public static XboxControllerCursorMovement Instance { get; private set; }
                 }
             }
 
-        } */
+        }
 
     }
 }
