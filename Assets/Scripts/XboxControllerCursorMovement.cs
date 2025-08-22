@@ -40,7 +40,7 @@ public static XboxControllerCursorMovement Instance { get; private set; }
         }
 
         virtualMouseInput = GetComponent<VirtualMouseInput>();
-
+        Debug.Log($"### mouse input: {virtualMouseInput}");
 
         foreach (var map in playerInput.actionMaps)
         {
@@ -78,6 +78,12 @@ public static XboxControllerCursorMovement Instance { get; private set; }
 
     private void LateUpdate()
     {
+        if (virtualMouseInput?.virtualMouse?.position == null)
+        {
+            Debug.LogError("Virtual mouse or its position is not initialized.");
+            return;
+        }
+
         Vector2 virtualMousePosition = virtualMouseInput.virtualMouse.position.value;
         virtualMousePosition.x = Mathf.Clamp(virtualMousePosition.x, 0f, Screen.width);
         virtualMousePosition.y = Mathf.Clamp(virtualMousePosition.y, 0f, Screen.height);
