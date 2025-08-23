@@ -274,7 +274,8 @@ title: EHKC
 <<reveal_object "Nisaea-FullBody">>
 Eloise: "I already told you, I can't help you."
 Narrator: Nisaea hands out the folded handkerchief as if offering to dry tears Eloise did not have.
-<<reveal_object "Warning">>//
+<<reveal_object "Warning">>
+<<hide_object "Warning">>
 Nisaea:"Is this-"
 <<expression Eloise guarded>>
 Eloise: Thief!
