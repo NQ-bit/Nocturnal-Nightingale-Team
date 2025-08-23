@@ -505,8 +505,8 @@ Jessamine:"It is. It's imported. A...friend.... got it for me."
     ->"That's a generous gift from a friend."
         <<set $reputation to $reputation -1>>
         // Narrator: Your current reputation is {$reputation}! // for debugging
-        <<jump JGL>>
 <<hide_object "Warning">>
+        <<jump JGL>>
 ===
 
 title: JMDPostCont
@@ -536,8 +536,8 @@ Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
         // Narrator: Your current reputation is {$reputation}! // for debugging
 Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
 Jessamine:"My apologies... 
-    <<jump JEnd>>
 <<hide_object "Warning">>
+    <<jump JEnd>>
 ===
 
 title: JEnd
