@@ -154,11 +154,19 @@ Narrator: Nisaea interrupts Victor, showing him the precious ring.
 <<expression Victor nervous>>
 <<lightenCharacter "Victor-FullBody">>
 Victor:"By the gods! You found it! I've been looking all over for this."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
     -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
-        Victor:"Family over everything. We protect each other first and foremost." 
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
+        Victor:"Family over everything. We protect each other first and foremost."
+	<<lightenCharacter "Nisaea-FullBody">>
+	<<darkenCharacter "Victor-FullBody">> 
             -><color=red>"You have kin?"</color>
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
                 Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
 		<<lightenCharacter "Nisaea-FullBody">>
 		<<darkenCharacter "Victor-FullBody">>
@@ -370,10 +378,10 @@ title: EHKC
 Eloise: "I already told you, I can't help you."
 
 //presenting the handkerchief
-<<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
 
 Narrator: Nisaea hands out the folded handkerchief as if offering to dry tears Eloise did not have.
+<<lightenCharacter "Nisaea-FullBody">>
 <<reveal_object "Warning">>
 Nisaea:"Is this-"
 <<expression Eloise guarded>>
@@ -388,6 +396,8 @@ Nisaea:"N-No, I-"
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"Where did you get this?!"
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"I found it! I think it fell out of your purse."
 <<darkenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
@@ -410,7 +420,6 @@ title: ECNeg
 <<darkenCharacter "Nisaea-FullBody">>
 Narrator:A twinge of pain seems to flash within Eloise's eyes before she buries it deep within.
 <<lightenCharacter "Eloise-FullBody">>
-<<darkenCharacter "Nisaea-FullBody">> 
 Eloise:"Has anyone ever told you, you're quite an intrusive girl and it's not the least bit endearing?"
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
@@ -419,13 +428,13 @@ Nisaea:"No?"
 <<darkenCharacter "Nisaea-FullBody">>
 Narrator:Eloises groans in frustration at Nisaea's obvious confusion.
 <<lightenCharacter "Eloise-FullBody">>
-<<darkenCharacter "Nisaea-FullBody">> 
 Eloise:"It's just expensive fabric now. I'm lucky to have gotten art by one of this era's most brilliant needleworkers, but that's all this ever will be." 
     <<jump EMDCont>>
 ===
 
 title:ECPos
 ---
+<<expression Eloise Condescending>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">> 
 Eloise:"Hahaha! I could leave offerings to strange gods and still not amount to being nearly as talented Jessamine."
@@ -434,6 +443,7 @@ Eloise:"Hahaha! I could leave offerings to strange gods and still not amount to 
 Nisaea:"That's Victor's sister, yes?"
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">> 
+<<expression Eloise Neutral>>
 Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel so diametric to one another."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">> 
@@ -455,19 +465,20 @@ title: EComL
 Eloise:"I wouldn't waste her time with such a pitiful project. I'd ask for a veil or gloves- something grand."
 Eloise:"It was a gift, of course." 
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"So you're quite close?"
 <<darkenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Narrator: Eloise fidgets with the handkerchief.
 <<lightenCharacter "Eloise-FullBody">>
-<<darkenCharacter "Nisaea-FullBody">>
+<<expression Eloise guarded>>
 Eloise:"No. Not anymore."
     <<jump EMDCont>>
 ===
 
 title:ETL
 ---
+<<expression Eloise guarded>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"Our language is too limited to describe the depth our connection. Friends will suffice for now I suppose."
@@ -477,7 +488,7 @@ Eloise:"Our language is too limited to describe the depth our connection. Friend
 title: EMDCont
 ---
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"You've lost Jessamine somehow?"
 <<expression Eloise guarded>>
 <<lightenCharacter "Eloise-FullBody">>
@@ -485,7 +496,7 @@ Nisaea:"You've lost Jessamine somehow?"
 Eloise:"Taken. My future, my livelihood, taken by that fool Humphrey Ellis."
 Eloise:"Or perhaps, I'm to blame. I've nary been a clever girl."
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
     ->"Humphrey Ellis? I'm unfamilliar with that name."
     ->"Should I know who Humphrey Ellis is?"
 <<lightenCharacter "Eloise-FullBody">>
@@ -493,7 +504,7 @@ Eloise:"Or perhaps, I'm to blame. I've nary been a clever girl."
 Eloise:"Haven't had the pleasure of recieving a tonic or hearing the ramblings of sea women from Point Ecrin's finest doctor? Color yourself lucky."
 <<expression Nisaea nervous>>
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"Sea women? Does your doctor have a doctor? Heheh..."
 <<darkenCharacter "Nisaea-FullBody">>
 Narrator: Eloise does not seem amused.
@@ -502,9 +513,9 @@ Nisaea:"I pray, contiue."
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"My jilted fiancé, Doctor Ellis, had me preoccupied. My family was keen on us being a match and having my focus narrowed. No time for hobbies, friends, or otherwise."
-Eloise:"He however has become so distracted, our arrangement is apparently annulled. His mind has been tainted from consorting with some out of town philosphers."
+Eloise:"He however, has become so distracted, our arrangement is apparently annulled. His mind has been tainted from consorting with some out of town philosphers."
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
     ->"Has he left town?"
         <<jump LTL>>
     ->"Sea women?"
@@ -514,7 +525,7 @@ Eloise:"He however has become so distracted, our arrangement is apparently annul
 title: SWL
 ---
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"How did that relate to sea women?"
 <<expression Eloise guarded>>
 <<lightenCharacter "Eloise-FullBody">>
@@ -522,14 +533,14 @@ Nisaea:"How did that relate to sea women?"
 Eloise:"These <i>'philosophers'</i> believe they've discovered a new race of people. Magical people who can transform back and forth between humans and animals on land and sea. Ridiculous."
 <<expression Nisaea nervous>>
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"Entirely!"
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"The only explanation I recieved is that he met some amazing woman– one of these creatures, and has become obsessed with proving their theorum."
 Eloise:"I have not heard from him since."
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"Where can I find him?"
 <<jump EDir>>
 ===
@@ -548,13 +559,13 @@ title: EDir
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"I'll do my best to give you directions."
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"I greatly appreciate it."
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"... I don't believe you said what you were searching for."
 <<lightenCharacter "Nisaea-FullBody">>
-<<darkenCharacter "Eloise-FullBody ">>
+<<darkenCharacter "Eloise-FullBody">>
 <<expression Nisaea happy>>
 Nisaea:"I don't believe I did."
 <<change_scene Warehouse>>
@@ -790,6 +801,8 @@ title: JYL
 <<hide_object "Warning">>
 <<expression Jessa sad>>
 <<reveal_object "Warning">>
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I hope merely seeing the waves satiates the moon then as well."
 <<hide_object "Warning">>
     <<jump JEnd>>
@@ -800,6 +813,8 @@ title:JNL
 <<hide_object "Warning">>
 <<expression Jessa sad>>
  <<reveal_object "Warning">>
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"Then I'm afraid I'm bereft of words. It's more akin to to a feeling, really. Like when missing several meals and your ribs start to ache?  But I'm still eating. I'm unsure if I'll ever be full again."
 Jessamine:"My apologies... 
 <<hide_object "Warning">>
