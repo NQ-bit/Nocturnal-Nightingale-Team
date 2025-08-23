@@ -112,18 +112,17 @@ Narrator:Nisaea approached Victor, both items in her pocket.
 Nisaea: "Victor..."
     -> Camphor Ring
         <<jump CRPostVD>>
-        <<reveal_object Warning>>
     -> Bloody Crane Scissors
         <<jump BCSPostVD>>
-        <<reveal_object Warning>>
 ===
 
 title: CRPostVD
 ---
 Victor: "Back so soon?"
 Narrator: Nisaea interrupts Victor, showing him the precious ring.
-<<expression Victor nervous>>
+<<reveal_object Warning>>
 <<hide_object Warning>>
+<<expression Victor nervous>>
 Victor:"By the gods! You found it! I've been looking all over for this."
     -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
@@ -148,8 +147,8 @@ title: BCSPostVD
 ---
 Victor:"Back so soon, love?"
 Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
+<<reveal_object Warning>>
 <<expression Victor nervous>>
-<<hide_object Warning>>
 Victor:"How did those fall out of my pocket?"
 Nisaea:"Carrying bloody scissors a vice of yours?"
 <<set $reputation to $reputation +1>>
