@@ -488,7 +488,7 @@ Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with
 Jessamine:"Alright, that's enough for tonight don't you think?"
 Narrator: Nisaea presents the book in her hands like she'd been given a newborn.
 <<reveal_object "Warning">>
-Nisaea:
+Nisaea: "It's beautiful..."
     ->"I've never seen a book like this. Is it from far away?"
         <<set $reputation to $reputation +1>>
         // Narrator: Your current reputation is {$reputation}! // for debugging 
