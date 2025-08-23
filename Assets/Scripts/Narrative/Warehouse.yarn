@@ -28,9 +28,9 @@ Narrator:An impeccable pelt, colored in shades of grey and symmetrical dots skew
 Narrator:It is difficult to tell if it is a Selkie skin or a very large seal molt. It is too far away to bear a discernable scent without Nisaea advancing further.
 Nisaea:"Regardless of how this was acquired, it makes one prematurely visit lunch."
 <<hide_object "RealSelkieSkin">>
-<<if visited SSkCF>>
-<<if visited WVC>>
-<<reveal_object "Doctor-Interactable">>
+<<if visited ("SSkCF")>>
+<<if visited ("WVC")>>
+  <<reveal_object "Doctor-Interactable">>
 <<endif>>
 <<endif>>
 ===
@@ -41,9 +41,9 @@ Narrator:A carefully encased pelt, colored in shades of grey and asymmetrical do
 Narrator:It is difficult to tell if it is a Selkie pup skin or large juvenile seal molt. The case prevents any further identification without Nisaea advancing further. 
 Nisaea:"How unique. An incomplete pattern. I hope the creature it comes from is ok..."
 <<hide_object "FakeSelkieSkin">>
-<<if visited SSkCT>>
-<<if visited WVC>>
-<<reveal_object "Doctor-Interactable">>
+<<if visited ("SSkCT")>>
+<<if visited ("WVC")>>
+  <<reveal_object "Doctor-Interactable">>
 <<endif>>
 <<endif>>
 ===
@@ -53,9 +53,9 @@ title: WVC
 Narrator: A tiny glass vial of meticulously kept shed whiskers. They do not seem to be plucked and appear to be of similar patterns, suggesting it comes from the same subject. More information cannot be gathered without Nisaea advancing futher.
 Nisaea: "Peculiar. What need would one have with whiskers? They're quite long as well. I suspect an adult or a selkie."
 <<hide_object "WhiskersVial">>
-<<if visited SSkCF>>
-<<if visited SSkCT>>
-<<reveal_object "Doctor-Interactable">>
+<<if visited ("SSkCF")>>
+<<if visited ("SSkCT")>>
+  <<reveal_object "Doctor-Interactable">>
 <<endif>>
 <<endif>>
 ===
