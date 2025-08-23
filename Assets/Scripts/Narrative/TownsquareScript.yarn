@@ -16,11 +16,11 @@ Victor:"Darling. Sorry, I have no crab for you today- traps were empty. I though
 Nisaea:"Oh.."
     ->"I missed Point Ecrin already!"
         <<set $reputation to $reputation -1>>
-         Narrator: Your current reputation is {$reputation}! // for debugging
+        //  Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump VD1NEG>>
     ->"I've lost something..."
         <<set $reputation to $reputation +1>>
-         Narrator: Your current reputation is {$reputation}! // for debugging
+        //  Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump VD1POS>>
 ===
 
@@ -126,7 +126,7 @@ Narrator: Nisaea interrupts Victor, showing him the precious ring.
 Victor:"By the gods! You found it! I've been looking all over for this."
     -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
-        Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current reputation is {$reputation}! // for debugging
         Victor:"Family over everything. We protect each other first and foremost." 
             -><color=red>"You have kin?"</color>
                 Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
@@ -151,7 +151,7 @@ Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 Victor:"How did those fall out of my pocket?"
 Nisaea:"Carrying bloody scissors a vice of yours?"
 <<set $reputation to $reputation +1>>
-Narrator: Your current reputation is {$reputation}! // for debugging
+// Narrator: Your current reputation is {$reputation}! // for debugging
 Victor:"I'm sure it looks odd, but spare me a sentencing."
 Victor:"My sister gifted these to me."
 <<expression Victor neutral>>
@@ -178,11 +178,11 @@ title: EloiseOpening
  Nisaea: Pardon. Are you...
     ->"The Keatings' Daughter?"
         <<set $reputation to $reputation +1>>
-        Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump EVDPOS1>>
     ->"Ms.Eliza or Elsa?"
         <<set $reputation to $reputation -1>>
-        Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump EVDNeg1>>
 ===
 
@@ -213,7 +213,7 @@ Eloise:"What great honors' bestowed upon me, that fate caused us to meet?"
 Nisaea:"I'm searching for someone. Someone I believe to be a thief."
 Eloise:"And you think I'd fraternize with that sort?"
 <<set $reputation to $reputation -1>>
-Narrator: Your current reputation is {$reputation}! // for debugging
+// Narrator: Your current reputation is {$reputation}! // for debugging
 <<expression Nisaea angry>>
 Nisaea:"No! 
 <<jump NEIQ>>
@@ -487,20 +487,20 @@ Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with
 Jessamine:"Alright, that's enough for tonight don't you think?"
     ->"I've never seen a book like this. Is it from far away?"
         <<set $reputation to $reputation +1>>
-        Narrator: Your current reputation is {$reputation}! // for debugging 
+        // Narrator: Your current reputation is {$reputation}! // for debugging 
     ->"Your bookmark is beautiful."
         <<set $reputation to $reputation +1>>
-        Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current reputation is {$reputation}! // for debugging
 Nisaea:"I've never seen a book with names like these. Is it from a land far away?"
 <<expression Jessa sad>>
 Jessamine:"It is. It's imported. A...friend.... got it for me."
     ->"Why are your spirits low?"
         <<set $reputation to $reputation +1>>
-        Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump JMDPostCont>>
     ->"That's a generous gift from a friend."
         <<set $reputation to $reputation -1>>
-        Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current reputation is {$reputation}! // for debugging
         <<jump JGL>>
 ===
 
