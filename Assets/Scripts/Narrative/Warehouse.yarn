@@ -110,9 +110,7 @@ Narrator: Nisaea gives it a squeaze and darts towards the exit, afraid to raise 
 Nisaea: "Be well."
 Narrator: The doctor nods to her.
 
-// to-do: add back when scene is ready
-// <<change_scene GoodEndingOutro>>
-<<change_scene TitleScreen>>
+<<change_scene GoodEnding>>
 ===
 
 title: DEBadEnding
@@ -139,7 +137,5 @@ Narrator: In a smooth, composed motion, Dr. Ellis held the rim of the gaslamp un
 Dr. Ellis: "Now we'll try this again. Perhaps take a day to think things over more clearly and we can reconvene."
 Narrator: Through watery eyes, Nisaea yanked at her crumbling milleu. Her world roasting to cinders in her charring hands, the pain of the reality, paling in comparison.
 
-// to-do: add back when scene is ready
-// <<change_scene BadEndingOutro>>
-<<change_scene TitleScreen>>
+<<change_scene BadEnding>>
 ===
