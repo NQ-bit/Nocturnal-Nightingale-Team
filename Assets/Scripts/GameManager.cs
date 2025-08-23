@@ -23,15 +23,17 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //Commentting this out because it'll just be an infinite black screen if the player
+        //pressed play after compeleting the game
+        //if (Instance == null)
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
 
         currentSceneName = SceneManager.GetActiveScene().name;
     }

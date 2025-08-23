@@ -9,6 +9,11 @@ public class TempMenuScript : MonoBehaviour
         SceneManager.LoadScene("Beach");
     }
 
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
+
     public void ToCredits()
     {
         SceneManager.LoadScene("Credits");
