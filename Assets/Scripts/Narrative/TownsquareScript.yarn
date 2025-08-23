@@ -487,7 +487,7 @@ title: JMDPost
 Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
 Jessamine:"Alright, that's enough for tonight don't you think?"
 Narrator: Nisaea presents the book in her hands like she'd been given a newborn.
-<<reveal_object Warning>>
+<<reveal_object "Warning">>
 Nisaea:
     ->"I've never seen a book like this. Is it from far away?"
         <<set $reputation to $reputation +1>>
