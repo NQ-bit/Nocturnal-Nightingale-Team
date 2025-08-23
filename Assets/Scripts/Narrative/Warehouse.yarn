@@ -61,11 +61,14 @@ Nisaea: "Peculiar. What need would one have with whiskers? They're quite long as
 
 title: DEMD
 ---
+<<hide_object "Warning">>
 Narrator:A well dressed man works diligently by a lamplit workspace. 
 Narrator:Nisaea's breath hitches, lungs stopping as is her body idles while she works up the courage. Then her mind goes blank.
+<<reveal_object "Warning">>
 <<expression Nisaea angry>>
 Nisaea:"Y... You ill-formed, feculent, monstrosity!"
 Nisaea:"Do you have any idea the damage your 'research' has done?! Where?! IS! IT!"
+<<hide_object "Warning">>
 Dr. Ellis:"..."
 <<expression Doctor Ecstatic>>
 Dr. Ellis:"Ondine."
