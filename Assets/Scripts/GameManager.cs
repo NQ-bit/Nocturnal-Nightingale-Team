@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Scene Names")]
     public string mainMenuSceneName = "TitleScreen";
-    public string cutSceneName = "IntroScene";
+    public string cutSceneName = "Cutscene";
     public string firstGameSceneName = "Beach";
     public string secondGameSceneName = "TownSquare";
     public string thirdGameSceneName = "Warehouse";
