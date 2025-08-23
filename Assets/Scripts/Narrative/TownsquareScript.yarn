@@ -121,7 +121,6 @@ title: CRPostVD
 Victor: "Back so soon?"
 Narrator: Nisaea interrupts Victor, showing him the precious ring.
 <<reveal_object Warning>>
-<<hide_object Warning>>
 <<expression Victor nervous>>
 Victor:"By the gods! You found it! I've been looking all over for this."
     -><color=red>"What do the scratches inside mean?"</color>
@@ -274,9 +273,8 @@ title: EHKC
 <<reveal_object "Eloise-FullBody">>
 <<reveal_object "Nisaea-FullBody">>
 Eloise: "I already told you, I can't help you."
-
-//presenting the handkerchief
-
+Narrator: Nisaea hands out the folded handkerchief as if offering to dry tears Eloise did not have.
+<<reveal_object Warning>>
 Nisaea:"Is this-"
 <<expression Eloise guarded>>
 Eloise: Thief!
@@ -486,6 +484,9 @@ title: JMDPost
 <<hide_object "Book">>
 Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
 Jessamine:"Alright, that's enough for tonight don't you think?"
+Narrator: Nisaea presents the book in her hands like she'd been given a newborn.
+<<reveal_object Warning>>
+Nisaea:
     ->"I've never seen a book like this. Is it from far away?"
         <<set $reputation to $reputation +1>>
         // Narrator: Your current reputation is {$reputation}! // for debugging 
@@ -524,9 +525,11 @@ Jessamine:"May I ask you an absurd question?"
 Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
     ->"Yes."
         <<set $reputation to $reputation -1>>
+        <<reveal_object Warning>>
         // Narrator: Your current reputation is {$reputation}! // for debugging
     ->"No."
         <<set $reputation to $reputation +1>>
+        <<reveal_object Warning>>
         // Narrator: Your current reputation is {$reputation}! // for debugging
 Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
 Jessamine:"My apologies... 
