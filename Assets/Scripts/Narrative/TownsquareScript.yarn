@@ -270,6 +270,7 @@ Nisaea:"What beautiful flowers... I wonder if this belongs to Ms. Keating."
 
 title: EHKC
 ---
+<<hide_object "Warning">>
 <<hide_object "Handkerchief">>
 <<reveal_object "Eloise-FullBody">>
 <<reveal_object "Nisaea-FullBody">>
@@ -510,6 +511,14 @@ Jessamine:"It is. It's imported. A...friend.... got it for me."
         <<jump JGL>>
 ===
 
+title: JGL
+---
+<<expression Jessa suspicious>>
+Jessamine:"Eloise is a generous person. She's not like how others describe her. I know her well."
+Nisaea:"I beg your pardon."
+    <<jump JMDPostCont>>
+===
+
 title: JMDPostCont
 ---
 <<hide_object "Warning">>
@@ -530,13 +539,31 @@ Jessamine:"May I ask you an absurd question?"
 Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
     ->"Yes."
         <<set $reputation to $reputation -1>>
+            <<jump JYL>>
         <<reveal_object "Warning">>
         // Narrator: Your current reputation is {$reputation}! // for debugging
     ->"No."
         <<set $reputation to $reputation +1>>
-        <<reveal_object "Warning">>
+            <<jump JNL>>
         // Narrator: Your current reputation is {$reputation}! // for debugging
-Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
+===
+
+title: JYL
+---
+<<hide_object "Warning">>
+<<expression Jessa sad>>
+<<reveal_object "Warning">>
+Jessamine:"I hope merely seeing the waves satiates the moon then as well."
+<<hide_object "Warning">>
+    <<jump JEnd>>
+===
+
+title:JNL
+---
+<<hide_object "Warning">>
+<<expression Jessa sad>>
+ <<reveal_object "Warning">>
+Jessamine:"Then I'm afraid I'm bereft of words. It's more akin to to a feeling, really. Like when missing several meals and your ribs start to ache?  But I'm still eating. I'm unsure if I'll ever be full again."
 Jessamine:"My apologies... 
 <<hide_object "Warning">>
     <<jump JEnd>>
@@ -547,19 +574,4 @@ title: JEnd
 Jessamine:"Perhaps you'll find more help directly from the Doctor himself. He's typically in his study on the edge of town. I'll draw you a map."
 Nisaea:"Thank you..."
 <<change_scene Warehouse>> 
-===
-
-title: JGL
----
-<<expression Jessa suspicious>>
-Jessamine:"Eloise is a generous person. She's not like how others describe her. I know her well."
-Nisaea:"I beg your pardon."
-    <<jump JMDPostCont>>
-===
-
-title: JYL
----
-<<expression Jessa sad>>
-Jessamine:"I hope merely seeing the waves satiates the moon then as well."
-    <<jump JEnd>>
 ===
