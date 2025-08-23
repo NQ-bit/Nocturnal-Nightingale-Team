@@ -883,7 +883,6 @@ GameObject:
   - component: {fileID: 333898972}
   - component: {fileID: 333898971}
   - component: {fileID: 333898975}
-  - component: {fileID: 333898974}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -965,29 +964,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &333898974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333898970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281bad627611e476f9a9f026b8b98819, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSceneName: Credits
-  endingThreshold: 20
-  mainMenuSceneName: TitleScreen
-  cutSceneName: Cutscene
-  tutorialGameSceneName: Tutorial
-  firstGameSceneName: Beach
-  secondGameSceneName: TownSquare
-  thirdGameSceneName: Warehouse
-  goodEndingSceneName: GoodEnding
-  badEndingSceneName: BadEnding
-  delayBeforeLoad: 1
 --- !u!114 &333898975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1008,59 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &448986476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448986478}
+  - component: {fileID: 448986477}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &448986477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448986476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281bad627611e476f9a9f026b8b98819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSceneName: Credits
+  mainMenuSceneName: TitleScreen
+  cutSceneName: Cutscene
+  firstGameSceneName: Beach
+  secondGameSceneName: TownSquare
+  thirdGameSceneName: Warehouse
+  goodEndingSceneName: GoodEnding
+  badEndingSceneName: BadEnding
+  delayBeforeLoad: 1
+--- !u!4 &448986478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448986476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 726.03754, y: 674.2017, z: 4.5723515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &471773330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,8 +1890,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1361391643}
-        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
+      - m_Target: {fileID: 448986477}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ReturnToMainMenu
         m_Mode: 1
         m_Arguments:
@@ -2407,6 +2436,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf542b0e1064384ba4fe32b0705f756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuCanvas: {fileID: 0}
+  pauseMenuBGMusic: {fileID: 0}
+  BGMuisc: {fileID: 0}
 --- !u!1 &1415876095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,3 +3488,4 @@ SceneRoots:
   - {fileID: 959417515}
   - {fileID: 515236520}
   - {fileID: 275349259}
+  - {fileID: 448986478}
