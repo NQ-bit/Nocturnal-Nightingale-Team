@@ -114,8 +114,6 @@ Nisaea: "Victor..."
         <<jump CRPostVD>>
     -> Bloody Crane Scissors
         <<jump BCSPostVD>>
-<<reveal_object "ConWarning">>
-<<hide_object "ConWarning">> //testing
 ===
 
 title: CRPostVD
