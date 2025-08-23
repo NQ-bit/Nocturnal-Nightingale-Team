@@ -481,6 +481,7 @@ Nisaea: "How queer..."
 
 title: JMDPost
 ---
+<<hide_object "Warning">>
 <<reveal_object "Jessa-FullBody">>
 <<reveal_object "Nisaea-FullBody">>
 <<hide_object "Book">>
@@ -511,6 +512,7 @@ Jessamine:"It is. It's imported. A...friend.... got it for me."
 
 title: JMDPostCont
 ---
+<<hide_object "Warning">>
 Narrator:Jessamine hesitates, seemingly conflicted.
 <<expression Jessa suspicious>>
 Jessamine:"You asked me about oddities, yes?"
