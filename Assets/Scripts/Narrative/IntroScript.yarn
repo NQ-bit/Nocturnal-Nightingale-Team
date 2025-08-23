@@ -3,7 +3,6 @@
 Disclaimer: This story is a work of fiction.  The names of all the characters, organizations, beings and so on, are fantastically concocted with the intention of exploring thematic avenues and challenging motifs. It bears no distinct connection to any real life events or specific cultural myths/practices.
 
     -> Press Space to Continue...
-        <<change_scene StorybookIntro>>
 ===
 
 title: StorybookIntro
@@ -26,5 +25,4 @@ Narrator: "Mother was caught in the middle of this chaos. Pods had been disappea
 
 Narrator: "When a pup had gone missing, my mother made it her mission to get to the bottom of the dwindling food and selkie population…"
 
-<<change_scene AlcoveScript>>
 ===
