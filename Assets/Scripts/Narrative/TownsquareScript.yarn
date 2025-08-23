@@ -4,23 +4,27 @@
 Narrator:Booted heels and walking sticks clatter noisily upon the ground adding to the cacophony in town. 
 Narrator:As nightfall readily approached, the soul of Point Ecrin was beginning to transform from bustling commerce to quieter pursuits of the evening.
 Narrator:Few souls loomed by their shops as they shuttered for the eventide, but one lone figure advancing from the docks Nisaea glimpsed, caught her attention. 
-Narrator:A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaeas' pleasure. He seems like he's in a hurry.
+Narrator:A man clad in sea soaked work overalls redolent of kelp and brine, materialized much to Nisaea's pleasure. He seems like he's in a hurry.
 
 ===
 
 title: VictorOpening
 ---
 <<expression Victor neutral>>
+<<darkenCharacter "Nisaea-FullBody">>
 Victor:"Nisaea!"
-Victor:"Darling. Sorry, I have no crab for you today- traps were empty. I thought you would be gone for several weeks." 
+Victor:"Darling. Sorry, I have no crab for you today– traps were empty. I thought you would be gone for several weeks."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
+
 Nisaea:"Oh.."
     ->"I missed Point Ecrin already!"
         <<set $reputation to $reputation -1>>
-        //  Narrator: Your current reputation is {$reputation}! // for debugging
+        //  Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1NEG>>
     ->"I've lost something..."
         <<set $reputation to $reputation +1>>
-        //  Narrator: Your current reputation is {$reputation}! // for debugging
+        //  Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1POS>>
 ===
 
@@ -29,20 +33,32 @@ position: 20,20
 ---
 Nisaea:"Something about this town calls to me, I just couldn't stay away."
 <<expression Victor concerned>>
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"Right... Glad to have you back then. Is everything alright? I love our chats but I'm in a bit of a bind."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
 Nisaea:"Apologies..."
 <<jump VRMD>>
 ===
 title:VD1POS
 ---
-Nisaea:"That is my intention, but as I was leaving, I noticed something dear to me has become misplaced. I've come back into town in hopes of finding it."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
+Nisaea:"That is my intention, but as I was leaving, I noticed something dear to me has become misplaced. I've come back in to town in hopes of finding it."
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"I'm terribly sorry to hear that. If it's quick, I'll lend you my hand."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
 Nisaea:"You have my eternal thanks."
 <<jump VRMD>>
 ===
 
 title:VRMD
 ---
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
 Nisaea: Victor...
     ->"Have you seen anything suspicious?"
          <<jump VD1NEUT>>
@@ -52,8 +68,10 @@ Nisaea: Victor...
 
 title: VD1NEUT
 ---
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"You'll have to be more specific. 'Er's never a dull moment in Ecrin." 
-Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself- All the residents are characters. "
+Victor:"Jilted brides, natural philosophers from out of town, mysterious women blowing in from the southern seas, much like yourself- All the residents are characters."
 <<if visited ("VD2NEUT")>>
     <<jump NRVMDB1>>
        <<else>>
@@ -63,6 +81,8 @@ Victor:"Jilted brides, natural philosophers from out of town, mysterious women b
 
 title: VD2NEUT
 ---
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"I wouldn't say so. Not since the Doctor stopped taking orders. And that was quite a bit ago."
 <<if visited ("VD1NEUT")>>
     <<jump NRVMDB1>>
@@ -73,7 +93,9 @@ Victor:"I wouldn't say so. Not since the Doctor stopped taking orders. And that 
 
 title: NRVMDB1
 ---
-Nisaea:His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste...
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
+Nisaea:<i>His answers are more stilted than usual. Maybe I can get him to open up somehow or figure out why he's in such haste...<i>
 <<reveal_object "Ring">>
 <<reveal_object "Scissors">>
 <<hide_object "Victor-FullBody">>
@@ -82,7 +104,8 @@ Nisaea:His answers are more stilted than usual. Maybe I can get him to open up s
 
 title: CamphorRing
 ---
-Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Bares the slight scent of salty metal.
+Narrator:A recently polished camphor ring. Inside carries the engraving: "Slocum sanguis ante omne." Carries the slight scent of salty metal.
+//Im unsure of which command to use here, but there should be the option to move between the Ring and Scissors THEN choose which option to present to Victor. Perhaps something <<if $player_has_camphor_ring>> then Victor: [camphor ring route]? For now I'll use JUMP
 <<reveal_object "Nisaea-FullBody">>
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea-FullBody">>
@@ -96,6 +119,7 @@ title: BloodyCraneScissors
 ---
 Narrator:Ornate crane scissors used for embroidery, stained with almost-brown blood. The hinges swing freely as if they are used frequently and the blade edges seem sharp.
 <<reveal_object "Nisaea-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"I should ask Victor about this."
 <<hide_object "Nisaea-FullBody">>
 <<hide_object "Scissors">>
@@ -108,90 +132,133 @@ title: VYdecision
 ---
 <<reveal_object "Victor-FullBody">>
 <<reveal_object "Nisaea-FullBody">>
-Narrator:Nisaea approached Victor, both items in her pocket. 
+Narrator: Nisaea approached Victor, both items in her pocket.
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">> 
 Nisaea: "Victor..."
     -> Camphor Ring
         <<jump CRPostVD>>
     -> Bloody Crane Scissors
         <<jump BCSPostVD>>
-<<reveal_object "ConWarning">>
-<<hide_object "ConWarning">> //testing
 ===
 
 title: CRPostVD
 ---
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
 Victor: "Back so soon?"
+<<darkenCharacter "Victor-FullBody">>
+<<reveal_object Warning>>
 Narrator: Nisaea interrupts Victor, showing him the precious ring.
 <<expression Victor nervous>>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"By the gods! You found it! I've been looking all over for this."
     -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         Victor:"Family over everything. We protect each other first and foremost." 
             -><color=red>"You have kin?"</color>
                 Victor:"I.. have a younger sister. My father and mother passed away a few years ago one after the other. Broken heart I suspect."
+		<<lightenCharacter "Nisaea-FullBody">>
+		<<darkenCharacter "Victor-FullBody">>
                 Nisaea:"And you guard this sister?"
+		<<darkenCharacter "Nisaea-FullBody">>
+		<<lightenCharacter "Victor-FullBody">>
                 Victor:"I protect her as best I can..."
-                Victor:"... You asked about <i>anyone</i> acting strangely?"
+                Victor:"... You asked about anyone acting strangely?"
+		<<lightenCharacter "Nisaea-FullBody">>
+		<<darkenCharacter "Victor-FullBody">>
                 Nisaea:"Anything you remember could be of use to me."
-                Victor:"It may be worth visiting the Keatings' girl. She's been in stitches for weeks." 
+		<<darkenCharacter "Nisaea-FullBody">>
+		<<lightenCharacter "Victor-FullBody">>
+                Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
+		<<lightenCharacter "Nisaea-FullBody">>
+		<<darkenCharacter "Victor-FullBody">>
                     -><color=red>"Where can I find her?"</color>
-                        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine- m-my sister."
+		<<darkenCharacter "Nisaea-FullBody">>
+		<<lightenCharacter "Victor-FullBody">>
+                        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I last was told by Jessamine- my sister."
+		<<lightenCharacter "Nisaea-FullBody">>
+		<<darkenCharacter "Victor-FullBody">>
                         Nisaea:"You have my thanks."
 <<reveal_object "Eloise-Interactable">>
 <<hide_object "Victor-FullBody">>
 <<hide_object "Nisaea-FullBody">>
+<<hide_object Warning>>
 ===
 
 title: BCSPostVD
 ---
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"Back so soon, love?"
+<<darkenCharacter "Victor-FullBody">>
+<<reveal_object Warning>>
 Narrator: Nisaea interrupts Victor, showing him the delicate scissors.
 <<expression Victor nervous>>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"How did those fall out of my pocket?"
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
 Nisaea:"Carrying bloody scissors a vice of yours?"
 <<set $reputation to $reputation +1>>
-// Narrator: Your current reputation is {$reputation}! // for debugging
+// Narrator: Your current repuation is {$reputation}! // for debugging
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
 Victor:"I'm sure it looks odd, but spare me a sentencing."
 Victor:"My sister gifted these to me."
-<<expression Victor neutral>>
 Victor:"She's an amazing needleworker and swore these types of scissors were sharp and precise."
 Victor:"I use them to cut off scales, excess fat- you name it."
 Victor:"Perfectly sane and normal."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">>
 Nisaea:"Right..."
-Victor:"N-Now that I mention it. Jessamine- my sister may know something."
+<<darkenCharacter "Nisaea-FullBody">>
+<<lightenCharacter "Victor-FullBody">>
+Victor:"N-Now that I mention it. Jessamine- my sister, may know something."
 Victor:"She sees far more people in her line of work than I." 
 Victor:"Maybe she's heard some gossip? I can point you in her direction for your troubles."
-Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads. 
+<<darkenCharacter "Victor-FullBody">>
+Narrator:Nisaea pursed her lips together and squinted her eyes. She could not be picky about leads.
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Victor-FullBody">> 
 Nisaea:"Please, if you will."
 <<reveal_object "Jessa-Interactable">>
 <<hide_object "Victor-FullBody">>
 <<hide_object "Nisaea-FullBody">>
+<<hide_object Warning>>
 ===
 
 title: EloiseOpening
 ---
 <<expression Eloise neutral>>
+<<darkenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
  Narrator: A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm. 
  Narrator: Couples begin to congregate near the opera house, with one soul lingering further out near the interior of the town square. 
  Narrator: Drapped in brilliant lilac taffeta and florid needlepoint lace, a woman stood divided from the rest.
+<<lightenCharacter "Nisaea-FullBody">>
  Nisaea: Pardon. Are you...
     ->"The Keatings' Daughter?"
         <<set $reputation to $reputation +1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EVDPOS1>>
     ->"Ms.Eliza or Elsa?"
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EVDNeg1>>
 ===
 
 title: EVDNeg1
 ---
 <<expression Eloise condescending>>
-Eloise:"Are you not as <i>charming</i> as a hare with half the brain?"
-Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service."
-Nisaea:"<i>Pleasure</i>... to meet you?"
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Eloise:"Are you not as charming as a hare with half the brain?"
+Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service. "
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
+Nisaea:"Pleasure to meet you?"
 <<set $reputation to $reputation -1>>
 <<jump EMD>>
 ===
@@ -199,9 +266,15 @@ Nisaea:"<i>Pleasure</i>... to meet you?"
 title:EVDPOS1
 ---
 <<expression Eloise neutral>>
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"Depends on the party inquiring." 
-Narrator:Eloise offers Nisaea a tentative hand.
+<<darkenCharacter "Eloise-FullBody">>
+Narrator:"Eloise offers Nisaea a tentative hand."
+<<lightenCharacter "Eloise-FullBody">>
 Eloise:"Eloise. Eloise Keating."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"Pleasure to meet you."
 <<jump EMD>>
 ===
@@ -209,12 +282,20 @@ Nisaea:"Pleasure to meet you."
 title: EMD
 ---
 <<expression Eloise Condescending>>
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"What great honors' bestowed upon me, that fate caused us to meet?"
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"I'm searching for someone. Someone I believe to be a thief."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"And you think I'd fraternize with that sort?"
 <<set $reputation to $reputation -1>>
-// Narrator: Your current reputation is {$reputation}! // for debugging
+// Narrator: Your current repuation is {$reputation}! // for debugging
 <<expression Nisaea angry>>
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"No! 
 <<jump NEIQ>>
 ===
@@ -222,6 +303,8 @@ Nisaea:"No!
 title: NEIQ
 ---
 <<expression Nisaea neutral>>
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"I'm simply asking:"
     ->"Have you seen anything odd?"
         <<jump EDNEUT1>>
@@ -231,6 +314,8 @@ Nisaea:"I'm simply asking:"
 
 title: EDNEUT1
 ---
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"The whole lot is odd if you ask me. There is not a single person in Point Ecrin of good breeding left."
 <<if visited ("EDNEUT2")>>
    <<jump NREFD>>
@@ -241,6 +326,8 @@ Eloise:"The whole lot is odd if you ask me. There is not a single person in Poin
 
 title: EDNEUT2
 ---
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"I could name a few people who are strange depending on your usage of the word, but I'm not one to gossip. I'm afraid I can't help you there."
 <<if visited ("EDNEUT1")>>
    <<jump NREFD>>
@@ -251,7 +338,8 @@ Eloise:"I could name a few people who are strange depending on your usage of the
 ===
 title: NREFD
 ---
-Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's some way we can connect.
+<<lightenCharacter "Nisaea-FullBody">>
+Nisaea: <i>She seems willing to talk... I wonder if I can urge her to talk somehow. Maybe there's someway we can connect.</i>
 <<reveal_object "Handkerchief">>
 <<hide_object "Nisaea-FullBody">>
 <<hide_object "Eloise-FullBody">>
@@ -259,11 +347,13 @@ Nisaea: She seems willing to talk... I wonder if I can urge her to talk somehow.
 
 title: handkerchief
 ---
+<<darkenCharacter "Nisaea-FullBody">>
 Narrator:A silken white handkerchief with skillfully embroidered violet and lavender flowers. 
 Narrator:Either imported or commissioned for an appropriate price. 
-Narrator:The letters E.K are painstakingly sewn into the corner of the fabric.
+Narrator:The letters E.K are painstalingly sewn into the corner of the fabric.
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"What beautiful flowers... I wonder if this belongs to Ms. Keating."
-//transition back to the option to interact with Eloise.
+//transition back to option to interact with Eloise.
     <<jump EHKC>>
 ===
 
@@ -272,85 +362,143 @@ title: EHKC
 <<hide_object "Handkerchief">>
 <<reveal_object "Eloise-FullBody">>
 <<reveal_object "Nisaea-FullBody">>
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise: "I already told you, I can't help you."
 
 //presenting the handkerchief
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 
 Nisaea:"Is this-"
 <<expression Eloise guarded>>
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+
 Eloise: Thief!
 <<expression Nisaea nervous>>
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"N-No, I-"
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"Where did you get this?!"
 Nisaea:"I found it! I think it fell out of your purse."
-Narrator:Eloise promptly snatches the handkerchief and looks over the embroidery to check for new imperfections. 
-    -> "It must mean a lot. What's its story?"
+<<darkenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Narrator:Eloise promptly snatches the handkerchief and looks over the embroidery to check for new imperfections.
+<<lightenCharacter "Nisaea-FullBody">> 
+    -> "It must mean a lot. What it's story?"
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ECNeg>>
-    ->"It's beautiful. Did you make it?"
+    ->"Its beautiful. Did you make it?"
         <<set $reputation to $reputation +1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ECPos>>
 ===
 
 title: ECNeg
 ---
-Narrator:A twinge of pain seems to flash within Eloise's eyes before she buries it deep within. 
-Eloise:"Has anyone ever told you, you're quite the intrusive girl and it's not the least bit endearing?"
+<<darkenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Narrator:A twinge of pain seems to flash within Eloise's eyes before she buries it deep within.
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">> 
+Eloise:"Has anyone ever told you, you're quite an intrusive girl and it's not the least bit endearing?"
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
 Nisaea:"No?"
+<<darkenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Narrator:Eloises groans in frustration at Nisaea's obvious confusion.
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">> 
 Eloise:"It's just expensive fabric now. I'm lucky to have gotten art by one of this era's most brilliant needleworkers, but that's all this ever will be." 
     <<jump EMDCont>>
 ===
 
 title:ECPos
 ---
-Eloise:"Hahaha! I could leave offerings to strange gods and still not amount to being nearly as talented as Jessamine."
-Nisaea:"That's Victors' sister, yes?"
-Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel so diametric to one another." 
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">> 
+Eloise:"Hahaha! I could leave offerings to strange gods and still not amount to being nearly as talented Jessamine."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">>
+Nisaea:"That's Victor's sister, yes?"
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">> 
+Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel so diametric to one another."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody">> 
     -> "You commissioned this handkerchief from her?"
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current reptuation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EComL>>
     -> "You speak tenderly of her. Are you friends?"
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current reptuation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ETL>>
 ===
 
 title: EComL
 ---
 <<expression Eloise condescending>>
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"I wouldn't waste her time with such a pitiful project. I'd ask for a veil or gloves- something grand."
 Eloise:"It was a gift, of course." 
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 Nisaea:"So you're quite close?"
+<<darkenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Narrator: Eloise fidgets with the handkerchief.
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"No. Not anymore."
     <<jump EMDCont>>
 ===
 
 title:ETL
 ---
-Eloise:"Our language is too limited to describe the depth of our connection. Friends will suffice for now I suppose."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Eloise:"Our language is too limited to describe the depth our connection. Friends will suffice for now I suppose."
     <<jump EMDCont>>
 ===
 
 title: EMDCont
 ---
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 Nisaea:"You've lost Jessamine somehow?"
 <<expression Eloise guarded>>
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"Taken. My future, my livelihood, taken by that fool Humphrey Ellis."
 Eloise:"Or perhaps, I'm to blame. I've nary been a clever girl."
-    ->"Humphrey Ellis? I'm unfamiliar with that name."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
+    ->"Humphrey Ellis? I'm unfamilliar with that name."
     ->"Should I know who Humphrey Ellis is?"
-Eloise:"Haven't had the pleasure of receiving a tonic or hearing the ramblings of sea women from Point Ecrin's finest doctor? Color yourself lucky."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Eloise:"Haven't had the pleasure of recieving a tonic or hearing the ramblings of sea women from Point Ecrin's finest doctor? Color yourself lucky."
 <<expression Nisaea nervous>>
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 Nisaea:"Sea women? Does your doctor have a doctor? Heheh..."
+<<darkenCharacter "Nisaea-FullBody">>
 Narrator: Eloise does not seem amused.
-Nisaea:"I pray, continue."
+<<lightenCharacter "Nisaea-FullBody">>
+Nisaea:"I pray, contiue."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"My jilted fiancé, Doctor Ellis, had me preoccupied. My family was keen on us being a match and having my focus narrowed. No time for hobbies, friends, or otherwise."
-Eloise:"He however has become so distracted, our arrangement is apparently annulled. His mind has been tainted from consorting with some out of town philosophers."
+Eloise:"He however has become so distracted, our arrangement is apparently annulled. His mind has been tainted from consorting with some out of town philosphers."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
     ->"Has he left town?"
         <<jump LTL>>
     ->"Sea women?"
@@ -359,28 +507,48 @@ Eloise:"He however has become so distracted, our arrangement is apparently annul
 
 title: SWL
 ---
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 Nisaea:"How did that relate to sea women?"
 <<expression Eloise guarded>>
-Eloise:"These 'philosophers' believe they've discovered a new race of people. Magical people who can transform back and forth between humans and animals on land and sea. Ridiculous."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Eloise:"These <i>'philosophers'</i> believe they've discovered a new race of people. Magical people who can transform back and forth between humans and animals on land and sea. Ridiculous."
 <<expression Nisaea nervous>>
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 Nisaea:"Entirely!"
-Eloise:"The only explanation I received is that he met some amazing woman- one of these creatures, and has become obsessed with proving their theorem."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Eloise:"The only explanation I recieved is that he met some amazing woman– one of these creatures, and has become obsessed with proving their theorum."
 Eloise:"I have not heard from him since."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 Nisaea:"Where can I find him?"
 <<jump EDir>>
 ===
 
 title: LTL
 ---
-Eloise:"I'm uncertain, but I believe he's still holed up in his study. It's a repurposed warehouse. I believe he and the philosophers have been studying the 'sea women' there."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Eloise:"I'm uncertain, but I believe he's still holled up in his study. It's a repurposed warehouse. I believe he and the other philosophers have been studying the <i>'sea women'</i> there."
     <<jump EDir>>
 ===
 
 title: EDir
 ---
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"I'll do my best to give you directions."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 Nisaea:"I greatly appreciate it."
+<<lightenCharacter "Eloise-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Eloise:"... I don't believe you said what you were searching for."
+<<lightenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Eloise-FullBody ">>
 <<expression Nisaea happy>>
 Nisaea:"I don't believe I did."
 <<change_scene Warehouse>>
@@ -390,31 +558,47 @@ title: JessamineOpening
 ---
 <<reveal_object "Nisaea-FullBody">>
 <<reveal_object "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Jessa-FullBody">>
 Narrator:A chill sets in the town of Port Ecrin making Nisaea deeply aware of how insufficient human skin is at keeping one warm.
-Narrator:Shopkeepers begin to dim their lights as they close up for the night save for one busying themself inside a building that looked more akin to home rather than a workshop. 
-Narrator:Nisaea found herself up the steps walking inside the shop before she thought wiser of the action. 
-Unknown: "Awfully sorry, We're closed."
+Narrator:Shopkeepers begin to dim their lights as they close up for the night say for one busying themself inside a build that looked more akin to home rather than a workshop. 
+Narrator:Nisaea found herself up the steps walking inside the shop before the thought wiser of the action. 
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Unknown: "Awfully sorry. We're closed."
 <<expression Nisaea nervous>>
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
     -> Are you Victor's sister? 
         <<jump JVDNeut1>>
     ->Victor sent me. He said you could be a friend.
         <<set $reputation to $reputation +1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JVDPOS1>>
 ===
 
 title: JVDNeut1
 ---
+<<darkenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Jessa-FullBody">>
 Narrator:The woman in the shop glances up from her work and looks over Nisaea.
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I told Victor I was done taking in new girls. Mrs. doesn't need more help in the shop and I certainly don't require more apprentices."
-Nisaea:"N-No, I'm not in search of a job... I do need help, but not in that way." 
-Jessamine:"I'm not sure I have 'help' sitting around in droves..."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
+Nisaea:"N-No, I'm not in search of a job... I do need help, but not in <i>that</i> way." 
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Jessamine:"I'm not sure I have <i>'help'</i> sitting around in droves..."
     <<jump JMD>>
 ===
 
 title:JVDPOS1
 ---
-Jessamine:"Victor thinks everyone is a friend. But, I suppose a friend of his is an acquaintance of mine."
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Jessamine:"Victor thinks everyone is a friend. But, I suppose a friend of his is an aquaintance of mine."
 <<expression Nisaea happy>>
 Jessamine:"Well out with it. What do you need, love?"
     <<jump JMD>>
@@ -422,7 +606,11 @@ Jessamine:"Well out with it. What do you need, love?"
 
 title: JMD
 ---
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"Victor sent you for a good reason, I'm certain of it."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Right.."
     ->"Have you seen anything odd?"
         <<jump JNEUT1>>
@@ -432,10 +620,18 @@ Nisaea:"Right.."
 
 title: JNEUT1
 ---
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I'm a needleworker. I get unique requests daily. Nothing substantial I suppose. Less orders as of late perhaps?" 
 Jessamine:"More people have been interested in attending the demonstrations some philosophers have been putting on. Hogwash if you ask me."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"They seem unqualified?"
-Jessamine:"Hardly. They parrot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are eager to attend."
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Jessamine:"Hardly. They parrot strange, outlandish ideas. Tales that mirror magic more than the natural sciences. I can hardly believe people are ardent to attend."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"I understand..."
 <<if visited ("JNEUT2")>>
    <<jump JMD2>>
@@ -446,9 +642,13 @@ Nisaea:"I understand..."
 
 title: JNEUT2
 ---
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I wouldn't say strange. When you work with your head down, people get used to not speaking in hushed voices around you."
 Jessamine:"You tend to fade into the tapestry, become decoration if you understand my intention." 
 Jessamine:"I've heard talk of poor behavior, but I have not seen any myself. That does not make me a reliable source."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"I see..."
 <<if visited ("JNEUT1")>>
    <<jump JMD2>>
@@ -459,10 +659,14 @@ Nisaea:"I see..."
 
 title: JMD2
 ---
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I can try to offer you more, I just need to finish this piece and close up if you're willing to wait."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Of course. Take your time."
 
-Nisaea: I wonder if I can find anything to help my search in the meantime?
+Nisaea: <i>I wonder if I can find anything to help my search in the meantime?</i>
 <<hide_object "Jessa-FullBody">>
 <<hide_object "Nisaea-FullBody">>
 <<reveal_object "Book">>
@@ -470,10 +674,12 @@ Nisaea: I wonder if I can find anything to help my search in the meantime?
 
 title: book
 ---
+<<darkenCharacter "Nisaea-FullBody">>
 Narrator: A titleless book cleverly hides the inside contents of a second edition translation of The Pillow Book. 
-Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
+Narrator: Inside is a hastily written note signed by an "E.K" and a locket serving as a bookmark.
 Narrator: The locket seems to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
 
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea: "How queer..."
     <<jump JMDPost>>
 ===
@@ -483,50 +689,79 @@ title: JMDPost
 <<reveal_object "Jessa-FullBody">>
 <<reveal_object "Nisaea-FullBody">>
 <<hide_object "Book">>
-Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly. 
+<<darkenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Jessa-FullBody">>
+
+Narrator:Jessamine knots a final thread in her fabric and cuts it precisely with her scissors before folding it away neatly.
+<<lightenCharacter "Jessa-FullBody">> 
 Jessamine:"Alright, that's enough for tonight don't you think?"
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
     ->"I've never seen a book like this. Is it from far away?"
         <<set $reputation to $reputation +1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging 
+        // Narrator: Your current repuation is {$reputation}! // for debugging 
     ->"Your bookmark is beautiful."
         <<set $reputation to $reputation +1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
 Nisaea:"I've never seen a book with names like these. Is it from a land far away?"
 <<expression Jessa sad>>
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"It is. It's imported. A...friend.... got it for me."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
     ->"Why are your spirits low?"
         <<set $reputation to $reputation +1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JMDPostCont>>
     ->"That's a generous gift from a friend."
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JGL>>
 ===
 
 title: JMDPostCont
 ---
+<<darkenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Jessa-FullBody">>
 Narrator:Jessamine hesitates, seemingly conflicted.
 <<expression Jessa suspicious>>
+<<lightenCharacter "Jessa-FullBody">>
 Jessamine:"You asked me about oddities, yes?"
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Correct."
-Jessamine:"I know-knew a woman. A brilliant woman, who has been absolutely undone by a set of circumstances, no fault of her own."
-Jessamine:"That rotten Doctor- believes he's humanity's gift to our green earth, has driven her family name into the mud while running off with that shifty eyed 'bride from the sea'."
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Jessamine:"I know- <i>knew</i> a woman. A brillant woman, who has been absolutely undone by a set of circumstances, no fault of her own."
+Jessamine:"That rotten, Doctor– believes he's humanity's gift to our green earth, has driven her family name into the mud while running off with that shifty eyed <i>'bride from the sea'</i>."
 <<expression Nisaea nervous>>
-Nisaea:"'Bride from the sea'? As in from across the sea? Foreign?"
-Jessamine:"That would be half sane! Bastar- only Doctor in Point Ecrin and he lost his <i>mind</i> consorting with those out of town philosphers."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
+Nisaea:"<i>'Bride from the sea'</i>? As in from across the sea? Foreign?"
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Jessamine:"That would be half sane. Only Doctor in Point Ecrin and he's lost his mind consorting with those out of town philosphers."
 Jessamine:"One day he's engaged to Eloise, the next he's run off with some woman he claims lives in the ocean that these philosophers discovered."
 <<expression Jessa sad>>
 Jessamine: "Nearly drove Eloise on a 'trip to the countryside.' She has not been the same since. We have not been the same since."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Do you miss her?"
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"May I ask you an absurd question?"
 Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
     ->"Yes."
         <<set $reputation to $reputation -1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
     ->"No."
         <<set $reputation to $reputation +1>>
-        // Narrator: Your current reputation is {$reputation}! // for debugging
+        // Narrator: Your current repuation is {$reputation}! // for debugging
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"Then no. It's more akin to missing several meals and your ribs start to ache, but I'm still eating. I'm unsure if I'll ever be full again."
 Jessamine:"My apologies... 
     <<jump JEnd>>
@@ -534,7 +769,11 @@ Jessamine:"My apologies...
 
 title: JEnd
 ---
-Jessamine:"Perhaps you'll find more help directly from the Doctor himself. He's typically in his study on the edge of town. I'll draw you a map."
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Jessamine:"Perhaps you'll find more help directly from Doctor. He's typically in his study on the edge of town. I'll draw you a map."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Thank you..."
 <<change_scene Warehouse>> 
 ===
@@ -542,7 +781,11 @@ Nisaea:"Thank you..."
 title: JGL
 ---
 <<expression Jessa suspicious>>
-Jessamine:"Eloise is a generous person. She's not like how others describe her. I know her well."
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
+Jessamine:"Eloise is a generous person. She's not like how other's describe her. I know her well."
+<<darkenCharacter "Jessa-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"I beg your pardon."
     <<jump JMDPostCont>>
 ===
@@ -550,6 +793,8 @@ Nisaea:"I beg your pardon."
 title: JYL
 ---
 <<expression Jessa sad>>
+<<lightenCharacter "Jessa-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I hope merely seeing the waves satiates the moon then as well."
     <<jump JEnd>>
 ===

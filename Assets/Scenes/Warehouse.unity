@@ -2606,6 +2606,8 @@ MonoBehaviour:
     gameObject: {fileID: 1122885434}
   - id: Doctor-Interactable
     gameObject: {fileID: 2051942212}
+  - id: Doctor-FullBody
+    gameObject: {fileID: 41182212104221351}
   - id: RealSelkieSkin
     gameObject: {fileID: 1810664846}
   - id: FakeSelkieSkin

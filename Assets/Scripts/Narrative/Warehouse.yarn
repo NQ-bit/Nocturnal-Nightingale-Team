@@ -8,7 +8,7 @@ Narrator:At home there were twice as many stars, blurred and droukit, but on lan
 Narrator:Soon enough she was outside of the warehouse. Her skin prickled like plucked chicken from more than the cold as she took in the environment. 
 
 <<reveal_object "Nisaea-FullBody">>
-Nisaea: Maybe I should look around inside first?
+Nisaea: <i>Maybe I should look around inside first?</i>
   <<jump INT>>
 //this error is citing how there is a difference between the art Milo drew vs Monica. Milo is Warehouse Exterior (WarehouseExt.) and Monica's is Warehouse Int. in the script. I'm unsure if it's labeled as such in the asset folder)
 ===
@@ -65,7 +65,9 @@ Narrator:A well dressed man works diligently by a lamplit workspace.
 Narrator:Nisaea's breath hitches, lungs stopping as is her body idles while she works up the courage. Then her mind goes blank.
 <<expression Nisaea angry>>
 Nisaea:"Y... You ill-formed, feculent, monstrosity!"
-Nisaea:"Do you have any idea the damage your 'research' has done?! Where?! IS! IT!"
+Nisaea:"Do you have any idea the damage your <i>'research'</i> has done?! Where?! IS! IT!"
+<<lightenCharacter "Doctor-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis:"..."
 <<expression Doctor Ecstatic>>
 Dr. Ellis:"Ondine."
@@ -88,6 +90,8 @@ title: DEGoodEnding
 <<play_music "GoodEnding">>
 Narrator: Nisaea recoils in disgust and confusion.
 <<expression Nisaea angry>>
+<<darkenCharacter "Doctor-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Ondine?"
 Nisaea:"You'll find my compassion wearing thin, Doctor. I am not the one you seek, but I understand a heart empty that yearns to be full." 
 Nisaea:"My home, beautiful as it may be, can greet my pod unforgivingly. We experience famine, loss of pups, and loss of mates."
@@ -95,17 +99,26 @@ Nisaea:"It seems no different on land, yes?"
 <<expression Doctor Neutral>>
 Nisaea:"Then why must you blight us with more misery, manufactured by the hands of greedy men?"
 Nisaea:"You loved this Ondine, but would destroy her land? Her people? For what gain-"
+<<lightenCharacter "Doctor-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis:"I can never lose you again... her again."
 Nisaea:"Posession is not love. She should come freely and leave without restraint. As should I."
 Dr. Ellis:"I... I did not mean to harm. I just... wish to make things right. To see her once more."
+<<darkenCharacter "Doctor-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Then make the first step."
+<<lightenCharacter "Doctor-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis: "Very well..."
 <<expression Nisaea happy>>
+<<darkenCharacter "Doctor-FullBody">>
 Narrator: With quiet steps and without much protest, Nisaea carefully tiptoed over to the hanging pelt and unhooked it while standing on the tips of her toes. The small hole would leave a mark when transformed, but it would heal over time.
 <<reveal_object "GoodEndingWarehouseBG">>
 Narrator: With the pelt in her hands, it was undeniable that it belonged to her. The markings, scent, and pattern was the coat she had grown painstakingly over several years. 
 Narrator: Nisaea gives it a squeaze and darts towards the exit, afraid to raise a malison against the situation. Yet, she pauses at the door, to look over her shoulder.
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea: "Be well."
+<<darkenCharacter "Nisaea-FullBody">>
 Narrator: The doctor nods to her.
 
 <<change_scene GoodEnding>>
@@ -119,20 +132,39 @@ Narrator:Nisaea recoils in disgust and anger.
 Nisaea:"You blithering idiot- aberrant fiend! Arrogation has addled you, leaving naught but putrefaction in your wake."
 Nisaea: "I demand satisfaction."
 <<expression Doctor angry>>
+<<lightenCharacter "Doctor-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis: "When did I hurt my love, so? What causes you to lash out at me in this way?"
+<<darkenCharacter "Doctor-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea: "Do you possess the faculty of sight, or are you willfully ignoring me? This Ondine you speak of has abandoned you and the reason is evident."
 Nisaea:"I've heard rumor the denizens of Point Ecrin keep their pets with more dignity than you've treated the mates you've been signed on for."
+<<lightenCharacter "Doctor-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis:"I loved Ondine-"
+<<darkenCharacter "Doctor-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea: "Yet you go in with lads keen on exploiting her kind?"
+<<lightenCharacter "Doctor-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis: "I thought if I could understand her, I could make her feel safe here. Keep her from needing to return to the ocean so frequently."
+<<darkenCharacter "Doctor-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Did you ask what she wanted?"
 <<expression Doctor neutral>>
+<<darkenCharacter "Nisaea-FullBody">>
 Narrator: Dr. Ellis sighs and adjusts the dial on the gaslamp to increase the brightness in the room. The flame roars inside the glass, begging to be freed.
+<<lightenCharacter "Doctor-FullBody">>
 Dr. Ellis: "Of course I did. It was me. We had discussed our betrothal in detail. Which makes your disappearance that much more bewildering."
+<<darkenCharacter "Doctor-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"My-?"
-Narrator: In a smooth, composed motion, Dr. Ellis held the rim of the gaslamp under Nisaea's pelt. In an instant, a conflagration of flame engulfed the space, dousing the environment in shades of vermillion and amber.
+<<darkenCharacter "Nisaea-FullBody">>
 <<reveal_object "BurningWarehouseBG">>
+Narrator: In a smooth, composed motion, Dr. Ellis held the rim of the gaslamp under Nisaea's pelt. In an instant, a conflagration of flame engulfed the space, dousing the environment in shades of vermillion and amber.
+<<lightenCharacter "Doctor-FullBody">>
 Dr. Ellis: "Now we'll try this again. Perhaps take a day to think things over more clearly and we can reconvene."
+<<darkenCharacter "Doctor-FullBody">>
 Narrator: Through watery eyes, Nisaea yanked at her crumbling milleu. Her world roasting to cinders in her charring hands, the pain of the reality, paling in comparison.
 
 <<change_scene BadEnding>>
