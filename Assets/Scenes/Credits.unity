@@ -1890,8 +1890,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 448986477}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1361391643}
+        m_TargetAssemblyTypeName: TempMenuScript, Assembly-CSharp
         m_MethodName: ReturnToMainMenu
         m_Mode: 1
         m_Arguments:
@@ -2433,12 +2433,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1361391638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcf542b0e1064384ba4fe32b0705f756, type: 3}
+  m_Script: {fileID: 11500000, guid: 14c4fead5280af940988aaa894aaa6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuCanvas: {fileID: 0}
-  pauseMenuBGMusic: {fileID: 0}
-  BGMuisc: {fileID: 0}
 --- !u!1 &1415876095
 GameObject:
   m_ObjectHideFlags: 0
