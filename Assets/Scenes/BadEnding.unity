@@ -359,9 +359,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 685014895}
+  - {fileID: 397706606}
   - {fileID: 818542590}
   - {fileID: 621305172}
-  - {fileID: 397706606}
   - {fileID: 488762791}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 284883621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcf542b0e1064384ba4fe32b0705f756, type: 3}
+  m_Script: {fileID: 11500000, guid: 14c4fead5280af940988aaa894aaa6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &397706605
@@ -1052,7 +1052,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: a2a6a7047ca6fde449cdf1e38aacced7, type: 3}
   m_Resource: {fileID: 8300000, guid: a2a6a7047ca6fde449cdf1e38aacced7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.85
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1892,8 +1892,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 284883626}
-        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
-        m_MethodName: Credits
+        m_TargetAssemblyTypeName: TempMenuScript, Assembly-CSharp
+        m_MethodName: ToCredits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
