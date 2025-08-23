@@ -62,18 +62,6 @@ public class YarnSceneCommands : MonoBehaviour
         
     }
     
-    // Trigger ending directly from dialogue
-    [YarnCommand("trigger_ending")]
-    public static void TriggerEnding()
-    {
-        Debug.Log("Yarn Command: Triggering game ending");
-        
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.TriggerEnding();
-        }
-    }
-    
     // Fade to black and change scene (dramatic effect)
     [YarnCommand("fade_to_scene")]
     public static void FadeToScene(string sceneName, float fadeTime = 2f)
