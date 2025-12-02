@@ -53,21 +53,22 @@ public class PauseMenuWH : MonoBehaviour
             }
         }
         #endregion
+
     }
 
     #region Resume & Pause
 
-    void PauseGame()
+    public void PauseGame()
     {
         gamePaused = true;
-        //Time.timeScale = 0f; //pausing the game
+        Time.timeScale = 0f; //pausing the game
         pauseMenuCanvas.SetActive(true);
     }
 
     public void ResumeGame()
     {
         gamePaused = false;
-        //Time.timeScale = 1f; //this is resuming the game time
+        Time.timeScale = 1f; //this is resuming the game time
         pauseMenuCanvas.SetActive(false);
     }
     #endregion 

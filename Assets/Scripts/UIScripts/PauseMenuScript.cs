@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class PauseMenuScript : MonoBehaviour
 {
-
     public GameObject pauseMenuCanvas;
+
     private bool gamePaused;
 
     public AudioSource pauseMenuBGMusic;
@@ -42,6 +42,7 @@ public class PauseMenuScript : MonoBehaviour
             if (!gamePaused)
             {
                 PauseGame(); //if the game isn't pause this will pause it
+                //Time.timeScale = 0f; //pausing the game
                 Debug.Log("Pause Menu");
                 pauseMenuBGMusic.Play();
                 pauseMenuBGMusic.loop = true;
@@ -49,20 +50,21 @@ public class PauseMenuScript : MonoBehaviour
             else
             {
                 ResumeGame();
+                //Time.timeScale = 1f; //this is resuming the game time
                 Debug.Log("Resume Game");
                 pauseMenuBGMusic.Stop();
                 pauseMenuBGMusic.loop = false;
             }
         }
         #endregion
+
     }
 
     #region Resume & Pause
-
-    void PauseGame()
+    public void PauseGame()
     {
         gamePaused = true;
-        //Time.timeScale = 0f; //pausing the game
+        Time.timeScale = 0f; //pausing the game
         pauseMenuCanvas.SetActive(true);
         BGMuisc.Pause();
     }
@@ -70,7 +72,7 @@ public class PauseMenuScript : MonoBehaviour
     public void ResumeGame()
     {
         gamePaused = false;
-        //Time.timeScale = 1f; //this is resuming the game time
+        Time.timeScale = 1f; //this is resuming the game time
         pauseMenuCanvas.SetActive(false);
         BGMuisc.UnPause();
     }
