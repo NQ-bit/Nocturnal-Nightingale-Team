@@ -14,11 +14,13 @@ public class PauseMenuScript : MonoBehaviour
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("TitleScreen");
+        Time.timeScale = 1f; //this is resuming the game time
     }
 
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
+        Time.timeScale = 1f; //this is resuming the game time
     }
 
 

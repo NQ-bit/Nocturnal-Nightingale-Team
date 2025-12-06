@@ -21,18 +21,21 @@ public class TempMenuScript : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Beach");
+        Time.timeScale = 1f; //this is resuming the game time
         //AllMusicManager.Instance.PlayMusic("Alcove Music");
     }
 
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("TitleScreen");
+        Time.timeScale = 1f; //this is resuming the game time
         //AllMusicManager.Instance.PlayMusic("Main Menu");
     }
 
     public void ToCredits()
     {
         SceneManager.LoadScene("Credits");
+        Time.timeScale = 1f; //this is resuming the game time
     }
 
     public void QuitGame()
