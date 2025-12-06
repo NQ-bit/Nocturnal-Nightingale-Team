@@ -1200,8 +1200,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: 147.5}
-  m_SizeDelta: {x: 295, y: 295}
+  m_AnchoredPosition: {x: -86.8, y: 122.351}
+  m_SizeDelta: {x: 220, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &356935554
 Animator:
@@ -1727,7 +1727,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 17, y: 57}
-  m_SizeDelta: {x: 280, y: 280}
+  m_SizeDelta: {x: 250, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &711615586
 Animator:
@@ -4781,6 +4781,10 @@ MonoBehaviour:
   managedObjects:
   - id: Nisaea-FullBody
     gameObject: {fileID: 449321992}
+  - id: Footprints
+    gameObject: {fileID: 2046769068}
+  - id: Rocks
+    gameObject: {fileID: 870833391}
 --- !u!1 &2130259415
 GameObject:
   m_ObjectHideFlags: 0
