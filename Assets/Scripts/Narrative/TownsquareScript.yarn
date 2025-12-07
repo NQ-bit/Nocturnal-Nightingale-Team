@@ -1,6 +1,7 @@
 ﻿title: TownsquareScript
 ---
 <<declare $reputation = 10>>
+<<update_reputation>>
 Narrator:Booted heels and walking sticks clatter noisily upon the ground adding to the cacophony in town. 
 Narrator:As nightfall readily approached, the soul of Point Ecrin was beginning to transform from bustling commerce to quieter pursuits of the evening.
 Narrator:Few souls loomed by their shops as they shuttered for the eventide, but one lone figure advancing from the docks Nisaea glimpsed, caught her attention. 
@@ -20,10 +21,12 @@ Victor:"Darling. Sorry, I have no crab for you today– traps were empty. I thou
 Nisaea:"Oh.."
     ->"I missed Point Ecrin already!"
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
         //  Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1NEG>>
     ->"I've lost something..."
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
         //  Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump VD1POS>>
 ===
@@ -158,6 +161,7 @@ Victor:"By the gods! You found it! I've been looking all over for this."
 <<darkenCharacter "Victor-FullBody">>
     -><color=red>"What do the scratches inside mean?"</color>
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
 <<darkenCharacter "Nisaea-FullBody">>
 <<lightenCharacter "Victor-FullBody">>
@@ -212,6 +216,7 @@ Victor:"How did those fall out of my pocket?"
 <<darkenCharacter "Victor-FullBody">>
 Nisaea:"Carrying bloody scissors a vice of yours?"
 <<set $reputation to $reputation +1>>
+<<update_reputation>>
 // Narrator: Your current repuation is {$reputation}! // for debugging
 <<darkenCharacter "Nisaea-FullBody">>
 <<lightenCharacter "Victor-FullBody">>
@@ -251,10 +256,12 @@ title: EloiseOpening
  Nisaea: Pardon. Are you...
     ->"The Keatings' Daughter?"
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EVDPOS1>>
     ->"Ms.Eliza or Elsa?"
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EVDNeg1>>
 ===
@@ -270,6 +277,7 @@ Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service.
 <<darkenCharacter "Eloise-FullBody">>
 Nisaea:"Pleasure to meet you?"
 <<set $reputation to $reputation -1>>
+<<update_reputation>>
 <<jump EMD>>
 ===
 
@@ -302,6 +310,7 @@ Nisaea:"I'm searching for someone. Someone I believe to be a thief."
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"And you think I'd fraternize with that sort?"
 <<set $reputation to $reputation -1>>
+<<update_reputation>>
 // Narrator: Your current repuation is {$reputation}! // for debugging
 <<expression Nisaea angry>>
 <<lightenCharacter "Nisaea-FullBody">>
@@ -405,10 +414,12 @@ Narrator:Eloise promptly snatches the handkerchief and looks over the embroidery
 <<lightenCharacter "Nisaea-FullBody">> 
     -> "It must mean a lot. What it's story?"
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ECNeg>>
     ->"Its beautiful. Did you make it?"
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ECPos>>
 <<hide_object "Warning">>
@@ -449,10 +460,12 @@ Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, th
 <<darkenCharacter "Eloise-FullBody">> 
     -> "You commissioned this handkerchief from her?"
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EComL>>
     -> "You speak tenderly of her. Are you friends?"
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ETL>>
 ===
@@ -590,6 +603,7 @@ Unknown: "Awfully sorry. We're closed."
         <<jump JVDNeut1>>
     ->Victor sent me. He said you could be a friend.
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JVDPOS1>>
 ===
@@ -720,9 +734,11 @@ Narrator: Nisaea presents the book in her hands like she'd been given a newborn.
 Nisaea: "It's beautiful..."
     ->"I've never seen a book like this. Is it from far away?"
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging 
     ->"Your bookmark is beautiful."
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
 Nisaea:"I've never seen a book with names like these. Is it from a land far away?"
 <<expression Jessa sad>>
@@ -733,10 +749,12 @@ Jessamine:"It is. It's imported. A...friend.... got it for me."
 <<lightenCharacter "Nisaea-FullBody">>
     ->"Why are your spirits low?"
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump JMDPostCont>>
     ->"That's a generous gift from a friend."
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
         // Narrator: Your current reputation is {$reputation}! // for debugging
 <<hide_object "Warning">>
         <<jump JGL>>
@@ -787,11 +805,13 @@ Jessamine:"Do you think the ocean would be greedy to yearn for the moon?"
 <<lightenCharacter "Nisaea-FullBody">>
     ->"Yes."
         <<set $reputation to $reputation -1>>
+        <<update_reputation>>
             <<jump JYL>>
         <<reveal_object "Warning">>
         // Narrator: Your current reputation is {$reputation}! // for debugging
     ->"No."
         <<set $reputation to $reputation +1>>
+        <<update_reputation>>
             <<jump JNL>>
         // Narrator: Your current reputation is {$reputation}! // for debugging
 ===
