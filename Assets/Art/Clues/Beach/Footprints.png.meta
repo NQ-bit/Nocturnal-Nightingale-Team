@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6976601f47186024bbcfeb26c866ddd7
+guid: a41b9fd52f1c4b14688693648bf55b02
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -179,9 +179,9 @@ TextureImporter:
       name: Footprints_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 116
-        width: 71
+        x: 7
+        y: 89
+        width: 72
         height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -201,8 +201,8 @@ TextureImporter:
       name: Footprints_1
       rect:
         serializedVersion: 2
-        x: 147
-        y: 132
+        x: 155
+        y: 105
         width: 34
         height: 40
       alignment: 0
@@ -223,8 +223,8 @@ TextureImporter:
       name: Footprints_2
       rect:
         serializedVersion: 2
-        x: 175
-        y: 139
+        x: 183
+        y: 112
         width: 78
         height: 45
       alignment: 0
@@ -245,8 +245,8 @@ TextureImporter:
       name: Footprints_3
       rect:
         serializedVersion: 2
-        x: 366
-        y: 152
+        x: 374
+        y: 125
         width: 34
         height: 41
       alignment: 0
@@ -267,8 +267,8 @@ TextureImporter:
       name: Footprints_4
       rect:
         serializedVersion: 2
-        x: 398
-        y: 151
+        x: 406
+        y: 124
         width: 77
         height: 44
       alignment: 0
@@ -289,8 +289,8 @@ TextureImporter:
       name: Footprints_5
       rect:
         serializedVersion: 2
-        x: 589
-        y: 113
+        x: 597
+        y: 86
         width: 70
         height: 44
       alignment: 0
@@ -311,8 +311,8 @@ TextureImporter:
       name: Footprints_6
       rect:
         serializedVersion: 2
-        x: 54
-        y: 72
+        x: 62
+        y: 45
         width: 35
         height: 42
       alignment: 0
@@ -333,8 +333,8 @@ TextureImporter:
       name: Footprints_7
       rect:
         serializedVersion: 2
-        x: 85
-        y: 75
+        x: 93
+        y: 48
         width: 78
         height: 44
       alignment: 0
@@ -355,8 +355,8 @@ TextureImporter:
       name: Footprints_8
       rect:
         serializedVersion: 2
-        x: 239
-        y: 100
+        x: 247
+        y: 73
         width: 36
         height: 41
       alignment: 0
@@ -377,8 +377,8 @@ TextureImporter:
       name: Footprints_9
       rect:
         serializedVersion: 2
-        x: 269
-        y: 105
+        x: 277
+        y: 78
         width: 78
         height: 44
       alignment: 0
@@ -399,8 +399,8 @@ TextureImporter:
       name: Footprints_10
       rect:
         serializedVersion: 2
-        x: 451
-        y: 100
+        x: 459
+        y: 73
         width: 35
         height: 42
       alignment: 0
@@ -421,8 +421,8 @@ TextureImporter:
       name: Footprints_11
       rect:
         serializedVersion: 2
-        x: 494
-        y: 97
+        x: 502
+        y: 70
         width: 66
         height: 45
       alignment: 0
@@ -443,8 +443,8 @@ TextureImporter:
       name: Footprints_12
       rect:
         serializedVersion: 2
-        x: 734
-        y: 101
+        x: 742
+        y: 74
         width: 33
         height: 40
       alignment: 0
@@ -465,8 +465,8 @@ TextureImporter:
       name: Footprints_13
       rect:
         serializedVersion: 2
-        x: 766
-        y: 101
+        x: 774
+        y: 74
         width: 76
         height: 43
       alignment: 0
@@ -487,8 +487,8 @@ TextureImporter:
       name: Footprints_14
       rect:
         serializedVersion: 2
-        x: 953
-        y: 79
+        x: 961
+        y: 52
         width: 34
         height: 40
       alignment: 0
@@ -509,8 +509,8 @@ TextureImporter:
       name: Footprints_15
       rect:
         serializedVersion: 2
-        x: 987
-        y: 68
+        x: 995
+        y: 41
         width: 75
         height: 50
       alignment: 0
@@ -531,8 +531,8 @@ TextureImporter:
       name: Footprints_16
       rect:
         serializedVersion: 2
-        x: 632
-        y: 60
+        x: 640
+        y: 33
         width: 34
         height: 41
       alignment: 0
@@ -553,8 +553,8 @@ TextureImporter:
       name: Footprints_17
       rect:
         serializedVersion: 2
-        x: 666
-        y: 54
+        x: 674
+        y: 27
         width: 75
         height: 47
       alignment: 0
@@ -575,8 +575,8 @@ TextureImporter:
       name: Footprints_18
       rect:
         serializedVersion: 2
-        x: 819
-        y: 52
+        x: 827
+        y: 25
         width: 33
         height: 40
       alignment: 0
@@ -597,8 +597,8 @@ TextureImporter:
       name: Footprints_19
       rect:
         serializedVersion: 2
-        x: 852
-        y: 50
+        x: 860
+        y: 23
         width: 76
         height: 44
       alignment: 0
@@ -619,10 +619,10 @@ TextureImporter:
       name: Footprints_20
       rect:
         serializedVersion: 2
-        x: 1026
-        y: 11
+        x: 1034
+        y: 0
         width: 37
-        height: 43
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,10 +641,10 @@ TextureImporter:
       name: Footprints_21
       rect:
         serializedVersion: 2
-        x: 1067
+        x: 1079
         y: 0
-        width: 63
-        height: 46
+        width: 51
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
