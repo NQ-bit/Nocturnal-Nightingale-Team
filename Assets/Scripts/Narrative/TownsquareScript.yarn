@@ -594,7 +594,7 @@ title: JessamineOpening
 <<darkenCharacter "Jessa-FullBody">>
 Narrator:Narrator: A chill sets in the town of Port Ecrin, making Nisaea deeply aware of the insufficiency of human skin in keeping one warm.
 Narrator:Shopkeepers begin to dim their lights as they close up for the night, except for one busying themselves inside a building that looked more akin to home rather than a workshop.
-Narrator::Nisaea finds herself up the steps walking inside the shop before she thought wiser of the action.
+Narrator:Nisaea finds herself up the steps walking inside the shop before she thought wiser of the action.
 <<lightenCharacter "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Unknown: "Awfully sorry, we're closed."
