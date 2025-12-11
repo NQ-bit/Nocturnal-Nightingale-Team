@@ -524,7 +524,7 @@ Nisaea:"Sea women? Does your physician need a doctor? Heheh..."
 <<darkenCharacter "Nisaea-FullBody">>
 Narrator: Eloise does not seem amused.
 <<lightenCharacter "Nisaea-FullBody">>
-Nisaea:"I pray, contiue."
+Nisaea:"I pray, continue."
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"My failed fiancé, Doctor Ellis, had me preoccupied.My family was keen on us being a match, and my focus was narrowed. No time for hobbies, friends, or otherwise."
