@@ -277,7 +277,7 @@ Eloise:"Are you not as <i>charming</i> as a hare with half the brain?"
 Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
-Nisaea:""<i>Pleasure</i>... to meet you?"
+Nisaea:"<i>Pleasure</i>... to meet you?"
 <<set $reputation to $reputation -1>>
 <<update_reputation>>
 <<jump EMD>>
