@@ -1,6 +1,6 @@
 ﻿title: OutroScript
 ---
-General Ending Dialogue here 
+//General Ending Dialogue here 
 //maybe need to but a small modular connecting piece here unsure as of now.
 ===
 
@@ -19,15 +19,15 @@ Narrator:"She ensured I always swam forward, keeping my skin close and my pod cl
 
 title: GoodEndingOutro
 ---
-Narrator:"Mother returned to the sea with answers albeit some more mystifying to her pod than the questions she set out with."
+Narrator:"Mother returned to the sea with answers, albeit some more mystifying to her pod than the questions she set out with."
 
-Narrator:"The sea embraced her like a lost child returned home and the lessons she brought with her colored the years to come."
+Narrator:"The sea embraced her like a lost child who returned home, and the lessons she brought with her colored the years to come."
 
-Narrator:"Her fondness for humans and land though damaged, was not broken given the aid she received along her journey."
+Narrator:"Her fondness for humans and land, though damaged, was not broken given the aid she received along her journey."
 
-Narrator:"Her weariness for humans was earned, but her trust in her allies, pod, and most importantly her own faculties solidified her aplomb when scrutinized most."
+Narrator:"Her weariness for humans was earned, but her trust in her allies, pod, and most importantly her own faculties solidified her aplomb when she was scrutinized most."
 
 Narrator:"Now I have learned the same, as will all of you…"
 
-Narrator: "The End..."
+Narrator: "The End."
 ===
