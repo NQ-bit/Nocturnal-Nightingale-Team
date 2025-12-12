@@ -676,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 391, y: 201}
+  m_AnchoredPosition: {x: 428, y: 246}
   m_SizeDelta: {x: 324.4325, y: 63.1413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872922374
@@ -699,8 +699,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The sea embraced her like a lost child returned home and the lessons she
-    brought with her colored the years to come.
+  m_text: The sea embraced her like a lost child who returned home, and the lessons
+    she brought with her colored the years to come.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -196.58295, y: 0, z: 126.00458, w: 0}
+  m_margin: {x: -196.58295, y: 0, z: 229.28998, w: -303.353}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -836,7 +836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 555, y: -232}
+  m_AnchoredPosition: {x: 555, y: -279}
   m_SizeDelta: {x: 324.4325, y: 63.1413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954017547
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: -15
-  m_lineSpacing: 0
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1114,7 +1114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 373, y: 156}
+  m_AnchoredPosition: {x: 379, y: 131}
   m_SizeDelta: {x: 324.4325, y: 63.1413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1129652016
@@ -1138,7 +1138,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Her weariness for humans was earned, but her trust in her allies, pod,
-    and most importantly her own faculties solidified her aplomb when scrutinized
+    and most importantly her own faculties solidified her aplomb when she was scrutinized
     most.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -2351,7 +2351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -463, y: -158}
+  m_AnchoredPosition: {x: -425, y: -142}
   m_SizeDelta: {x: 324.4325, y: 63.1413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868517742
@@ -2374,8 +2374,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Her fondness for humans and land though damaged, was not broken given the
-    aid she received along her journey.
+  m_text: Her fondness for humans and land, though damaged, was not broken given
+    the aid she received along her journey.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -2440,7 +2440,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -196.58295, y: 0, z: -158.22266, w: 0}
+  m_margin: {x: -196.58295, y: 0, z: -158.22266, w: -53.288605}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2792,7 +2792,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mother returned to the sea with answers albeit some more mystifying to
+  m_text: Mother returned to the sea with answers, albeit some more mystifying to
     her pod than the questions she set out with.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}

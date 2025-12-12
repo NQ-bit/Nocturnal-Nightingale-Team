@@ -562,9 +562,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I'd like to tell you mothers' perseverance was as effortless as breathing,
-    but it was clear she yearned for home so much it hurt. Especially once I could
-    return to the sea.
+  m_text: I'd like to tell you that her perseverance was as effortless as breathing,
+    but it was clear she yearned so much for home that it hurt. Especially once I
+    could return to the sea.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "She made sure I always swam forward, kept my skin close and my pod closer.
+  m_text: "She ensured I always swam forward, keeping my skin close and my pod closer.
     \nYou should too."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -1353,11 +1353,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'And there was nothing more than that.
+  m_text: 'Natheless, there was nothing more than that.
 
 
-    No perfectly shed tears in
-    coteries of seven on the edge of the strand would bring back mothers'' life.'
+    No shed tears or offerings
+    from far away tides would bring back mother''s true life.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -2716,7 +2716,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Her pod and home were forever lost to a conflagration and one man's selfishness.
+  m_text: Her family and home were forever lost to a conflagration of selfishness.
+    I think that was worse than death for her.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}

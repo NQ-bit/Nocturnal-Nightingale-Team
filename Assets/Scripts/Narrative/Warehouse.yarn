@@ -26,7 +26,10 @@ title: SSkCT
 ---
 Narrator:An impeccable pelt, colored in shades of gray and speckled with symmetrical dots on a rusty meat hook. It is unclear how this skin was obtained. 
 Narrator:It is difficult to tell if it is a Selkie skin or a huge seal molt. It is too far away to bear a discernable scent, and Nisaea cannot advance without disturbing the doctor.
+<<reveal_object "Nisaea-FullBody">>
+<<expression Nisaea nervous>>
 Nisaea:"Regardless of how this was acquired, it makes one prematurely visit lunch."
+<<hide_object "Nisaea-FullBody">>
 <<hide_object "RealSelkieSkin">>
 <<if visited ("SSkCF")>>
 <<if visited ("WVC")>>
@@ -39,7 +42,10 @@ title: SSkCF
 ---
 Narrator:A carefully encased pelt, colored in shades of grey and asymmetrical dots that do not completely cover the fur. It is unclear how this skin was obtained.
 Narrator:It is difficult to tell if it is a Selkie pup skin or a large juvenile seal molt. The case prevents any further identification without Nisaea advancing and disturbing the doctor.
+<<reveal_object "Nisaea-FullBody">>
+<<expression Nisaea neutral>>
 Nisaea:"How unique. An incomplete pattern. I hope the creature it comes from is ok..."
+<<hide_object "Nisaea-FullBody">>
 <<hide_object "FakeSelkieSkin">>
 <<if visited ("SSkCT")>>
 <<if visited ("WVC")>>
@@ -51,7 +57,10 @@ Nisaea:"How unique. An incomplete pattern. I hope the creature it comes from is 
 title: WVC
 ---
 Narrator: A tiny glass vial of shed whiskers, meticulously kept. They do not appear to be plucked and have similar patterns, suggesting that they are from the same subject.
+<<reveal_object "Nisaea-FullBody">>
+<<expression Nisaea neutral>>
 Nisaea: "Peculiar. What need would one have with whiskers? They are quite long as well. I suspect an adult or a selkie."
+<<hide_object "Nisaea-FullBody">>
 <<hide_object "WhiskersVial">>
 <<if visited ("SSkCF")>>
 <<if visited ("SSkCT")>>
@@ -63,9 +72,12 @@ Nisaea: "Peculiar. What need would one have with whiskers? They are quite long a
 title: DEMD
 ---
 <<hide_object "Warning">>
+<<darkenCharacter "Nisaea-FullBody">>
+<<darkenCharacter "Doctor-FullBody">>
 Narrator:A well-dressed man works diligently in a lamplit workspace.
 Narrator:Nisaea's breath hitches, her lungs stopping as her body idles, while she works up the courage. Then, her mind goes blank.
 <<reveal_object "Warning">>
+<<lightenCharacter "Nisaea-FullBody">>
 <<expression Nisaea angry>>
 Nisaea:"Y... You ill-formed, feculent, monstrosity!"
 Nisaea:"Do you have any idea of the damage your <i>'research'</i> has done?! Where?! IS! IT!"
@@ -101,7 +113,11 @@ Nisaea:"You loved this Ondine, but you would destroy her land? Her people? For w
 <<lightenCharacter "Doctor-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis:"I can never lose you again... her again."
+<<darkenCharacter "Doctor-FullBody">>
+<<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Posession is not love. She should come freely and leave without restraint. As should I."
+<<lightenCharacter "Doctor-FullBody">>
+<<darkenCharacter "Nisaea-FullBody">>
 Dr. Ellis:"I... I did not intend to harm. I just wish to make things right. To see her once more."
 <<darkenCharacter "Doctor-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
@@ -126,7 +142,9 @@ Narrator: The doctor nods to her.
 title: DEBadEnding
 ---
 <<play_music "BadEnding">>
+<<darkenCharacter "Doctor-FullBody">>
 Narrator:Nisaea recoils in disgust and anger.
+<<lightenCharacter "Nisaea-FullBody">>
 <<expression Nisaea angry>>
 Nisaea:"You blithering idiot- aberrant fiend! Arrogation has addled you, leaving naught but putrefaction in your wake."
 Nisaea: "I demand satisfaction."
@@ -136,7 +154,7 @@ Nisaea: "I demand satisfaction."
 Dr. Ellis: "When did I hurt my love, so? What causes you to lash out at me in this way?"
 <<darkenCharacter "Doctor-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
-Nisaea: "Do you possess the faculties of sight, or are you willfully ignoring me? This Ondine you speak of has abandoned you, and the reason is evident."
+Nisaea: "Do you possess the faculties of sight, or are you willfully ignoring me? This <i>Ondine</i> you speak of has abandoned you, and the reason is evident."
 Nisaea:"I've heard rumor the denizens of Point Ecrin keep their pets with more dignity than you've treated the mates you've been signed on for."
 <<lightenCharacter "Doctor-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
@@ -158,7 +176,10 @@ Dr. Ellis: "Of course I did. It was me. We have discussed our betrothal in detai
 <<darkenCharacter "Doctor-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"My-?"
+<<play_sfx "FireLit">>
+<<play_effect "FireBurnLoop">>
 <<darkenCharacter "Nisaea-FullBody">>
+<<reveal_object "Fire">>
 <<reveal_object "BurningWarehouseBG">>
 Narrator:  Dr. Ellis held the rim of the gaslamp under Nisaea’s pelt in a smooth, composed motion. In an instant, a conflagration of flame engulfed the space, dousing the environment in shades of vermillion and amber.
 <<lightenCharacter "Doctor-FullBody">>
