@@ -216,9 +216,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: For generations, tales of humans that walk the lands by day and take to
-    the sea as seals by night have occupied stormy strands and frozen tundras, what
-    I've heard.
+  m_text: For generations, I have heard tales of humans that exist on lands and take
+    to the sea as seals at will or under special circumstances, occupying stormy
+    strands and frozen tundras.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -792,8 +792,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "When a pup had gone missing, my mother made it her mission to get to the
-    bottom of the dwindling food and selkie population\u2026"
+  m_text: "When a pup went missing, my mother made it her mission to get to the bottom
+    of the dwindling food and selkie population\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -1809,8 +1809,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Naturally, the wishes backfire by causing the 3 losses: Famine, Death,
-    and Disappearance.'
+  m_text: "Naturally, the wishes not freely given caused the 3 losses: \nFamine,
+    Death, and Disappearance."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -2106,7 +2106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In the beginning when there were several beginnings...
+  m_text: In the beginning, when there were several beginnings...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -2381,8 +2381,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: and the heavens could not differentiate between themself and the sky, the
-    seed of something brilliant took root yet remained dormant till that delineation
+  m_text: and the heavens could not differentiate themselves from the sky, the seed
+    of something brilliant took root and remained dormant until that delineation
     was made.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -3225,7 +3225,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: To discuss each being borne of arcane association would consume years,
-    yet this much I may say.
+    yet I may say this much.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -3545,8 +3545,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I can't remember his name, but in Mom's time, a male selkie was tricked
-    into giving 3 wishes when he was caught in a net by a human.
+  m_text: I cannot recall his name, but in my mother's time, a male selkie was tricked
+    into giving 3 wishes when a human caught him in a net.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
@@ -3834,10 +3834,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Disclaimer: This story is a work of fiction.  The names of all the characters,
-    organizations, beings and so on, are fantastically concocted with the intention
-    of exploring thematic avenues and challenging motifs. It bears no distinct connection
-    to any real life events or specific cultural myths/practices.'
+  m_text: This story is a work of fiction. The names of all the characters, organizations,
+    beings, and so on are fantastically concocted with the intention of exploring
+    thematic avenues and challenging motifs. It bears no distinct connection to any
+    real-life events or specific cultural myths/practices.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
   m_sharedMaterial: {fileID: -7045057111692336019, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
@@ -4068,8 +4068,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mother was caught in the middle of this chaos. Pods had been disappearing
-    and hers was not spared of this tragedy.
+  m_text: Mother was caught in the chaos. Pods had been disappearing, and she was
+    not spared of this tragedy.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}
   m_sharedMaterial: {fileID: 331679651600461996, guid: c11848ac2ceb3f54d93a041dfa5d8a7a, type: 2}

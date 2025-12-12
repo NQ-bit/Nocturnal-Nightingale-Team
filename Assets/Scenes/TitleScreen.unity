@@ -2882,8 +2882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12905e68d49581c4db8f2dcd05970a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicLibrary: {fileID: 297104769}
-  musicSource: {fileID: 2124390375}
+  fireTracks: []
 --- !u!114 &297104769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8343,15 +8342,16 @@ MonoBehaviour:
     \t\tJoelFazhari \n\t\t\t\t\t\t\t\tOne Thousand Years \n\t\t\t\t\t\t\t\t\tAgo
     - Victorian \n\t\t\t\t\t\t\t\tGothic Piano Music\n\n\n\nSound effects: \t\t\t\t\t\tfloraphonic
     &  \n\t\t\t\t\t\t\tfreesound_community \n\n\n\nFonts: \t\t\t\t\t\t\tfontget.com
-    & \n\t\t\t\t\t\t\tfreefontdownload.org\n\n\nCutscene Music: \t\t\t\tOpen Music
+    & \n\t\t\t\t\t\t\tfreefontdownload.org\n\n\n\nCutscene Music: \t\t\t\tOpen Music
     for Videos\n\t\t\t\t\t\t\tMelancholic ASMR Piano | \n\t\t\t\t\t\t\t\tSoft Background
-    | \n\t\t\t\t\t\t\t\tEmotional Flow\n\n\nBeach BG Music: \t\t\t\t\t\tClavier-Music
-    \n\t\t\t\t\t\t\t\tRelaxing Piano Music\n\n\nTown BG Music: \t\t\t\tOpen-Music-for-Videos
+    | \n\t\t\t\t\t\t\t\tEmotional Flow\n\n\n\nBeach BG Music: \t\t\t\t\t\tClavier-Music
+    \n\t\t\t\t\t\t\t\tRelaxing Piano Music\n\n\n\n\nTown BG Music: \t\t\t\tOpen-Music-for-Videos
     \n\t\t\t\t\t\t\tSad Romantic Piano\n\n\n\nWarehouse Music: \t\t\t\tNikitaKondrashev
-    \n\t\t\t\t\t\t\tHorror Creepy Piano\n\n\n\nGood End &\t \t\t\t\t\t\t\t\t\nCredits
-    Music:\t\t \t\t\tClavier-Music\t\t\n\t\t\t\t\t\t\trelaxing piano music\n\n\n\nBad
-    End Music:\t\t\t\t\tNikitaKondrashev\n\t\t\t\t\t\t\t\tHorror Dark Piano\n\n\nPause
-    Menu Music:\t\t\t\t\t\tWaveMaster  \n\t\t\t\t\t\t\t\t\tSad Piano Lost \n\t\t\t\t\t\t\t\t\t\tLove_30sec"
+    \n\t\t\t\t\t\t\tHorror Creepy Piano\n\n\n\nGood End Music:\t\t \t\t\tClavier-Music\t\t\n\t\t\t\t\t\t\trelaxing
+    piano music\n\n\n\nBad End Music:\t\t\t\t\tNikitaKondrashev\n\t\t\t\t\t\t\t\tHorror
+    Dark Piano\n\n\nPause Menu Music:\t\t\t\t\t\t WaveMaster  \n\t\t\t\t\t\t\t\t\tSad
+    Piano Lost \n\t\t\t\t\t\t\t\t\t\tLove_30sec\t\t\t\t\t\t\t\n\t\t\nCredits Music:
+    \t\t\t\t\t     Golden Hours - \n\t\t\t\t\t\t\t\t     Relaxing Piano "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
   m_sharedMaterial: {fileID: -7045057111692336019, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}

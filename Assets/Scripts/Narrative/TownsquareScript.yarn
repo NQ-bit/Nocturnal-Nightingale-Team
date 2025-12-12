@@ -372,8 +372,10 @@ title: handkerchief
 Narrator:A silken white handkerchief with skillfully embroidered violet and lavender flowers.
 Narrator:Imported or commissioned for an appropriate price.
 Narrator:The letters E.K are painstakingly sewn into the corner of the fabric.
+<<reveal_object "Nisaea-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"What beautiful flowers... I wonder if this belongs to Ms. Keating."
+<<hide_object "Nisaea-FullBody">>
 //transition back to option to interact with Eloise.
     <<jump EHKC>>
 ===
@@ -570,6 +572,7 @@ Eloise:"I'm uncertain, but I believe he's still holed up in his study. It is a r
 
 title: EDir
 ---
+<<expression Eloise Neutral>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"I'll do my best to give you directions."
@@ -616,7 +619,6 @@ title: JVDNeut1
 <<darkenCharacter "Jessa-FullBody">>
 Narrator:The woman in the shop glances up from her work and looks over Nisaea.
 <<lightenCharacter "Jessa-FullBody">>
-<<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I told Victor I was done taking in new girls. The Mrs. doesn't need more help in the shop, and I certainly don't require more apprentices."
 <<darkenCharacter "Jessa-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
@@ -711,9 +713,10 @@ title: book
 Narrator:A titleless book cleverly hides the contents of a second edition translation of The Pillow Book.
 Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
 Narrator: The locket appears to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
-
+<<expression Eloise Neutral>>
 <<lightenCharacter "Nisaea-FullBody">>
 Nisaea: "How queer..."
+<<hide_object "Nisaea-FullBody">>
     <<jump JMDPost>>
 ===
 
@@ -746,7 +749,7 @@ Nisaea:"I've never seen a book with names like these. Is it from a land far away
 <<expression Jessa sad>>
 <<lightenCharacter "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
-Jessamine:"It is. It's imported. A...friend...got it for me."
+Jessamine:"It is. It's imported. A...<i>friend</i>...got it for me."
 <<darkenCharacter "Jessa-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
     ->"Why are your spirits low?"
@@ -838,7 +841,7 @@ title:JNL
 <<lightenCharacter "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"Then I'm afraid I'm bereft of words. It's more akin to to a feeling, really. Like when you miss several meals and your ribs start to ache?  But I'm still eating. I'm unsure if I'll ever be full again."
-Jessamine:"My apologies... 
+Jessamine:"My apologies..." 
 <<hide_object "Warning">>
     <<jump JEnd>>
 ===
