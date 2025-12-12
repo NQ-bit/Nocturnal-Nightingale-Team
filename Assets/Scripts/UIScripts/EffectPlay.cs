@@ -56,8 +56,8 @@ public class EffectPlay : MonoBehaviour
         }
     }
 
-    [YarnCommand("stop_effect")]
-    public static void StopEffect()
+    [YarnCommand("stop_SFX")]
+    public static void StopSFX()
     {
         sfxSource.Stop();
         Debug.Log("[Yarn] Stopped music playback");

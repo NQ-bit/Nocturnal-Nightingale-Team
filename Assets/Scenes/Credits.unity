@@ -212,8 +212,8 @@ MonoBehaviour:
     piano music\n\n\n\nBad End Music:\t\t\t\t\tNikitaKondrashev\n\t\t\t\t\t\t\t\tHorror
     Dark Piano\n\n\nPause Menu Music:\t\t\t\t\t\t WaveMaster  \n\t\t\t\t\t\t\t\t\tSad
     Piano Lost \n\t\t\t\t\t\t\t\t\t\tLove_30sec\t\t\t\t\t\t\t\n\t\t\nCredits Music:
-    \t\t\t\t\t     Golden Hours - \n\t\t\t\t\t\t\t\t     Relaxing Piano \n\n\n\n\n\n\n\n\n\n\n\n\nThank
-    You For Playing\nThe Lament"
+    \t\t\t\t\t Clavier-Music\n\t\t\t\t\t\t\t\t  Golden Hours - \n\t\t\t\t\t\t\t    
+    \t  Relaxing Piano \n\n\n\n\n\n\n\n\n\n\n\n\nThank You For Playing\nThe Lament"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
   m_sharedMaterial: {fileID: -7045057111692336019, guid: 30ffd6b9aae35b245a0a94379d00f3ac, type: 2}
@@ -663,7 +663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &227106228
 RectTransform:
   m_ObjectHideFlags: 0

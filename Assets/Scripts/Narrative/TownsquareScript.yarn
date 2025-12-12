@@ -709,11 +709,11 @@ Nisaea: <i>I wonder if I can find anything to help my search?</i>
 
 title: book
 ---
-<<darkenCharacter "Nisaea-FullBody">>
 Narrator:A titleless book cleverly hides the contents of a second edition translation of The Pillow Book.
 Narrator: Inside is a hastily written note signed by a "E.K" and a locket serving as a bookmark.
 Narrator: The locket appears to contain a strand of jet black hair, while the surface plate is a bouquet of lavender.
-<<expression Eloise Neutral>>
+<<reveal_object "Nisaea-FullBody">>
+<<expression Nisaea Neutral>>
 <<lightenCharacter "Nisaea-FullBody">>
 Nisaea: "How queer..."
 <<hide_object "Nisaea-FullBody">>

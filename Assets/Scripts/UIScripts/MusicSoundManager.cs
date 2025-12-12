@@ -118,8 +118,8 @@ public class MusicSoundManager : MonoBehaviour
         }
     }
 
-    [YarnCommand("stop_effect")]
-    public static void StopEffect()
+    [YarnCommand("stop_fire")]
+    public static void StopFire()
     {
         sfxSource.Stop();
         Debug.Log("[Yarn] Stopped music playback");
