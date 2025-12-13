@@ -402,7 +402,7 @@ Nisaea:"Is this-"
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 
-Eloise:"Thief!""
+Eloise:"Thief!"
 <<expression Nisaea nervous>>
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
