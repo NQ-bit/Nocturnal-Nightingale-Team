@@ -183,13 +183,13 @@ Victor:"By the gods! You found it! I've been looking all over for this."
                 Nisaea:"Anything you remember could be of use to me."
 		<<darkenCharacter "Nisaea-FullBody">>
 		<<lightenCharacter "Victor-FullBody">>
-                Victor:"It may be worth visiting the Keating's girl. She's been in stitches for weeks." 
+                Victor:"It may be worth visiting the Keating's girl. <color=\#9370DB>Lady Eloise</color>. She's been in stitches for weeks." 
 		<<lightenCharacter "Nisaea-FullBody">>
 		<<darkenCharacter "Victor-FullBody">>
                     -><color=red>"Where can I find her?"</color>
 		<<darkenCharacter "Nisaea-FullBody">>
 		<<lightenCharacter "Victor-FullBody">>
-                        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I was told last night by Jessamine, m-my sister."
+                        Victor:"Likely around town at this hour. She usually frequents the stores or operas during the week. At least that's what I've been told by <color=\#556B2F>Jessamine</color>, m-my sister."
 		<<lightenCharacter "Nisaea-FullBody">>
 		<<darkenCharacter "Victor-FullBody">>
                         Nisaea:"You have my thanks."
@@ -231,7 +231,7 @@ Nisaea:"Right..."
 <<darkenCharacter "Nisaea-FullBody">>
 <<lightenCharacter "Victor-FullBody">>
 <<expression Victor nervous>>
-Victor:"N-Now that I mention it. Jessamine- my sister, may know something."
+Victor:"N-Now that I mention it, my sister, <color=\#556B2F>Jessamine,-</color> may know something."
 Victor:"She sees far more people in her line of work than I." 
 <<expression Victor neutral>>
 Victor:"Maybe she's heard some gossip? I can point you in her direction for your troubles."
@@ -274,7 +274,7 @@ title: EVDNeg1
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"Are you not as <i>charming</i> as a hare with half the brain?"
-Eloise:"A newcomer I surmise, dear? I'm Eloise. Eloise Keating, at your service."
+Eloise:"A newcomer I surmise, dear? I'm <color=\#9370DB>Eloise</color>. Eloise Keating, at your service."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
 Nisaea:"<i>Pleasure</i>... to meet you?"
@@ -292,7 +292,7 @@ Eloise:"Depends on the party inquiring."
 <<darkenCharacter "Eloise-FullBody">>
 Narrator:"Eloise offers Nisaea a tentative hand."
 <<lightenCharacter "Eloise-FullBody">>
-Eloise:"Eloise. Eloise Keating."
+Eloise:"<color=\#9370DB>Eloise</color>. Eloise Keating."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
 Nisaea:"Pleasure to meet you."
@@ -307,7 +307,8 @@ title: EMD
 Eloise:"What great honors are bestowed upon me, that fate caused us to meet?"
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
-Nisaea:"I'm searching for someone.” Someone I believe to be a thief."
+Nisaea:"I'm searching for someone. Someone I believe to be a thief."
+<<expression Eloise guarded>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"And you think I'd fraternize with that sort?"
@@ -326,7 +327,7 @@ title: NEIQ
 <<expression Nisaea neutral>>
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
-Nisaea:"I'm simply asking:"
+Nisaea:"I'm merely asking:"
     ->"Have you seen anything odd?"
         <<jump EDNEUT1>>
     ->"Has anyone around you been acting strange?"
@@ -401,7 +402,7 @@ Nisaea:"Is this-"
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 
-Eloise: Thief!
+Eloise:"Thief!"
 <<expression Nisaea nervous>>
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
@@ -452,14 +453,14 @@ title:ECPos
 <<expression Eloise Condescending>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">> 
-Eloise:"Hahaha! I could leave offerings to strange gods and still not be nearly as talented as Jessamine."
+Eloise:"Hahaha! I could leave offerings to strange gods and still not be nearly as talented as <color=\#556B2F>Jessamine</color>."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
 Nisaea:"That's Victor's sister, yes?"
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">> 
 <<expression Eloise Neutral>>
-Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, they feel very diametric to one another."
+Eloise:"The <color=\#2F4F4F>crab fisherman</color>? Yes. It often slips my mind that they're related, they feel diametric to one another."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">> 
     -> "You commissioned this handkerchief from her?"
@@ -506,11 +507,11 @@ title: EMDCont
 ---
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
-Nisaea:"You've lost Jessamine somehow?"
+Nisaea:"You've lost <color=\#556B2F>Jessamine</color> somehow?"
 <<expression Eloise guarded>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
-Eloise:"Taken. My future, my livelihood, was taken by that fool Humphrey Ellis."
+Eloise:"Taken. My future, my livelihood, was taken by that fool <color=\#4682B4>Humphrey Ellis.</color>"
 Eloise:"Or perhaps, I'm to blame. I've nary been a clever girl."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
@@ -529,7 +530,7 @@ Narrator: Eloise does not seem amused.
 Nisaea:"I pray, continue."
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
-Eloise:"My failed fiancé, Doctor Ellis, had me preoccupied.My family was keen on us being a match, and my focus was narrowed. No time for hobbies, friends, or otherwise."
+Eloise:"My failed fiancé, <color=\#4682B4>Doctor Ellis</color>, had me preoccupied.My family was keen on us being a match, and my focus was narrowed. No time for hobbies, friends, or otherwise."
 Eloise:"He however has become very distracted that our arrangement is apparently annulled. His mind has been tainted from consorting with some out-of-town philosophers."
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
@@ -547,7 +548,7 @@ Nisaea:"How did that relate to sea women?"
 <<expression Eloise guarded>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
-Eloise:"These <i>'philosophers'</i> believe they have discovered a new race of people. Magical people who can transform between humans and animals on land and sea. Ridiculous."
+Eloise:"These <i>'philosophers'</i> believe they have discovered a new race of people. Magical people who can transform between humans and animals on land and sea. It's absurd."
 <<expression Nisaea nervous>>
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
@@ -619,7 +620,7 @@ title: JVDNeut1
 <<darkenCharacter "Jessa-FullBody">>
 Narrator:The woman in the shop glances up from her work and looks over Nisaea.
 <<lightenCharacter "Jessa-FullBody">>
-Jessamine:"I told Victor I was done taking in new girls. The Mrs. doesn't need more help in the shop, and I certainly don't require more apprentices."
+Jessamine:"I told <color=\#2F4F4F>Victor</color> I was done taking in new girls. The Mrs. doesn't need more help in the shop, and I certainly don't require more apprentices."
 <<darkenCharacter "Jessa-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"N-No, I'm not in search of a job... I do need help, but not in <i>that</i> way." 
@@ -633,7 +634,7 @@ title:JVDPOS1
 ---
 <<lightenCharacter "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
-Jessamine:"Victor thinks everyone is a friend. But, I suppose a friend of his is an aquaintance of mine."
+Jessamine:"<color=\#2F4F4F>Victor</color> thinks everyone is a friend. But, I suppose a friend of his is an aquaintance of mine."
 <<expression Nisaea happy>>
 Jessamine:"Well out with it. What do you need, love?"
     <<jump JMD>>
@@ -768,7 +769,7 @@ Jessamine:"It is. It's imported. A...<i>friend</i>...got it for me."
 title: JGL
 ---
 <<expression Jessa suspicious>>
-Jessamine:"Eloise is a generous person. She's not like how others describe her. I know her well."
+Jessamine:"<color=\#9370DB>Eloise</color> is a generous person. She's not like how others describe her. I know her well."
 Nisaea:"I beg your pardon."
     <<jump JMDPostCont>>
 ===
@@ -788,7 +789,7 @@ Nisaea:"Correct."
 <<lightenCharacter "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"I know- <i>knew</i> a woman. A brilliant woman who has been absolutely undone by a set of circumstances, no fault of her own."
-Jessamine:"That rotten Doctor- believes he's humanity's gift to our green earth, has driven her family name into the mud while running off with that shifty-eyed <i>'bride from the sea.'</i>"
+Jessamine:"That rotten <color=\#4682B4>Doctor-</color>- believes he's humanity's gift to our green earth, has driven her family name into the mud while running off with that shifty-eyed <i>'bride from the sea.'</i>"
 <<expression Nisaea nervous>>
 <<darkenCharacter "Jessa-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
@@ -796,9 +797,9 @@ Nisaea:"<i>'Bride from the sea'</i>? As in from across the sea? Foreign?"
 <<lightenCharacter "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Jessamine:"That would be half sane. Only Doctor in Point Ecrin and he's lost his mind consorting with those out of town philosphers."
-Jessamine:"One day he's engaged to Eloise, the next he's run off with some woman he claims lives in the ocean that these philosophers discovered."
+Jessamine:"One day he's engaged to <color=\#9370DB>Eloise</color>, the next he's run off with some woman he claims lives in the ocean that these philosophers discovered."
 <<expression Jessa sad>>
-Jessamine: "Nearly drove Eloise on a 'trip to the countryside.' She has not been the same since. <i>We</i> have not been the same since."
+Jessamine: "Nearly drove <color=\#9370DB>Eloise</color> on a 'trip to the countryside.' She has not been the same since. <i>We</i> have not been the same since."
 <<darkenCharacter "Jessa-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Do you miss her?"
@@ -850,7 +851,7 @@ title: JEnd
 ---
 <<lightenCharacter "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
-Jessamine:"Perhaps you'll find more help directly from Doctor. He's typically in his study on the edge of town. I'll draw you a map."
+Jessamine:"Perhaps you'll find more help directly from <color=\#4682B4>Doctor</color>. He's typically in his study on the edge of town. I'll draw you a map."
 <<darkenCharacter "Jessa-FullBody">>
 <<lightenCharacter "Nisaea-FullBody">>
 Nisaea:"Thank you..."
