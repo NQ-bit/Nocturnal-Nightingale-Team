@@ -463,7 +463,7 @@ Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, th
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">> 
     -> "You commissioned this handkerchief from her?"
-        <<set $reputation to $reputation -1>>
+        <<set $reputation to $reputation +1>>
         <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EComL>>
@@ -595,7 +595,7 @@ title: JessamineOpening
 <<reveal_object "Jessa-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Jessa-FullBody">>
-Narrator:Narrator: A chill sets in the town of Port Ecrin, making Nisaea deeply aware of the insufficiency of human skin in keeping one warm.
+Narrator:A chill sets in the town of Port Ecrin, making Nisaea deeply aware of the insufficiency of human skin in keeping one warm.
 Narrator:Shopkeepers begin to dim their lights as they close up for the night, except for one busying themselves inside a building that looked more akin to home rather than a workshop.
 Narrator:Nisaea finds herself up the steps walking inside the shop before she thought wiser of the action.
 <<lightenCharacter "Jessa-FullBody">>
