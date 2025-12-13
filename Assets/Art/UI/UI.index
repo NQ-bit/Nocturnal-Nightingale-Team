@@ -1,0 +1,13 @@
+{
+    "type": "scene",
+    "roots": [],
+    "includes": [".unity"],
+    "excludes": ["Assets/Temp/", "Assets/External/"],
+    "options": {
+        "types": true,
+        "properties": false,
+        "extended": true,
+        "dependencies": false
+    },
+    "baseScore": 155
+}

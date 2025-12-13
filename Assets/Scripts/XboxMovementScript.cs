@@ -1,25 +1,37 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.UI;
+using Yarn.Unity;
+using Yarn;
+using Yarn.Unity.Legacy;
+
 
 public class XboxMovementScript : MonoBehaviour
 {
-    public static XboxMovementScript Instance { get; private set; }
+    [Header("Cursor Setup")]
+    public RectTransform cursor;
+    public float moveSpeed = 1000f;
+    public float deadzone = 0.2f;
+    public float clickCooldown = 0.5f;
 
     [Header("Input System")]
     [SerializeField] InputActionAsset playerInput;
-    [SerializeField] float clickCooldown = 0.5f;
 
     private InputAction moveAction;
+    private Vector2 cursorPosition;
     private float lastClickTime = 0f;
+
+    private Vector2 currentStickValue; // stores the stick value
 
     void Awake()
     {
+        // Find the Vector2 action bound to any stick
         foreach (var map in playerInput.actionMaps)
         {
             foreach (var action in map.actions)
@@ -34,14 +46,15 @@ public class XboxMovementScript : MonoBehaviour
             if (moveAction != null) break;
         }
 
-        if (moveAction != null)
-        {
-            moveAction.performed += OnLook;
-        }
-        else
+        if (moveAction == null)
         {
             Debug.LogError("No joystick Vector2 action found in InputActionAsset.");
+            return;
         }
+
+        // Subscribe only to InputAction events
+        moveAction.performed += OnMove;
+        moveAction.canceled += OnMoveCanceled;
     }
 
     void OnEnable()
@@ -54,44 +67,76 @@ public class XboxMovementScript : MonoBehaviour
         playerInput?.Disable();
     }
 
-    #region Void Look Prev
-    public void OnLook(InputAction.CallbackContext context)
+    void Start()
     {
-        Vector2 joystick = context.ReadValue<Vector2>();
+        cursorPosition = new Vector2(Screen.width / 2f, Screen.height / 2f);
+        cursor.position = cursorPosition;
+    }
 
-        // Convert joystick input to screen position
-        Vector2 screenPos = new Vector2(
-            (joystick.x + 1f) / 2f * Screen.currentResolution.width,
-            (1f - (joystick.y + 1f) / 2f) * Screen.currentResolution.height
-        );
+    // Called when stick is moved
+    private void OnMove(InputAction.CallbackContext ctx)
+    {
+        Vector2 value = ctx.ReadValue<Vector2>();
 
-        Mouse.current.WarpCursorPosition(screenPos);
-        Debug.Log($"Using Xbox Controller cursor at {screenPos}");
+        if (value.magnitude < deadzone)
+            value = Vector2.zero;
 
-        if (Input.GetButtonDown("Jump"))
+        currentStickValue = new Vector2(value.x, -value.y);  // invert Y for UI
+    }
+
+    // Called when stick is released
+    private void OnMoveCanceled(InputAction.CallbackContext ctx)
+    {
+        currentStickValue = Vector2.zero;
+    }
+
+    void Update()
+    {
+        MoveCursor();
+        HandleClick();
+    }
+
+    private void MoveCursor()
+    {
+        if (currentStickValue == Vector2.zero)
+            return;
+
+        cursorPosition += currentStickValue * moveSpeed * Time.deltaTime;
+
+        cursorPosition.x = Mathf.Clamp(cursorPosition.x, 0, Screen.width);
+        cursorPosition.y = Mathf.Clamp(cursorPosition.y, 0, Screen.height);
+
+        cursor.position = cursorPosition;
+    }
+
+    private void HandleClick()
+    {
+        Gamepad pad = Gamepad.current;
+        if (pad == null) return;
+
+        if (pad.buttonSouth.wasPressedThisFrame &&
+            Time.time - lastClickTime > clickCooldown)
         {
-            Debug.Log($"Pressing Jump button");
-        }
-
-        PointerEventData pointerData = new PointerEventData(EventSystem.current)
-        {
-            position = screenPos
-        };
-
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(pointerData, results);
-
-        if (results.Count > 0)
-        {
-            GameObject target = results[0].gameObject;
-
-            if (target.GetComponent<Button>() != null && Time.time - lastClickTime > clickCooldown)
+            PointerEventData pointerData = new PointerEventData(EventSystem.current)
             {
-                ExecuteEvents.Execute(target, pointerData, ExecuteEvents.pointerClickHandler);
-                Debug.Log($"Auto-clicked on {target.name} via joystick");
-                lastClickTime = Time.time;
+                position = cursorPosition
+            };
+
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerData, results);
+
+            foreach (var result in results)
+            {
+                Button button = result.gameObject.GetComponent<Button>();
+                if (button != null)
+                {
+                    ExecuteEvents.Execute(button.gameObject, pointerData, ExecuteEvents.pointerClickHandler);
+                    Debug.Log($"Clicked UI Button: {button.name}");
+
+                    lastClickTime = Time.time;
+                    break;
+                }
             }
         }
     }
-    #endregion
 }
