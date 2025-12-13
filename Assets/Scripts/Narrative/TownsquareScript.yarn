@@ -307,7 +307,8 @@ title: EMD
 Eloise:"What great honors are bestowed upon me, that fate caused us to meet?"
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">>
-Nisaea:"I'm searching for someone.” Someone I believe to be a thief."
+Nisaea:"I'm searching for someone. Someone I believe to be a thief."
+<<expression Eloise guarded>>
 <<lightenCharacter "Eloise-FullBody">>
 <<darkenCharacter "Nisaea-FullBody">>
 Eloise:"And you think I'd fraternize with that sort?"
