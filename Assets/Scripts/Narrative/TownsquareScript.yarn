@@ -463,12 +463,12 @@ Eloise:"The crab fisherman? Yes. It often slips my mind that they're related, th
 <<lightenCharacter "Nisaea-FullBody">>
 <<darkenCharacter "Eloise-FullBody">> 
     -> "You commissioned this handkerchief from her?"
-        <<set $reputation to $reputation -1>>
+        <<set $reputation to $reputation +1>>
         <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump EComL>>
     -> "You speak tenderly of her. Are you friends?"
-        <<set $reputation to $reputation +1>>
+        <<set $reputation to $reputation -1>>
         <<update_reputation>>
         // Narrator: Your current repuation is {$reputation}! // for debugging
         <<jump ETL>>
