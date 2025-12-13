@@ -6223,8 +6223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: 34}
-  m_SizeDelta: {x: 445, y: 515}
+  m_AnchoredPosition: {x: 30, y: 14}
+  m_SizeDelta: {x: 430, y: 490}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051942214
 MonoBehaviour:
@@ -6248,7 +6248,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+    m_HighlightedColor: {r: 0.6301887, g: 0.6301887, b: 0.6301887, a: 1}
     m_PressedColor: {r: 0.7433963, g: 0.7433963, b: 0.7433963, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6331,14 +6331,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89433956, g: 0.8632594, b: 0.72728366, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3f7f0cd61e851f34891c25d83e09c500, type: 3}
+  m_Texture: {fileID: 2800000, guid: fd05de9980dca68429b5499597b88d14, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
